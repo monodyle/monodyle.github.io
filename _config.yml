@@ -2,7 +2,7 @@
 title:              "The Monody's Blog"
 description:        "Is it just a blog?"
 author_name:        "Monody Le"
-logo_url:           https://avatars0.githubusercontent.com/u/30283022?v=4
+logo_url:           '/assets/touch-icon.png'
 
 # Social links
 facebook:           https://www.facebook.com/monodylh
@@ -12,7 +12,6 @@ instagram:          https://instagram.com/monodyle
 url:                https://monodyle.github.io
 baseurl:            "" # the subpath of your site
 url:                "" # the base hostname & protocol for your site, e.g. http://example.com
-permalink:          /:title # Post permalink
 timezone:           Asia/Ho_Chi_Minh
 
 # Build settings
@@ -25,7 +24,7 @@ sass:
 
 # Plugins settings
 # theme: minima
-remote_theme: heiswayi/the-plain
+remote_theme:       heiswayi/the-plain
 
 # Other Params
 include:            [ "robots.txt" ]
@@ -36,10 +35,12 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
 
-# Paginate
-paginate_path: '/page:num'
 # permalink: pretty
 
 # Where are tags and categories displayed
 tag_page: '/tags/'
 category_page: '/categories/'
+
+# Paginate
+paginate_path:      '/page:num'
+permalink:          /:title # Post permalink

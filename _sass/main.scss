@@ -85,7 +85,7 @@ blockquote {
   margin: 0 auto 35px;
   text-align: center;
   a {
-    background: #ddd url("logo_wrapper.png");
+    background: #ddd;
     color: #000;
     text-decoration: none;
     font-weight: 700;
@@ -252,6 +252,7 @@ article {
     text-align: center;
     font-size: 1.4em;
     margin-bottom: 0.2em;
+    padding: 0 1em;
   }
   .tags {
     margin-bottom: 0.8em;
@@ -277,6 +278,8 @@ article {
     font-size: 15px;
     line-height: 1.9em;
     word-wrap: break-word;
+    letter-spacing: -0.2px;
+    text-align: justify;
   }
   .footnote {
     border: 0;

@@ -1,6 +1,6 @@
 ---
 layout: tag_page
-title: "Tag: jekyll"
-tag: jekyll
+title: "Tag: laravel"
+tag: laravel
 robots: noindex
 ---

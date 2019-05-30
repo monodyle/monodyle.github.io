@@ -1,6 +1,6 @@
 ---
 layout: tag_page
-title: "Tag: blog"
-tag: blog
+title: "Tag: noty"
+tag: noty
 robots: noindex
 ---
