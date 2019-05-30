@@ -153,6 +153,8 @@ GEM
     jekyll-sitemap (1.2.0)
       jekyll (~> 3.3)
     jekyll-swiss (0.4.0)
+    jekyll-tagging (1.1.0)
+      nuggets
     jekyll-theme-architect (0.1.1)
       jekyll (~> 3.5)
       jekyll-seo-tag (~> 2.0)
@@ -217,6 +219,7 @@ GEM
     multipart-post (2.1.1)
     nokogiri (1.10.3)
       mini_portile2 (~> 2.4.0)
+    nuggets (1.6.0)
     octokit (4.14.0)
       sawyer (~> 0.8.0, >= 0.5.3)
     parallel (1.17.0)
@@ -260,6 +263,7 @@ DEPENDENCIES
   html-proofer
   jekyll-remote-theme
   jekyll-sitemap
+  jekyll-tagging
   tzinfo
   tzinfo-data
 

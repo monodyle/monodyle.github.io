@@ -8,6 +8,10 @@
 	<title>{{ site.title }}</title>
 {% endif %}
 
+{% if site.tags != "" %}
+  {% include tagscollect.html %}
+{% endif %}
+
 <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
 <link rel="icon" href="{{ "/assets/favicon.png" | prepend: site.baseurl | prepend: site.url }}">

@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<section>
+	<div>
+        <h1 class="title">{{ page.tag }}</h1>
+    </div>
+    <ul>
+        {% for post in site.tags[page.tag] %}
+        <li>
+            <div class="post-date code">
+                <span>{{ post.date | date: "%b %d" }}</span>
+            </div>
+            <div class="title">
+                <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
