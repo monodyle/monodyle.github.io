@@ -13,7 +13,15 @@ layout: default
 
 	{{ content }}
 
+	<div class="divider"></div>
+
+	<div class="share">Share this:
+			<a class="next" href="https://www.facebook.com/sharer.php?u={{ site.url | append:page.url }}" title="Share on Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+			<a class="next" href="https://twitter.com/share?url={{ site.url | append:page.url }}" title="Share on Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+			<a class="next" href="mailto:?body=Check out this article: {{ site.url | append:page.url }}" title="Share to email" target="_blank"><i class="fas fa-envelope"></i></a>
+	</div>
 </article>
+
 
 <div class="page-navigation code">
 	{% if page.next.url %}

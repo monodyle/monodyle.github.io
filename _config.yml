@@ -4,6 +4,10 @@ description:        "Is it just a blog?"
 author_name:        "Monody Le"
 logo_url:           https://avatars0.githubusercontent.com/u/30283022?v=4
 
+# Social links
+facebook:           https://www.facebook.com/monodylh
+instagram:          https://instagram.com/monodyle
+
 # Site Settings
 url:                https://monodyle.github.io
 baseurl:            "" # the subpath of your site
