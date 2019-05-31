@@ -1,5 +1,5 @@
 ---
-title: 'Tạo hiệu ứng 3D trên website của bạn?'
+title: 'Tạo hiệu ứng 3D trên website như thế nào?'
 layout: post
 date: '2019-05-29 22:22:54 +0700'
 categories: dev
