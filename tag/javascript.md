@@ -1,6 +1,6 @@
 ---
 layout: tag_page
-title: "Tag: vuejs"
-tag: vuejs
+title: "Tag: javascript"
+tag: javascript
 robots: noindex
 ---
