@@ -14,6 +14,10 @@ Sau đó thì web sập. Đấy là thứ mà sinh viên **UIT** vẫn gọi là
 
 Mình cũng từng như thế, tranh giành khốc liệt, server phía bên trường sập vẫn cứ sập, sinh viên thấy server sập lại cứ thế mà **F5**, mà càng F5 thì cache càng nặng, server càng nhiều request, thế lại càng sập, mà càng sập lại càng khó để đăng ký. Haizz, trước tình cảnh năm nhất và kỳ I năm 2 không thể đăng ký được những gì mình mong muốn. Ấm ức mãi cũng chả giải quyết gì, nhìn nhiều đứa chửi đổng cũng thở dài, cũng nghe nhạc Mr.Siro nhìn ra cửa sổ trầm tư về cuộc sống thường nhật. Bên cạnh vẫn là chiếc laptop hiển thị lỗi, cảm giác cuộc sống đôi khi vô vị.
 
+Xem cái meme nghỉ mắt tý
+
+![Meme nghỉ mắt tý](https://i.imgur.com/4h8ssQu.png)
+
 Tự dưng lúc đó chẹp lưỡi, bảo giá như có thằng nào canh hộ mình, đỡ mất công ngồi đây canh.... Thế mà quên mất mình là dân CNTT, tại sao không giải quyết bằng phương pháp Công nghệ Thông tin? Thế là lại lọ mọ ngồi code, cứ thế mà quên mất đang phải ĐKHP, cứ thế mà ĐKHP Helper đã ra đời.
 
 
@@ -43,6 +47,8 @@ var formData = request.done(function(response) {
 Nếu các bạn đã dùng ajax, hẳn sẽ biết việc **request** của ajax bản chất vẫn là load cả một website ra, vì thế nên response của chúng ta là một file text bao gồm html của một trang web, khá giống vơi việc bạn vào trang [đăng ký](https://dkhp.uit.edu.vn/sinhvien/hocphan/dangky) rồi **Ctrl + U** để lấy source trang web. Thế nên thời gian request của ajax và thời gian dùng browser request là tương đương, tốc độ hơn ở đây là xử lý thông tin và không tốn thời gian browser **render DOM** ra màn hình người dùng.
 
 Tuy nhiên vì vẫn sẽ có những lúc server sập, thế nên chúng ta phải phòng hờ trường hợp này bằng cách bắt lỗi từ ajax
+
+![Lỗi khi request](https://i.imgur.com/K63jLcw.png)
 
 ```javascript
 request.fail(function (xhr, status, errorThrown){
@@ -206,3 +212,5 @@ Coi như hết lỗi rồi á, hứa.
 * Và điều cuối cùng: mình không quan tâm bất cứ dư luận nào nói về việc làm này là chơi bẩn hay cái gì, mình là dân CNTT, mình chỉ giải quyết vấn đề mình đang gặp phải bằng phương pháp CNTT, và mình hiểu mình đang làm gì.
 
 Cảm ơn các bạn đã xem bài viết, hy vọng blog này có ích cho các bạn. Σ(ノ°▽°)ノ
+
+![Kết quả](https://i.imgur.com/ujWzizu.png)
