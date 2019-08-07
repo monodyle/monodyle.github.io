@@ -1,10 +1,11 @@
 ---
 title: 'Tôi đã viết ĐKHP Helper như thế nào?'
 layout: post
-date: '2019-08-07 06:00:00 +0700'
 categories: dev
 tags: javascript uit dkhp helper
 feature_image: https://i.imgur.com/C297kbl.jpg
+description: Cứ 9h sáng, kỳ nào cũng thế, không có sự khoan nhượng nào, một trận chiến khốc liệt, đẫm máu, tất cả vỏn vẹn chưa tới một giây...
+date: '2019-08-07 06:00:00 +0700'
 ---
 
 ## Ngày xửa ngày xưa...
