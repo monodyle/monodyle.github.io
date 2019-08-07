@@ -10,11 +10,12 @@
 
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:url" content="https://monodyle.github.io{{ page.url }}">
 <meta property="og:site_name" content="{{ site.title }}">
 {% if page.feature_image %}
 <meta property="og:image" content="{{ page.feature_image }}">
 {% endif %}
+<meta property="og:type" content="website" />
 
 {% if site.tags != "" %}
   {% include tagscollect.html %}
