@@ -4,6 +4,7 @@ layout: post
 date: '2019-08-07 06:00:00 +0700'
 categories: dev
 tags: javascript uit dkhp helper
+feature_image: https://i.imgur.com/C297kbl.jpg
 ---
 
 ## Ngày xửa ngày xưa...
