@@ -214,7 +214,7 @@ pre {
   line-height: 1.4;
   white-space: pre;
   overflow-x: auto;
-  background-color: #f9f9f9;
+  background-color: #f0f0f0;
   border: 1px solid #ddd;
   padding: 1rem;
   code {
@@ -223,6 +223,10 @@ pre {
     background-color: transparent;
     padding: 0;
   }
+}
+.hljs {
+  background: transparent;
+  padding: 0;
 }
 table {
   width: 100%;
@@ -264,6 +268,12 @@ article {
     height: 1px;
     margin: 2em 0;
   }
+  img.emoji {
+    height: 1em;
+    width: 1em;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.1em;
+  }
   .center {
     text-align: center;
     margin: 0 auto;
@@ -282,6 +292,9 @@ article {
   }
   ul {
     margin: 0.5em 0 1em;
+    li {
+      line-height: 2;
+    }
   }
   .footnote {
     border: 0;

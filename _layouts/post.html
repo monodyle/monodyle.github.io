@@ -40,3 +40,13 @@ layout: default
     <a class="prev" href="{{ page.previous.url | prepend: site.baseurl | prepend: site.url }}" title="PREV: {{page.previous.title}}">&gt;&gt;</a>
   {% endif %}
 </div>
+
+<script>
+twemoji.parse(document.body);
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  document.querySelectorAll('pre code').forEach((block) => {
+    hljs.highlightBlock(block);
+  });
+});
+</script>

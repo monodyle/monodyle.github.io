@@ -14,6 +14,7 @@ Tôi sinh ra là đứa con của núi rừng, lớn lên trên mảnh đất *T
 Hiện tại (2019) tôi đang theo học tại trường **Đại Học Công nghệ Thông Tin - Đại học Quốc gia TP-HCM** (*Vietnam National University Ho Chi Minh - University of Information Technology*) chuyên ngành **Hệ Thống Thông Tin** (*Information System*).
 
 Tôi theo đuổi công việc trở thành một Frontend Engineer (Tuy nhiên tui còn chơi cả Backend nữa :facepalm:)
+
 Ngôn ngữ chính: *PHP (Laravel Framework), HTML, CSS, JavaScript, jQuery*
 
 > Liên hệ công việc: monodylh@gmail.com
