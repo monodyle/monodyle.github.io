@@ -49,7 +49,7 @@ Giả sử ở bài viết này, mình sẽ cố gắng xây dựng một web ap
 
 1. Hiển thị được danh sách liên kết
 2. Tạo một cái form để mọi người cùng chia sẻ liên kết mới
-3. Đã có form thì phải có xác thực (validate)
+3. Đã có form thì phải có xác thực (validation)
 4. Lưu dữ liệu được gửi vào cơ sở dữ liệu (database)
 
 ![Xây dựng kế hoạch](https://i.imgur.com/qXdrYWJ.jpg)
@@ -379,7 +379,7 @@ Sau đó chúng ta sẽ cập nhật view **index** đã khởi tạo trước �
 
 Không hiểu gì phải không? Tới giờ giáo sư rồi này 🤣
 
-Khi `Route` bắt được phương thức `get` đến địa chỉ `/` thì sẽ có một *closure* trả một *callback* là một view blade tên là `index` đặt tại `resource/views` với *data* được truyền tới là `links` vào trong một biến tên là `links`. Biến này sẽ được sử dụng trong `index.blade.php` như một biến php thông thường mà không cần phải khai báo.
+Khi `Route` bắt được phương thức `get` đến địa chỉ `/` thì sẽ có một *closure* trả một *callback* `view` là `index` blade đặt tại `resource/views` với *data* được truyền tới là `links` vào trong một biến tên là `links`. Biến này sẽ được sử dụng trong `index.blade.php` như một biến PHP thông thường mà không cần phải khai báo.
 
 Việc truyền dữ liệu bằng cách thêm đối số thứ 2 vào hàm view có lẽ sẽ làm nhiều bạn thấy khó khăn, nên cũng có cách khác là sử dụng fluent API để define biến nếu bạn thích:
 
@@ -481,7 +481,7 @@ Tiếp theo thì phải tạo ra một cái template cho `submit.blade.php` và 
 
 Hơi nhiều thứ ở đây các bạn phải tiếp thu nhở, nên mình sẽ lướt qua sơ sơ những điểm quan trọng có thể gây nhầm lẫn cho những bạn chưa quen với Laravel.
 
-Ở đầu của form, hãy bỏ qua cái `@csrf` vì nó khá lằng nhằng và phức tạp, mình sẽ phải nói về nó trong 1 bài viết khác, nhưng các bạn cứ hiểu sơ sơ là có nó thì form mới thực thi. Tiếp đó chúng ta có một blade điều khiện kiểm tra có bất kỳ lỗi validation nào với form hay không. Khi có lỗi sẽ có một thông báo hiển thị nhắc nhở người dùng rằng form không hợp lệ để gửi.
+Ở đầu của form, hãy bỏ qua cái `@csrf` vì nó khá lằng nhằng và phức tạp, mình sẽ phải nói về nó trong 1 bài viết khác, nhưng các bạn cứ hiểu sơ sơ là có nó thì form mới thực thi. Tiếp đó chúng ta có một blade điều khiện kiểm tra có bất kỳ lỗi validation (xác thực) nào với form hay không. Khi có lỗi sẽ có một thông báo hiển thị nhắc nhở người dùng rằng form không hợp lệ để gửi.
 
 ```html
 @if ($errors->any())
@@ -537,13 +537,15 @@ Bắt đầu hơi rối phải không? Sở dĩ route này phức tạp hơn cá
 
 Đầu tiên chúng ta injecting (không biết dùng từ gì trong tiếng Việt cho đúng nghĩa 😖) một object `Illuminate\Http\Request` để hold (giữ lại) các dữ liệu từ method POST request truyền tới.
 
-Tiếp đó là `validate()` method của request dùng để xác thực dữ liệu được gửi từ form. Như chúng ta có 3 field cần phải validate, đều yêu cầu required (bắt buộc phải điền), tối đa 255 ký tự và ở field `url` bắt buộc phải truyền vào dữ liệu là một địa chỉ, đồng thời **là duy nhất** trong bảng **links**. Nếu việc xác thực dữ liệu có lỗi, một exception sẽ được trả lại và route sẽ trả người dùng về nguyên y những input data trước đó cùng với một (mớ) những chiếc lỗi.
+Tiếp đó là `validate()` method của request dùng để validation dữ liệu được gửi từ form. Như chúng ta có 3 field cần phải validate, đều yêu cầu required (bắt buộc phải điền), tối đa 255 ký tự và ở field `url` bắt buộc phải truyền vào dữ liệu là một địa chỉ, đồng thời **là duy nhất** trong bảng **links**. Nếu việc validation dữ liệu có lỗi, một exception sẽ được trả lại và route sẽ trả người dùng về nguyên y những input data trước đó cùng với một (mớ) những chiếc lỗi.
 
 Tiếp tục là tạo mới dữ liệu cho model **Link** với hàm `create()`. Rồi trả về route `/`. Ngoài ra các bạn có thể sử dụng cách tạo ra một object mới rồi lưu nó lại:
 
 ```php
 tap(new App\Link($data))->save();
+
 // hoặc
+
 $link = new \App\Link($data);
 $link->save();
 ```
@@ -593,11 +595,13 @@ Thế là xong chức năng thứ 2 rồi nè.
 
 ### Testing the Form Submission
 
-***Lưu ý*: Phần này khá nặng lý thuyết nên các bạn có thể bỏ qua nếu lười đọc**
+***Lưu ý*: Phần này khá nặng lý thuyết và khó đối với beginner nên các bạn có thể bỏ qua**
 
-Laravel cho chúng ta sử dụng kiểm tra HTTP dễ dàng hơn để kiểm tra tính tích hợp đối với các routes và middleware. Vì vậy hãy viết một vài feature tests để kiểm tra code của chúng ta hoạt động đúng như mong đợi.
+Testing là kỹ thuật để kiểm tra các lỗi tồn tại trong một features. Thông thường trong 1 dự án, chúng ta sẽ có bộ phận viết test riêng, việc test sẽ yêu cầu các bạn viết tất cả (nhiều nhất có thể) các test case có thể gặp (dù lỗi hay không lỗi) đối với feature đó để chắc chắn rằng chúng nó hoạt động theo đúng những gì chúng ta mong đợi.
 
-Trước khi bắt đầu viết test, mình cần phải chỉnh lại một số thứ trong file `phpunit.xml` để có thể sử dụng SQLite trong bộ nhớ. Bạn cần phải đảm bảo rằng bạn đã cài đặt đầy đủ các module phù hợp của PHP. Sử dụng environment variables (biến môi trường), chúng ta có thể thay đổi kết nối cơ sở dư liệu bằng cách thêm vài biến mới vào config:
+Đối với Laravel, khá là dễ dàng để kiểm tra tính tích hợp của *HTTP request* đối với các *routes* và *middleware*. Vì vậy hãy viết một vài feature tests để kiểm tra code của chúng ta hoạt động đúng theo những gì mường tượng nãy giờ nhé.
+
+Trước khi bắt đầu viết test, mình cần phải chỉnh lại một số thứ trong file `phpunit.xml` để có thể sử dụng **SQLite** trong bộ nhớ. Bạn cần phải đảm bảo rằng bạn đã cài đặt đầy đủ các module phù hợp của PHP. Sử dụng *environment variables* (biến môi trường), chúng ta có thể thay đổi kết nối cơ sở dư liệu bằng cách thêm vài biến mới vào config:
 
 ```xml
 <php>
@@ -616,7 +620,7 @@ Giờ thì đã sẵn sàng để bắt đầu test route `/submit` form thông 
 
     $ php artisan make:test SubmitLinksTest
 
-Lệnh trên khởi tạo một file mới với các phụ thuộc phù hợp, bao gồm cả RefeshDatabase trait mà chúng ta sẽ sử dụng để verify (xác minh) rằng các liên kết của chúng ta đã được lưu vào CSDL khi việc xác thực hợp lệ. Mở file `tests/Feature/SubmitLinksTest.php` mới tạo ra và define một khung xương cho việc test cái xác mà chúng ta đang muốn kiểm tra:
+Lệnh trên khởi tạo một file mới với các phụ thuộc phù hợp, bao gồm cả RefeshDatabase trait mà chúng ta sẽ sử dụng để verify (xác minh) rằng các liên kết của chúng ta đã được lưu vào CSDL khi việc validation hợp lệ. Mở file `tests/Feature/SubmitLinksTest.php` mới tạo ra và define một khung xương cho việc test cái xác mà chúng ta đang muốn kiểm tra:
 
 ```php
 /** @test */
@@ -642,7 +646,7 @@ Bài test này sẽ cung cấp cho bạn tổng quan nhất về những gì ch�
  4. Xác thực sẽ thất bại khi các field vượt quá 255 ký tự.
  5. Xác thực sẽ thành công khi các field dài không quá 255 ký tự.
 
-Chúng ta có thể sẽ quên một vài thứ gì đó, nhưng kệ mịa đi, dù sao cũng là sản phẩm đầu tiên nên việc test không quan trọng lắm đâu (nói thế thôi chứ đừng giữ tư duy như thế về sau nhé).
+Có thể bạn sẽ quên một vài thứ gì đó, nhưng kệ mịa đi, dù sao cũng là sản phẩm đầu tiên nên việc test không quan trọng lắm đâu (nói thế thôi chứ đừng giữ tư duy như thế về sau nhé).
 
 **Saving a valid link**
 
@@ -685,13 +689,13 @@ class SubmitLinksTest extends TestCase
 
 ```
 
-Hãy để ý một chúc đến RefreshDatabase trait để đảm bảo rằng mỗi test có một CSDL mới, cung cấp cho mỗi lần thử nghiệm một môi trường CSDL nguyên sơ trên tất cả các lần migration.
+Chúng ta cần đến *trait **RefreshDatabase*** để đảm bảo rằng mỗi test có một CSDL mới, cung cấp cho mỗi lần thử nghiệm một môi trường CSDL nguyên sơ ở tất cả các lần chạy `migration`.
 
-Test đầu tiên của chúng ta gửi dữ liệu hợp lệ, trả về một object mà chúng ta có thể dùng để xác nhận rằng route đã phản hồi đúng như mong đợi. Và verify rằng CSDL chúa một record với tiêu đề như vừa tạo. Sau đó, chúng ta verify rằng phản hồi lại là status `302` với Location header trỏ tới trang chủ. Cuối cùng là yêu cầu trang chủ và thấy tiêu đè đó dang hiển thị trên trang chủ.
+Test đầu tiên: Chúng ta gửi dữ liệu hợp lệ (valid data), rồi trả về một object và dùng object đó để xác nhận rằng route đã phản hồi (response) đúng như mong đợi. Rồi verify rằng CSDL chứa một record với tiêu đề như vừa tạo. Sau đó, chúng ta verify khi phản hồi lại status `302` với Location header trỏ tới trang chủ. Cuối cùng là request về trang chủ và thấy tiêu đè đó đã được hiển thị.
 
 **Testing Failed Validation**
 
-Khi người dùng gửi dữ liệu xấu (bad data), chúng ta sẽ hy vọng cho việc validation sẽ kích hoạt một exception và chúng ta sử dụng nó để đảm bảo lớp validation đang hoạt động bình thường:
+Khi người dùng gửi dữ liệu xấu (bad data), hãy kỳ vọng cho việc validation sẽ kích hoạt một exception và sử dụng nó để đảm bảo lớp validation đang hoạt động bình thường:
 
 ```php
 /** @test */
@@ -703,9 +707,9 @@ function link_is_not_created_if_validation_fails()
 }
 ```
 
-Chúng ta sử dụng hàm **assetSessionHasErrors()** của Laravel để chắc chắn rằng session có lỗi validation cho từng field bắt buộc. Vì chúng ta gửi dữ liệu trống (empty data) tới route, chúng ta sẽ hy vọng rule sẽ kích hoạt cho từng field một.
+Dùng hàm **assetSessionHasErrors()** của Laravel để chắc chắn rằng session có lỗi validation cho từng required field. Vì khi chúng ta gửi dữ liệu trống (empty data) tới route, rule sẽ hoạt động cho từng field riêng biệt.
 
-Giờ thì chạy thử để xác nhận những gì mình làm từ nãy tới giờ không vô nghĩa:
+Giờ thì chạy thử để chắc rằng những gì mình làm từ nãy tới giờ không vô nghĩa 😓
 
 ```
 $ vendor/bin/phpunit
@@ -720,7 +724,7 @@ OK (2 tests, 6 assertions)
 
 **Testing URL Validation**
 
-Giờ thì chúng ta cần kỳ vọng chỉ những url nào hợp lý mới có thể pass được validation để website không hiển thị những data lỗi
+Giờ thì chỉ những URL nào hợp lý mới có thể thông qua được validation:
 
 ```php
 /** @test */
@@ -750,7 +754,9 @@ function link_is_not_created_with_an_invalid_url()
 }
 ```
 
-Từ phiên bản Laravel 5.5 đã cho chúng ta một phương thức `withoutExceptionHandling()` dùng cho việc vô hiệu hóa những route xử lý ngoại lệ, sử dụng để tạo ra một HTTP response sau một exception. Rồi kiến thức về ValidationException, try/catch đồ,... tự dưng tới đây lười viết tiếp quá bay... nên thôi mình sẽ đi tàu siêu tốc cho qua luốn nha 😂
+Từ phiên bản Laravel 5.5 đã cho chúng ta một phương thức `withoutExceptionHandling()` dùng cho việc vô hiệu hóa những route xử lý ngoại lệ, sử dụng để tạo ra một HTTP response sau một exception.
+
+Còn mớ kiến thức về ValidationException, try/catch đồ,... mình sẽ đi tàu siêu tốc cho qua luốn nha 😂
 
 **Testing Max Length Validation**
 
@@ -792,9 +798,9 @@ function max_length_fails_when_too_long()
 }
 ```
 
-Ừ thì chúng ta vô hiệu hóa các xử lý exception và tạo ra dữ liệu quá lên 1 ký tự để vượt qua validation. Làm thế với từng field để đảm bảo tất cả chúng nó đều có thông báo lỗi validation độ dài tối đa.
+Ừ thì chúng ta vô hiệu hóa các xử lý exception và tạo ra dữ liệu nhiều hơn 1 ký tự để vượt qua validation. Làm thế với từng field để đảm bảo tất cả chúng nó đều có thông báo lỗi validation độ dài tối đa.
 
-Rồi lại kiểm tra kịch bản "under the max" nè:
+Rồi lại kiểm tra "under the max" nè:
 
 ```php
 /** @test */
