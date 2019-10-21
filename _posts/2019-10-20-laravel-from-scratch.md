@@ -4,7 +4,7 @@ layout: post
 categories: dev
 tags: laravel tutorial
 feature_image: https://i.imgur.com/SYVY6DM.jpg
-description: Kể từ khi Laravel phát hành vào năm 2011, nó tăng trưởng theo cấp số nhân. Năm 2015, Laravel đã trở thành PHP Framework được đánh giá cao nhất trên Github và trở thành framework quốc dân. Sau khi bản 6.0 ra đời, Laravel thực sự trở thành một hệ sinh thái khổng lồ dành cho dân code web. Thế nên học đê...
+description: Kể từ khi Laravel phát hành vào năm 2011, nó tăng trưởng theo *cấp số nhân*. Năm 2015, Laravel đã trở thành *PHP Framework* được đánh giá cao nhất trên Github và trở thành framework quốc dân. Sau khi bản 6.0 ra đời, Laravel trở thành một hệ sinh thái khổng lồ dành cho dân code web.
 date: '2019-10-20 17:00:00 +0700'
 ---
 
