@@ -507,7 +507,7 @@ Mỗi field (trường) của form kiểm tra lỗi validation riêng và xuất
 </div>
 ```
 
-Nếu trong trường hợp người dùng gửi form không hợp lệ, route sẽ lưu trữ validation trong session (phiên) cũ và redirect (chuyển hướng) người dùng về trở lại form. Hàm `&lcub;&lcub; old('title) &rcub;&rcub;` bên trong `value` *attribute* sẽ điền lại dữ liệu được gửi trước đó.
+Nếu trong trường hợp người dùng gửi form không hợp lệ, route sẽ lưu trữ validation trong session (phiên) cũ và redirect (chuyển hướng) người dùng về trở lại form. Hàm `&lcub;&lcub; old('title') &rcub;&rcub;` bên trong `value` *attribute* sẽ điền lại dữ liệu được gửi trước đó.
 
 Nếu field có lỗi xảy ra, method `first()` sẽ trả về lỗi đầu tiên của field đó:
 
