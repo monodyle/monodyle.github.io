@@ -4,7 +4,7 @@ layout: post
 categories: dev
 tags: laravel tutorial
 feature_image: https://i.imgur.com/SYVY6DM.jpg
-description: Kể từ khi Laravel phát hành vào năm 2011, nó tăng trưởng theo *cấp số nhân*. Năm 2015, Laravel đã trở thành *PHP Framework* được đánh giá cao nhất trên Github và trở thành framework quốc dân. Sau khi bản 6.0 ra đời, Laravel trở thành một hệ sinh thái khổng lồ dành cho dân code web.
+description: Laravel phát hành vào năm 2011. Bằng một cách thần kỳ nào đó mà tới năm 2015, Laravel đã trở thành *PHP Framework* được đánh giá cao nhất trên Github và trở thành framework quốc dân. Người ta gọi sự tăng trưởng của Laravel khi đó là sự tăng trưởng theo cấp số nhân. Sau khi bản 6.0 ra đời, Laravel trở thành một hệ sinh thái khổng lồ dành cho dân code web.
 date: '2019-10-20 17:00:00 +0700'
 ---
 
@@ -19,7 +19,7 @@ date: '2019-10-20 17:00:00 +0700'
 
 **Laravel** là một *PHP Framework* mã nguồn mở và miễn phí, sinh ra nhằm mục tiêu hỗ trợ phát triển các ứng dụng web theo mô hình **MVC**.
 
-Kể từ khi **Laravel** phát hành vào năm **2011**, nó tăng trưởng theo *cấp số nhân*. Năm 2015, Laravel đã trở thành *PHP Framework* được đánh giá cao nhất trên **Github** và trở thành framework quốc dân. Sau khi bản 6.0 ra đời, Laravel trở thành một ~~con rồng kinh tế~~ hệ sinh thái khổng lồ dành cho dân code web.
+**Laravel** phát hành vào năm **2011**. Bằng một cách thần kỳ nào đó mà tới năm 2015, Laravel đã trở thành *PHP Framework* được đánh giá cao nhất trên **Github** và trở thành framework quốc dân. Người ta gọi sự tăng trưởng của Laravel khi đó là sự tăng trưởng theo cấp số nhân. Sau khi bản 6.0 ra đời, Laravel trở thành một ~~con rồng kinh tế~~ hệ sinh thái khổng lồ dành cho dân code web.
 
 ![](https://i.imgur.com/SYVY6DM.jpg)
 
