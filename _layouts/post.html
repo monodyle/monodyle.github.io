@@ -44,8 +44,11 @@ layout: default
 <script>
 twemoji.parse(document.body);
 
+var patt = /\&lcub\;/g;
+
 document.addEventListener('DOMContentLoaded', (event) => {
   document.querySelectorAll('pre code').forEach((block) => {
+	block.innerHTML = block.innerHTML.replace(/\&amp\;lcub\;/g, "\{").replace(/\&amp\;rcub\;/g, "\}");
     hljs.highlightBlock(block);
   });
 });

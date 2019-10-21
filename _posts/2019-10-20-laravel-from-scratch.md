@@ -17,13 +17,15 @@ date: '2019-10-20 17:00:00 +0700'
 
 ## Laravel là cái gì?
 
-**Laravel** là một PHP Framework mã nguồn mở và miễn phí, sinh ra nhằm mục tiêu hỗ trợ phát triển các ứng dụng web theo mô hình MVC.
+**Laravel** là một *PHP Framework* mã nguồn mở và miễn phí, sinh ra nhằm mục tiêu hỗ trợ phát triển các ứng dụng web theo mô hình **MVC**.
 
-Kể từ khi **Laravel** phát hành vào năm **2011**, nó tăng trưởng theo *cấp số nhân*. Năm 2015, Laravel đã trở thành PHP Framework được đánh giá cao nhất trên Github và trở thành framework quốc dân. Sau khi bản 6.0 ra đời, Laravel thực sự trở thành một hệ sinh thái khổng lồ dành cho dân code web.
+Kể từ khi **Laravel** phát hành vào năm **2011**, nó tăng trưởng theo *cấp số nhân*. Năm 2015, Laravel đã trở thành *PHP Framework* được đánh giá cao nhất trên **Github** và trở thành framework quốc dân. Sau khi bản 6.0 ra đời, Laravel trở thành một ~~con rồng kinh tế~~ hệ sinh thái khổng lồ dành cho dân code web.
 
 ![](https://i.imgur.com/SYVY6DM.jpg)
 
-Bài viết này mình tham khảo từ các tutorial của nước ngoài, dịch và chỉnh sửa lại đôi chỗ cho phù hợp với bản mới nhất, hy vọng giúp các bạn đi từ bước ý tưởng đến bước build thành công một sản phẩm đầu tay của mình 😁. Tuy nhiên sẽ không được toàn diện hay chi tiết vì nó chỉ là hướng dẫn tân thủ cơ bản, nên nếu thực sự muốn học chuyên sâu hơn nữa thì các bạn nên đọc cuốn sách [*Laravel: Up and Running*](https://amzn.to/2MXh0aB) hoặc tự mò tới chết và làm tới chết thì sẽ giúp bạn trở thành một senior đấy. 🤣
+Bài viết này mình tham khảo từ các tutorial của nước ngoài, thêm mắm thêm muối đôi chỗ cho phù hợp với bản mới nhất, hy vọng giúp các bạn đi từ bước ý tưởng đến bước build thành công một sản phẩm đầu tay của mình 😁
+
+Tuy nhiên sẽ không được toàn diện hay chi tiết vì nó chỉ là *hướng dẫn tân thủ* (có khi thua cả quyển *Giang Hồ Chỉ Nam*), nên nếu thực sự muốn học chuyên sâu hơn nữa thì các bạn nên đọc cuốn sách [*Laravel: Up and Running*](https://amzn.to/2MXh0aB) hoặc tự mò tới chết và làm tới chết thì sẽ giúp bạn trở thành một senior đấy 🤣 Còn một cách nữa là theo dõi blog của mình nhiều vào vì bài này không phải là bài duy nhất đâu 😤
 
 Yêu cầu cơ bản:
  * Một bộ não.
@@ -35,7 +37,7 @@ Yêu cầu cơ bản:
 Yêu cầu về mặt công nghệ:
  * Môi trường PHP trên máy của bạn (Valet, Homestead, Vagrant, MAMP, LAMP,...).
  * Có một cơ sở dữ liệu (ở đây mình sẽ dùng MySQL làm gốc).
- * PHPUnit, Composer và Node phải được cài đặt sẵn.
+ * PHPUnit, Composer và Node phải được cài đặt sẵn trên máy của bạn.
 
 Đáp ứng yêu cầu thì đi vào bước đầu thôi nào
 
@@ -366,7 +368,7 @@ Sau đó chúng ta sẽ cập nhật view **index** đã khởi tạo trước �
                 <div class="card-body">
                     <ul>
                     @foreach ($links as $link)
-                        <li><a href="{{ $link->url }}">{{ $link->title }}</a></li>
+                        <li><a href="&lcub;&lcub; $link->url &rcub;&rcub;">&lcub;&lcub; $link->title &rcub;&rcub;</a></li>
                     @endforeach
                     </ul>
                 </div>
@@ -395,7 +397,7 @@ Còn ở file `index.blade.php`, chúng ta có một vòng lặp đơn giản `f
 
 ```php
 @foreach ($links as $link)
-    <a href="{{ $link->url }}">{{ $link->title }}</a>
+    <a href="&lcub;&lcub; $link->url &rcub;&rcub;">&lcub;&lcub; $link->title &rcub;&rcub;</a>
 @endforeach
 ```
 
@@ -443,32 +445,32 @@ Tiếp theo thì phải tạo ra một cái template cho `submit.blade.php` và 
                             </div>
                         @endif
 
-                        <div class="form-group row{{ $errors->has('title') ? ' has-error' : '' }}">
+                        <div class="form-group row&lcub;&lcub; $errors->has('title') ? ' has-error' : '' &rcub;&rcub;">
                             <label for="title" class="col-sm-2 col-form-label">Title</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="title" name="title" placeholder="Title" value="{{ old('title') }}">
+                                <input type="text" class="form-control" id="title" name="title" placeholder="Title" value="&lcub;&lcub; old('title') &rcub;&rcub;">
                                 @if($errors->has('title'))
-                                    <span class="help-block">{{ $errors->first('title') }}</span>
+                                    <span class="help-block">&lcub;&lcub; $errors->first('title') &rcub;&rcub;</span>
                                 @endif
                             </div>
                         </div>
-                        <div class="form-group row{{ $errors->has('url') ? ' has-error' : '' }}">
+                        <div class="form-group row&lcub;&lcub; $errors->has('url') ? ' has-error' : '' &rcub;&rcub;">
                             <label for="url" class="col-sm-2 col-form-label">Url</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="url" name="url" placeholder="URL" value="{{ old('url') }}">
+                                <input type="text" class="form-control" id="url" name="url" placeholder="URL" value="&lcub;&lcub; old('url') &rcub;&rcub;">
                                 @if($errors->has('url'))
-                                    <span class="help-block">{{ $errors->first('url') }}</span>
+                                    <span class="help-block">&lcub;&lcub; $errors->first('url') &rcub;&rcub;</span>
                                 @endif
                             </div>
                         </div>
-                        <div class="form-group{{ $errors->has('description') ? ' has-error' : '' }}">
+                        <div class="form-group&lcub;&lcub; $errors->has('description') ? ' has-error' : '' &rcub;&rcub;">
                             <label for="description">Description</label>
-                            <textarea class="form-control" id="description" name="description" placeholder="description">{{ old('description') }}</textarea>
+                            <textarea class="form-control" id="description" name="description" placeholder="description">&lcub;&lcub; old('description') &rcub;&rcub;</textarea>
                             @if($errors->has('description'))
-                                <span class="help-block">{{ $errors->first('description') }}</span>
+                                <span class="help-block">&lcub;&lcub; $errors->first('description') &rcub;&rcub;</span>
                             @endif
                         </div>
-                        <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
+                        <input type="hidden" name="user_id" value="&lcub;&lcub; Auth::user()->id &rcub;&rcub;">
                         <button type="submit" class="btn btn-primary float-right">Submit</button>
                     </form>
                 </div>
@@ -494,23 +496,23 @@ Hơi nhiều thứ ở đây các bạn phải tiếp thu nhở, nên mình sẽ
 Mỗi field (trường) của form kiểm tra lỗi validation riêng và xuất ra lỗi và thêm một class cảnh báo lỗi vào cho thẻ để tùy biến giao diện:
 
 ```html
-<div class="form-group row{{ $errors->has('title') ? ' has-error' : '' }}">
+<div class="form-group row&lcub;&lcub; $errors->has('title') ? ' has-error' : '' &rcub;&rcub;">
     <label for="title" class="col-sm-2 col-form-label">Title</label>
     <div class="col-sm-10">
-        <input type="text" class="form-control" id="title" name="title" placeholder="Title" value="{{ old('title') }}">
+        <input type="text" class="form-control" id="title" name="title" placeholder="Title" value="&lcub;&lcub; old('title') &rcub;&rcub;">
         @if($errors->has('title'))
-            <span class="help-block">{{ $errors->first('title') }}</span>
+            <span class="help-block">&lcub;&lcub; $errors->first('title') &rcub;&rcub;</span>
         @endif
     </div>
 </div>
 ```
 
-Nếu trong trường hợp người dùng gửi form không hợp lệ, route sẽ lưu trữ validation trong session (phiên) cũ và redirect (chuyển hướng) người dùng về trở lại form. Hàm `{{ old('title) }}` bên trong `value` *attribute* sẽ điền lại dữ liệu được gửi trước đó.
+Nếu trong trường hợp người dùng gửi form không hợp lệ, route sẽ lưu trữ validation trong session (phiên) cũ và redirect (chuyển hướng) người dùng về trở lại form. Hàm `&lcub;&lcub; old('title) &rcub;&rcub;` bên trong `value` *attribute* sẽ điền lại dữ liệu được gửi trước đó.
 
 Nếu field có lỗi xảy ra, method `first()` sẽ trả về lỗi đầu tiên của field đó:
 
 ```html
-{{ $errors->first('title') }}
+&lcub;&lcub; $errors->first('title') &rcub;&rcub;
 ```
 
 ### Submitting the Form
