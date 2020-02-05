@@ -1,0 +1,42 @@
+.taxonomies-list {
+  margin-top: 25px;
+  padding-left: 20px;
+  a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+.taxonomies-list-container {
+  .panel-title {
+    font-size: 0.8em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    a {
+      display: inline-block;
+      margin-right: 4px;
+      color: var(--grey);
+    }
+    .text-muted {
+      color: var(--grey);
+    }    
+  }
+}
+
+.taxonomy-row {
+  padding-left: 20px;
+  margin-left: 20px;
+  padding-bottom: 10px;
+  border-left: 1px solid var(--track);
+  position: relative;
+  .taxonomy-metadata {
+    font-size: 0.8em;
+    color: var(--grey);
+  }
+  .taxonomy-title {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin-top: 5px;
+  }
+}
+

@@ -1,0 +1,39 @@
+{{ define "main"}}
+{{ $tags := .Site.Taxonomies.tags }}
+<Section class="section" relative id="Articles__Hero">
+  <div class="heading-container">
+    <h1 class="hero-heading">{{ .Title }}</h1>
+    <div class="taxonomies-list">
+      {{ range $tags }}
+      <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
+      {{ end }}
+    </div>
+  </div>
+</Section>
+<section class="section narrow">
+  <div id="taxonomiesList" class="taxonomies-list-container show-details">
+    {{ range $name, $taxonomy := $tags  }}
+    <div class="panel-title">
+      <a href="{{ "tags/" | absURL}}{{ $name | urlize }}" title="#{{ $name }}"># {{ $name }}</a>
+      <small class="text-muted">{{ .Count }} articles</small>
+    </div>
+    <div class="taxonomy-row">
+      {{ range $taxonomy }}
+      <div class="taxonomy-item">
+        <div class="taxonomy-data">
+          <div class="taxonomy-metadata">
+            {{ .Date.Format "January 2, 2006" }} • {{ .ReadingTime }} min read
+          </div>
+          <a href="{{ .RelPermalink }}" class="taxonomy-link">
+            <div class="taxonomy-title">
+              {{ .Params.title }}
+            </div>
+          </a>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

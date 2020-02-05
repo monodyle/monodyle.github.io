@@ -1,0 +1,13 @@
+<!-- <div class="footer-gradient"></div> -->
+<a class="back-to-top" id="back-to-top"><i class="icon-right" style="outline:0"></i></a>
+{{ $script := resources.Get "js/scrollTop.js" }}
+<script src="{{ $script.RelPermalink }}"></script>
+<div class="section narrow">
+  <div class="footer-hr"></div>
+  <div class="footer-container">
+    <div class="footer-text">
+      © {{ dateFormat "2006" now }} {{ .Site.Title }}
+    </div>
+    {{ partial "social-links/social-links.html" . }}
+  </div>
+</div>

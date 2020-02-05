@@ -1,0 +1,41 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "The Monody's Blog"
+enableEmoji = true
+enableInlineShortcodes = true
+
+[taxonomies]
+  author = "authors"
+  archive = "archives"
+  series = "series"
+  category = "categories"
+  tag = "tags"
+
+[markup.goldmark.renderer]
+unsafe= true
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    title = "About"
+    url = "/about/"
+    weight = "1"
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archives"
+    title = "Archives"
+    url = "/archives/"
+    weight = "2"
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    title = "Categories"
+    url = "/categories/"
+    weight = "3"
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    title = "Tags"
+    url = "/tags/"
+    weight = "4"

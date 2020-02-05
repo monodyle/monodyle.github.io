@@ -1,0 +1,8 @@
+{{ with .Params.tags}}
+  <span class="article-tag">
+    {{ $len := (len .) }}
+    {{ range $index, $element := . }}
+    <a class="article-tag-link" href="/{{ "tags" }}/{{ . | urlize }}/">{{ . }}</a>{{ if ne (add $index 1) $len }},{{ end }}
+    {{ end}}
+  </span>
+{{ end }}

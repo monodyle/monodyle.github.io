@@ -1,0 +1,23 @@
+{{ $title := .Page.Params.Title }}
+<section id="articleHero" class="section narrow">
+  <div class="article-hero">
+    {{ with .Page.Params.hero }}
+    <div class="article-hero-image" id="ArticleImage__Hero">
+      <img src="{{ . }}" alt="{{ $title }}">
+    </div>
+    {{ end }}
+    <header class="article-header">
+      <div class="article-meta">
+        {{ .Page.Date.Format "January 2, 2006" }}
+        {{ partial "article/tag.html" . }}
+      </div>
+      <h1 class="article-hero-heading">{{ .Page.Params.Title }}</h1>
+      <div class="article-hero-subtitle">
+        <div class="article-author">
+          {{ partial "article/authors.html" . }}
+          <!-- • --> {{ .ReadingTime }} min{{ if ne .ReadingTime 1 }}s{{ end }} read
+        </div>
+      </div>
+    </header>
+  </div>
+</section>
