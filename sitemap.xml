@@ -3,81 +3,81 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://monodyle.github.io/</loc>
     <lastmod>2019-10-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/authors/</loc>
+    <loc>https://monodyle.github.io/authors/</loc>
     <lastmod>2019-10-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://monodyle.github.io/categories/</loc>
     <lastmod>2019-10-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/dev/</loc>
+    <loc>https://monodyle.github.io/categories/dev/</loc>
     <lastmod>2019-10-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/laravel/</loc>
+    <loc>https://monodyle.github.io/tags/laravel/</loc>
     <lastmod>2019-10-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/laravel-from-scratch/</loc>
+    <loc>https://monodyle.github.io/post/laravel-from-scratch/</loc>
     <lastmod>2019-10-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/authors/monody-le/</loc>
+    <loc>https://monodyle.github.io/authors/monody-le/</loc>
     <lastmod>2019-10-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>https://monodyle.github.io/post/</loc>
     <lastmod>2019-10-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://monodyle.github.io/tags/</loc>
     <lastmod>2019-10-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/tutorial/</loc>
+    <loc>https://monodyle.github.io/tags/tutorial/</loc>
     <lastmod>2019-10-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/javascript/</loc>
+    <loc>https://monodyle.github.io/tags/javascript/</loc>
     <lastmod>2019-08-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/toi-da-viet-dkhp-helper-nhu-the-nao/</loc>
+    <loc>https://monodyle.github.io/post/toi-da-viet-dkhp-helper-nhu-the-nao/</loc>
     <lastmod>2019-08-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/uit/</loc>
+    <loc>https://monodyle.github.io/tags/uit/</loc>
     <lastmod>2019-08-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://monodyle.github.io/about/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/archives/</loc>
+    <loc>https://monodyle.github.io/archives/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>https://monodyle.github.io/series/</loc>
   </url>
   
 </urlset>

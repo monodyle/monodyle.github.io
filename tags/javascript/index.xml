@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>javascript on The Monody&#39;s Blog</title>
-    <link>http://localhost:1313/tags/javascript/</link>
+    <link>https://monodyle.github.io/tags/javascript/</link>
     <description>Recent content in javascript on The Monody&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 07 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://monodyle.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Tôi đã viết ĐKHP Helper như thế nào?</title>
-      <link>http://localhost:1313/post/toi-da-viet-dkhp-helper-nhu-the-nao/</link>
+      <link>https://monodyle.github.io/post/toi-da-viet-dkhp-helper-nhu-the-nao/</link>
       <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/toi-da-viet-dkhp-helper-nhu-the-nao/</guid>
+      <guid>https://monodyle.github.io/post/toi-da-viet-dkhp-helper-nhu-the-nao/</guid>
       <description>Ngày xửa ngày xưa&amp;hellip; Cứ 9h sáng, kỳ nào cũng thế, không có sự khoan nhượng nào, một trận chiến khốc liệt trên xa trường, tất cả vỏn vẹn chưa tới một giây&amp;hellip;
 Sau đó thì web sập. Đấy là thứ mà sinh viên UIT vẫn gọi là Đăng ký học phần. Vừa mở đăng ký, sinh viên lùa vào như siêu thị sale sản phẩm 100%, ai cũng muốn giành cho mình chỗ tốt, mọi việc cứ thế mà lộn tùng phèo hết cả lên.</description>
     </item>

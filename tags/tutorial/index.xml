@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tutorial on The Monody&#39;s Blog</title>
-    <link>http://localhost:1313/tags/tutorial/</link>
+    <link>https://monodyle.github.io/tags/tutorial/</link>
     <description>Recent content in tutorial on The Monody&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Oct 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://monodyle.github.io/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Laravel From Scratch: Từ đầu tới đít</title>
-      <link>http://localhost:1313/post/laravel-from-scratch/</link>
+      <link>https://monodyle.github.io/post/laravel-from-scratch/</link>
       <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/laravel-from-scratch/</guid>
+      <guid>https://monodyle.github.io/post/laravel-from-scratch/</guid>
       <description>Cảnh báo: Wall of TextVì một tương lai tươi sáng, hãy khắc phục chứng sợ chữ...Laravel là cái gì? Laravel là một PHP Framework mã nguồn mở và miễn phí, sinh ra nhằm mục tiêu hỗ trợ phát triển các ứng dụng web theo mô hình MVC.
 Laravel phát hành vào năm 2011. Bằng một cách thần kỳ nào đó mà tới năm 2015, Laravel đã trở thành PHP Framework được đánh giá cao nhất trên Github và trở thành framework quốc dân.</description>
     </item>
