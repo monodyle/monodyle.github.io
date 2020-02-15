@@ -87,7 +87,7 @@ Lên lớp 11, mình bất ngờ nhận được một đề nghị từ GVCN: T
 
 Qua vòng loại ở tỉnh, cuối cùng được bơi ra biển lớn, mình đến thành phố **Biên Hoà** thuộc tỉnh **Đồng Nai** - nơi diễn ra vòng **Cấp quốc gia - khu vực phía Nam**. Hơn 100 gian hàng từ hơn 20 tỉnh thành quy tụ về **trường Đại học Đồng Nai**, sản phẩm nào cũng thuộc hàng khủng... Người ta có nghiên cứu, có kỹ thuật, có công nghệ. Nhìn lại sản phẩm của mình muốn đào cái lỗ nào chui xuống cho xong.
 
-Nhưng điểm vui là khi đi cùng đoàn của tỉnh mình, mình quen 1 thằng em nói không điêu thì nó là *"quái vật"*. Nếu vô tình bạn đã từng mò được 1 cái trình duyệt mang tên là [KTBrowser](https://kt-browser.com/) thì đó là thứ nó làm ra đấy.
+Nhưng điểm vui là khi đi cùng đoàn của tỉnh mình, mình quen 1 thằng em tên **Khoa**, nói không điêu thì nó là *"quái vật"*. Nếu vô tình bạn đã từng mò được 1 cái trình duyệt mang tên là [KTBrowser](https://kt-browser.com/) thì đó là thứ nó làm ra đấy. **Khoa** là một thằng em vui tính, hơi ki bo một tý nhưng cũng rất tốt bụng, đôi khi gặp vấn đề gì stuck thì maybe nó sẽ giúp. Nói chung nó cũng là một nguồn cảm hứng của mình.
 
 Cuộc thi năm 2016 kết thúc, cầm 1 triệu giải an ủi quay trở về, mình mới nhận ra mình là ếch ngồi đáy giếng thế nào.
 
