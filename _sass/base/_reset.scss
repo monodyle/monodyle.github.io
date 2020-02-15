@@ -9,6 +9,11 @@
   box-sizing: border-box;
 }
 
+::-moz-selection, ::selection {
+  background-color: #fff47a;
+  color: $text
+}
+
 html {
   min-height: 100%;
   box-sizing: border-box;
@@ -42,7 +47,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
+  font-weight: 700;
   color: $text;
 }
 
@@ -107,7 +112,7 @@ strong {
 }
 i,
 em {
-  font-weight: italic;
+  font-style: italic;
 }
 
 /* Content */

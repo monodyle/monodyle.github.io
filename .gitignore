@@ -12,5 +12,5 @@ _posts/2019-03-08-markdown-syntax.md
 .jekyll-metadata/*
 
 # draft
-assets/images/posts/lap-trinh-bat-dau-tu-dau.jpg
-_posts/2020-02-15-lap-trinh-bat-dau-tu-dau.md
+# assets/images/posts/lap-trinh-bat-dau-tu-dau.jpg
+# _posts/2020-02-15-lap-trinh-bat-dau-tu-dau.md

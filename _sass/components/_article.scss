@@ -49,8 +49,9 @@
 }
 
 .c-article__main {
-  margin-bottom: 5rem; // 50px
-  @include fs--body;
+  margin-bottom: 5rem;
+  line-height: 1.8;
+  font-size: 1.8rem;
   color: $text;
 
   > * {
@@ -86,7 +87,7 @@
 
   strong {
     color: $text;
-    font-weight: 400;
+    font-weight: 600;
   }
 
   blockquote {
@@ -172,14 +173,63 @@
   color: $text;
 
   &:before {
-      color: $gray-200;
-      content: '#\2009';
+    color: $gray-200;
+    content: '#\2009';
   }
 }
 
 .article-body {
+  word-wrap: break-word;
+  hyphens: auto;
   code {
-    font-size: 1.4rem
+    font-size: 1.6rem
   }
-
+  .emoji {
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+  }
+  .hero-image {
+    margin: 0 -10rem 5rem;
+    img {
+      display: block;
+      width: 100%;
+    }
+    @media screen and (max-width: $desktop) {
+      margin: 0 -4rem 5rem;
+    }
+    @media screen and (max-width: 800px) {
+      margin: 0 0 5rem;
+    }
+  }
+  .caption-image {
+    img {
+      display: block;
+      width: 100%;
+    }
+    em {
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+      color: $gray-400;
+    }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    position: relative;
+    &::before {
+      content: "#";
+      color: #CCC;
+      margin-right: 8px;
+      margin-left: -20px;
+      font-weight: 700;
+    }
+  }
+  .center {
+    text-align: center;
+  }
 }
