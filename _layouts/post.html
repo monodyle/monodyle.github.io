@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: content
 ---
+
 <article class="c-article">
   <header class="c-article__header">
     <time class="c-article__time" datetime="{{ page.date | date_to_xmlschema }}"
@@ -13,9 +14,8 @@ layout: page
     </div>
     {% endif %}
   </header>
-  <div class="c-article__main">
+  <div class="c-article__main article-body">
     {{ content }}
-    {% include comment.html %}
   </div>
 </article>
 

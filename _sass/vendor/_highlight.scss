@@ -14,7 +14,6 @@ green     #55a532  operators, other keywords
 pre,
 code {
   font-family: $monospace;
-  @include fs--code;
 }
 
 *:not(pre) > code {

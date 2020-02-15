@@ -25,6 +25,7 @@
     align-items: baseline;
   }
 
+  /*
   .c-article__tags {
     .c-article__tag {
       display: inline-block;
@@ -33,6 +34,8 @@
       border-radius: 2px;
     }
   }
+  */
+
 }
 
 .c-article__title {
@@ -141,4 +144,8 @@
       color: $gray-200;
       content: '#\2009';
   }
+}
+
+.article-body code {
+  font-size: 1.4rem
 }

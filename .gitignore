@@ -1,6 +1,6 @@
 _site
 _site/*
-./_post/2016-10-18-very-long-title-post.md
+_posts/2016-10-18-very-long-title-post.md
 .sass-cache
 .sass-cache/*
 .idea

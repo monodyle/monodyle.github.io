@@ -18,6 +18,18 @@
       }
     }
   }
+
+  .header-content {
+    margin-bottom: 5rem;
+  }
+
+  .header-image {
+    background-color: $gray-100;
+    padding-top: calc(52.5% + 10rem);
+    background-size: cover;
+    background-position: center;
+    margin: 0 -10rem 5rem;
+  }
 }
 
 .c-page__footer {
