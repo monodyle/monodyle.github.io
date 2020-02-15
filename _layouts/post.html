@@ -1,0 +1,26 @@
+---
+layout: page
+---
+<article class="c-article">
+  <header class="c-article__header">
+    <time class="c-article__time" datetime="{{ page.date | date_to_xmlschema }}"
+      itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+    {% if page.tags %}
+    <div class="c-article__tags">
+      {% for tag in page.tags %}
+        <span class="c-tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </header>
+  <div class="c-article__main">
+    {{ content }}
+    {% include comment.html %}
+  </div>
+</article>
+
+<style>
+  .c-page__header {
+    margin-bottom: 1rem
+  }
+</style>
