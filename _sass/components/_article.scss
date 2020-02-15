@@ -1,0 +1,151 @@
+.c-article {
+  margin-bottom: 10rem; // 100px
+}
+
+.c-article__header {
+  margin-bottom: 5rem; // 50px
+  font-family: $monospace;
+  font-size: 1.25rem;
+
+  @media screen and (min-width: $sm) {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+
+  /*
+  .c-article__tags {
+    .c-article__tag {
+      display: inline-block;
+      background-color: $light;
+      padding: 0px 4px;
+      border-radius: 2px;
+    }
+  }
+  */
+
+}
+
+.c-article__title {
+  @include fs--heading-1;
+  color: $text;
+}
+
+.c-article__time {
+  @include fs--body;
+  color: $gray-400;
+}
+
+.c-article__main {
+  margin-bottom: 5rem; // 50px
+  @include fs--body;
+  color: $text;
+
+  > * {
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    @include fs--heading-2;
+  }
+
+  h3 {
+    @include fs--heading-3;
+  }
+
+  h4 {
+    @include fs--heading-4;
+  }
+
+  h5 {
+    @include fs--body;
+  }
+
+  strong {
+    color: $text;
+    font-weight: 400;
+  }
+
+  blockquote {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1.8rem; // 18px
+    border-left: 1px solid #eff1f3;
+  }
+
+  ul,
+  ol {
+    margin-left: 2.1rem;
+  }
+
+  table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    display: block;
+    width: 100%;
+    overflow: auto;
+    tr {
+      background-color: #fff;
+      border-top: 1px solid #c6cbd1;
+    }
+    tr:nth-child(2n) {
+      background-color: #f6f8fa;
+    }
+    td, th {
+      padding: 6px 13px;
+      border: 1px solid #dfe2e5;
+    }
+    th {
+      padding: 6px 13px;
+      border: 1px solid #dfe2e5;
+      font-weight: 600;
+    }
+  }
+
+  sup .footnote {
+    padding: 0 2px;
+    font-size: .8em;
+    &::before {
+      content: "[";
+      font-size: .85em;
+    }
+    &::after {
+      content: "]";
+      font-size: .85em;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.c-tag {
+  font-family: $monospace;
+  margin-right: 1rem;
+  position: relative;
+  white-space: nowrap;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  color: $text;
+
+  &:before {
+      color: $gray-200;
+      content: '#\2009';
+  }
+}
+
+.article-body code {
+  font-size: 1.4rem
+}

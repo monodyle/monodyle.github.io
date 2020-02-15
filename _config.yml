@@ -1,0 +1,32 @@
+# Site settings
+title: The Monody's Blog
+description: >
+  The Monody's Blog
+author: Monody Le
+email: monodylh@gmail.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://monodyle.github.io" # the base hostname & protocol for your site
+twitter_username: MonodyLe
+github_username: monodyle
+facebook_username: monodylh
+instagram_username: monodyle
+
+
+# Build settings
+include: [_pages]
+markdown: kramdown
+permalink: /:title
+sass:
+  style: compressed
+
+gems:
+  - jemoji
+  - jekyll-sitemap
+# - amp-jekyll # Acceletrated Mobile Pages
+
+# AMP Settings
+# ampdir: amp/
+# enable_amp: true
+
+# Google Analytics
+# google_analytics: UA-XXXXXXXX-X

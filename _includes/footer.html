@@ -1,0 +1,9 @@
+<footer class="c-page__footer">
+	<hr>
+	<p>&copy; {{ site.author }} {{ 'now' | date: '%Y' }}</p>
+	<p class="socials">
+    {% if site.facebook_username %}<a href="https://fb.me/{{ site.facebook_username }}"><img src="/assets/icons/facebook.svg" class="icon" /></a>{% endif %}
+    {% if site.twitter_username %}<a href="https://twitter.com/{{ site.twitter_username }}"><img src="/assets/icons/twitter.svg" class="icon" /></a>{% endif %}
+    {% if site.github_username %}<a href="https://github.com/{{ site.github_username }}"><img src="/assets/icons/github.svg" class="icon" /></a>{% endif %}
+  </p>
+</footer>
