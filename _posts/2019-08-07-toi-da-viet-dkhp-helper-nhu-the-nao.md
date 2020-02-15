@@ -5,7 +5,7 @@ date: 2019-08-07 20:00
 previewImage: /assets/images/posts/dkhp-helper.jpg
 description: >
   Cứ 9h sáng, kỳ nào cũng thế, không có sự khoan nhượng nào, một trận chiến khốc liệt, đẫm máu, tất cả vỏn vẹn chưa tới một giây...
-tags: ['dev', 'javascript']
+tags: [dev, web, javascript]
 ---
 
 ## Ngày xửa ngày xưa...

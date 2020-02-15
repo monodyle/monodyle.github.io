@@ -20,9 +20,12 @@ sass:
   style: compressed
 
 gems:
-  - jemoji
   - jekyll-sitemap
+  - jekyll-katex
 # - amp-jekyll # Acceletrated Mobile Pages
+
+plugins:
+  - jemoji
 
 # AMP Settings
 # ampdir: amp/

@@ -2,7 +2,7 @@
 layout: post
 title: Tạo hiệu ứng 3D trên website như thế nào?
 date: 2019-05-29 22:22
-tags: [dev, javascript]
+tags: [dev, web, javascript]
 ---
 
 Tối hôm qua trong lúc đang code đồ án, mắt nhắm mắt mở thì có tiếng thông báo messenger của thằng bạn. Với câu hỏi: “Muốn cho cái hình 3D giống trên facebook lên website như nào?”

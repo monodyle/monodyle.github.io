@@ -9,11 +9,13 @@ $white: #FCF5E4;
 $primary: #1366e9;
 $green: #8BE367;
 
-$sans-serif: 'Source Sans Pro', sans-serif;
+$sans-serif: "Source Sans Pro", sans-serif;
+$serif: "Lora", serif;
 $monospace: "Cascadia", monospace;
 
 // Breakpoints
-$sm: 45rem; // 450px
+$mobile: 45rem;
+$desktop: 1080px;
 
 // Misc
 $border-1: 1px solid $light;

@@ -29,6 +29,14 @@
     background-size: cover;
     background-position: center;
     margin: 0 -10rem 5rem;
+    @media screen and (max-width: $desktop) {
+      padding-top: calc(52.5% + 4rem);
+      margin: 0 -4rem 5rem;
+    }
+    @media screen and (max-width: 800px) {
+      padding-top: 52.5%;
+      margin: 0 0 5rem;
+    }
   }
 }
 

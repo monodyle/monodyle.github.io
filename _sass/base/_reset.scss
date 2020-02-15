@@ -14,6 +14,7 @@ html {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
   font-size: 62.5%; // Make it easy to calculate rems to px
+  overflow-x: hidden;
 }
 
 body {

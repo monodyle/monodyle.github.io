@@ -7,7 +7,7 @@
   font-family: $monospace;
   font-size: 1.25rem;
 
-  @media screen and (min-width: $sm) {
+  @media screen and (min-width: $mobile) {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -57,6 +57,17 @@
     margin-bottom: 2rem;
   }
 
+  h1 {
+    font-size: 3rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    line-height: 1.25;
+    border-bottom: $border-1;
+  }
+
   h2 {
     @include fs--heading-2;
   }
@@ -81,13 +92,21 @@
   blockquote {
     margin-left: 0;
     margin-right: 0;
-    padding-left: 1.8rem; // 18px
-    border-left: 1px solid #eff1f3;
+    padding: 0.5rem 0 0.5rem 1.8rem;
+    border-left: 2px solid #eff1f3;
+    font-family: $serif;
+    font-size: 2rem;
+    @media screen and (min-width: $desktop) {
+      padding: 1rem 0 1rem 2rem;
+      border-left: 3px solid #eff1f3;
+      margin: 0 -14rem 2rem -2rem;
+      font-size: 3rem;
+    }
   }
 
   ul,
   ol {
-    margin-left: 2.1rem;
+    margin-left: 3rem;
   }
 
   table {
@@ -129,6 +148,18 @@
       text-decoration: underline;
     }
   }
+
+  mark {
+    display: inline-block;
+    padding: 0 4px;
+    background-color: #ffe8a2;
+  }
+
+  kbd {
+    font-family: $monospace;
+    font-size: 1.5rem;
+    color: #6a737d;
+  }
 }
 
 .c-tag {
@@ -146,6 +177,9 @@
   }
 }
 
-.article-body code {
-  font-size: 1.4rem
+.article-body {
+  code {
+    font-size: 1.4rem
+  }
+
 }
