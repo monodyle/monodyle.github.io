@@ -20,6 +20,17 @@ html {
   -webkit-tap-highlight-color: transparent;
   font-size: 62.5%; // Make it easy to calculate rems to px
   overflow-x: hidden;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cdcdcd;
 }
 
 body {
