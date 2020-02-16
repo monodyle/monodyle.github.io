@@ -68,7 +68,7 @@ Giải thích một cách dễ hiểu, **Chinh Phục** cũng là một forum đ
  * 2 người anh mình vẫn nói chuyện và làm việc cho tới bây giờ: 1 người là bậc thầy trong làng forumvi thời đó, tuy không có quyền lớn lao gì ở **CP** nhưng lại là người được mọi người nể và dè chừng nhất **CP** - **zzbaivong** (admin của *fmvi*, *ctrl + c*, *ctrl + v* và *devs* sau này) và 1 người không rõ sao mà quen biết hắn được hay thật, nhưng người anh này cũng giúp đỡ mình khá nhiều - **anhoang**;
  * Một người ngày xưa chuyên bán domain lậu giá `40k/tháng` vẫn còn chơi thân dù anh đang ở nước Nhật xa xôi - **bucnong**;
  * Một anh trai không giúp gì mình trong lĩnh vực code, nhưng lại giúp mình rất nhiều trong lĩnh vực khai phá thế giới 16+ - **Junkulz** (Cảm ơn anh vì tết này lì xì cho em nha) :rolf:;
- * và còn rất nhiều các anh chị khác mà em tạm thời quên mất rồi :psad: ~~xin lỗi~~
+ * Chị **mía**, anh **VietK**, lão **quan** Thỏ,... và còn rất nhiều các anh chị khác mà em tạm thời quên mất rồi :psad: ~~xin lỗi~~
 
 <div class="hero-image caption-image" markdown="1">
 ![Chatbox hồi đó vui cực](assets/images/posts/lap-trinh-bat-dau-tu-dau/04.png)
@@ -98,15 +98,15 @@ Cuộc thi năm 2016 kết thúc, cầm 1 triệu giải an ủi quay trở về
 
 ## Hành trình phục thù và vấp ngã
 
-Năm 12, mình chưa có ý định sẽ quay trở lại cuộc thi. Dù sao cũng là năm học lớp 12 cuối cấp, việc thi Đại học tương đối quan trọng, mình không muốn bỏ quãng thời gian gần 2 tháng cho cuộc thi. Nhưng dù sao ở đó vẫn có 1 cơ hội: *"Chỉ cần giành giải không phải là khuyến khích thì sẽ được **tuyển thẳng** vào trường Đại học"*. Ai lại không thích tuyển thẳng cơ chứ? Nhưng mình vẫn không đưa ra quyết định sẽ quay lại.
+Năm 12, mình chưa có ý định sẽ quay trở lại cuộc thi. Dù sao cũng là năm cuối cấp, việc thi Đại học tương đối quan trọng, mình không muốn bỏ quãng thời gian gần 2 tháng cho cuộc thi. Dù sao ở đó vẫn có 1 cơ hội khá hấp dẫn: *"Chỉ cần giành giải không phải là khuyến khích thì sẽ được **tuyển thẳng** vào phần lớn các trường Đại học"*. Ai lại không thích tuyển thẳng cơ chứ? Thế nhưng mình vẫn không đưa ra quyết định sẽ quay lại.
 
-Nhưng **Dũng** tìm đến mình, **Dũng** cũng đam mê với việc sáng tạo và muốn đi thi thử cho biết. Nhìn Dũng mình lại tự thấy bản thân của mình năm ngoái, thế là lại có máu quay lại phục thù. Cả năm đó mình học `PHP`, và con đường ngắn nhất để lập trình `PHP` là `Wordpress`.
+Lúc đó **Dũng** tìm đến mình, Dũng cũng đam mê với việc sáng tạo và muốn đi thi thử cho biết. Nhìn Dũng mình lại tự thấy bản thân của mình năm ngoái, thế là lại có máu quay lại phục thù. Cả năm đó mình học `PHP`, và con đường ngắn nhất để lập trình `PHP` là `Wordpress`.
 
-Một kỷ niệm khá đáng nhớ là Dũng rất chịu khó, mình thì hồi đó rất lười, nên toàn đùn việc cho Dũng :beaming: Có hôm Dũng đi hết 1 vòng **Kon Tum** để sưu tập tư liệu về làm sản phẩm. Respect. Dù sao nếu **Dũng** có đọc blog này thì xin lỗi Dũng rất nhiều vì làm Dũng thất vọng.
+Một kỷ niệm khá đáng nhớ là Dũng rất chịu khó, mình thì hồi đó rất lười, nên toàn đùn việc cho Dũng :beaming: Có hôm Dũng đi hết 1 vòng Kon Tum để sưu tập tư liệu về làm sản phẩm. Respect. Dù sao nếu Dũng có đọc blog này thì xin lỗi Dũng rất nhiều vì làm Dũng thất vọng.
 
-Hành trình phục thù của mình không thành công, vẫn qua vòng loại ở Tỉnh nhưng rớt vòng Quốc gia. Trước đêm công bố giải, bọn mình còn được phím là tất cả sản phẩm của đoàn **Kon Tum** năm nay đều có giải. Thế là 2 thằng mừng rớt nước mắt vì không phải quá coi trọng cuộc thi Đại học sắp tới nữa, coi như khoẻ người.
+Hành trình phục thù của mình không thành công, vẫn qua vòng loại ở Tỉnh nhưng rớt vòng Quốc gia. Trước đêm công bố giải, bọn mình còn được phím là tất cả sản phẩm của đoàn Kon Tum năm nay đều có giải. Thế là 2 thằng mừng rớt nước mắt vì không phải quá coi trọng cuộc thi Đại học sắp tới nữa, coi như khoẻ người.
 
-Ấy thế mà hôm sau trao giải, đọc hết giải khuyến khích, đến giải ba, rồi giải nhì vẫn không thấy tên mình đâu. Rồi giải nhất... Năm đó đoàn **Kon Tum** đi, rất cả đều có giải trừ 2 tụi mình, 2 thằng cầm 1 triệu an ủi quay về cắm đầu ôn thi.
+Ấy thế mà hôm sau trao giải, đọc hết giải khuyến khích, đến giải ba, rồi giải nhì vẫn không thấy tên mình đâu. Rồi giải nhất... Năm đó đoàn Kon Tum đi, rất cả đều có giải trừ 2 tụi mình, 2 thằng cầm 1 triệu an ủi quay về cắm đầu ôn thi.
 
 Sau cuộc thi năm 2017, mình như người vô hồn, trước hội trại 26/3, mình vẫn chán nản không thôi, tập văn nghệ mình cũng không tập, đi làm trại mình cũng không làm, suốt ngày lầm lầm lì lì như người chết. Kết quả học tập cũng giảm sút, môn **Vật Lý** là môn mình tự tin nhất và đã từng có cơ hội trong đội tuyển cũng có những con số thậm tệ.
 
@@ -114,9 +114,9 @@ Một cảm giác cực kỳ bất lực.
 
 ## Dậy thôi, làm gì có bình minh nào không mọc?
 
-Trước 26/3, ở lớp học thêm **Lý** cô **Hà** có tổ chức một buổi nói chuyện nhỏ nhỏ, hay ngôn ngữ hiện đại có thể hiểu là Talkshow, Cô **Hà** rất quan tâm tâm lý học sinh, nên thường mỗi tháng cô đều dành 2 - 3 buổi để nói chuyện với học sinh, mặc dù cô đã nghỉ hưu, nhưng cô rất tâm huyết với nghề nhà giáo. Thế là buổi đó mình đi học, cô bảo mình đứng lên chia sẻ về chuyến đi thi cấp Quốc gia vừa rồi.
+Trước 26/3, ở lớp học thêm **Lý** cô **Hà** có tổ chức một buổi nói chuyện nhỏ nhỏ, hay ngôn ngữ hiện đại có thể hiểu là Talkshow, cô **Hà** rất quan tâm tâm lý học sinh, nên thường mỗi tháng cô đều dành 2 - 3 buổi để nói chuyện với học sinh, mặc dù cô đã nghỉ hưu, nhưng cô rất tâm huyết với nghề nhà giáo. Thế là buổi đó mình đi học, cô bảo mình đứng lên chia sẻ về chuyến đi thi cấp Quốc gia vừa rồi.
 
-Hôm đó mình không nhớ mình nói gì, nhưng nhớ rất rõ sau khi mình nói xong. Cô có nói với mình:
+Hôm đó mình không nhớ mình nói gì, nhưng nhớ rất rõ sau khi mình nói xong. Cô hỏi mình:
 
 > *Tại sao trong câu chuyện của em toàn là chữ "buồn" vậy?*
 
@@ -134,7 +134,7 @@ Cuối cùng là hội trại 26/3, hôm đó cả khối 12 nhảy đồng di�
 
 Trưa hôm đó, bỏ qua hết tất cả mọi thứ, mình tham gia vào hội trại với tất cả phần năng lượng tích cực còn lại.
 
-Rồi trở lại chặng đường đua Đại học, con đường không thể nào khó khăn hơn khi gần như toàn bộ kiến thức đều phải ôn lại từ đầu... nhất là môn **Hoá**.
+Cuối cùng trở về chặng đường đua Đại học, con đường không thể nào khó khăn hơn khi gần như toàn bộ kiến thức đều phải ôn lại từ đầu... nhất là môn **Hoá**.
 
 ## Đi theo đam mê, hay đi theo khả năng tiềm ẩn của mình?
 
@@ -142,9 +142,9 @@ Có một hôm khác, cô **Hà** lại ngồi nói chuyện với bọn mình. 
 
 Hôm đó, cô nói thẳng là cô không muốn mình học Công nghệ Thông tin. Thực sự mình rất kiên định cho tới thời khắc đó, và cả sau đó nữa. Cô luôn có quan điểm: *"Làm nhân viên, thì tức là không làm chủ, mà không làm chủ, tức là không thành công"*, sở dĩ cô công kích mình, bởi vì con trai cô nói 1 câu rằng: *"Con cảm giác cứ đi theo ngành Công nghệ thông tin thì không làm chủ được."*
 
-Thế đấy. Giống như một con cừu bị ràng buộc, cô khuyên mình: *"Cô thấy năng lực của em có thể đi theo rất nhiều ngành nghề thành công hơn, tại sao em không chọn?"*. Ừ thì mình cũng không biết năng lực đấy là gì, và cũng không biết cụ thể phải làm sao. Nhưng dẫu sao, mình vẫn sống theo tư tưởng mình thích cái gì thì mình làm cái đó thôi, miễn là không ảnh hưởng tới ai, và không làm ai phải mệt mỏi vì điềU đó.
+Giống như một con cừu bị trói buộc, cô khuyên mình: *"Cô thấy năng lực của em có thể đi theo rất nhiều ngành nghề thành công hơn, tại sao em không chọn?"*. Ừ thì mình cũng không biết năng lực đấy là gì, và cũng không biết cụ thể phải làm sao. Dù sao thì, mình vẫn sống theo tư tưởng mình thích cái gì thì mình làm cái đó thôi, miễn là không ảnh hưởng tới ai, và không làm ai phải mệt mỏi vì điều đó.
 
-Và 1 điểm nữa là mình hay bị kích động bởi những ai động vào những gì mình theo đuổi, nên mình cũng muốn chứng minh cho cô thấy: *"Công nghệ Thông tin không có nghĩa là làm lình"*. Vậy đấy, cũng vì cái tính này mà môn **Vật Lý** trở thành môn mà mình có điểm cao nhất thời cấp 3. Hy vọng con đường này cũng vậy.
+Và một điểm nữa là mình hay bị kích động bởi những ai động vào những gì mình theo đuổi, nên mình cũng muốn chứng minh cho cô thấy: *"Công nghệ Thông tin không có nghĩa là làm lính"*. Vậy đấy, cũng vì cái tính này mà môn **Vật Lý** trở thành môn mà mình có điểm số cao nhất thời cấp 3. Hy vọng con đường này cũng vậy.
 
 ## Hiện thực hoá đam mê
 
@@ -154,6 +154,10 @@ Thực ra con đường này mình vẫn đang đi, ở thời điểm hiện t�
 
 Ai cũng có một lối đi riêng, quan trọng là ai đi đến cuối đường, ai quay lại để tìm con đường mới. Mình học Lập trình, không có nghĩa bạn cũng phải học lập trình, quan trọng là hiểu nhau đang làm gì mà thôi.
 
-Hy vọng bài viết này sẽ có ích với bạn bằng một cách nào đó. Chúc các bạn một ngày vui vẻ :heart:
+Chặng đường học Đại Học, cũng có rất nhiều điều xảy ra với mình, và ảnh hưởng tới hành trình của mình. Nhưng có lẽ mình sẽ viết vào một phần khác. Có thể là vài năm nữa, hoặc 10 năm nữa để mình được viết *"Decade in review"*? Tóm lại có hứng mới viết được, haha.
+
+Hy vọng bài viết này sẽ có ích với bạn bằng một cách nào đó. Chúc các bạn một ngày vui vẻ 💖
+
+*(Còn tiếp...)*
 
 ---
