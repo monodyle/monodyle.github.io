@@ -1,0 +1,75 @@
+.toc-container {
+  position: fixed;
+  display: none;
+  top: 180px;
+  max-width: 280px;
+  transform: translateX(800px);
+  transition: opacity 0.5s;
+  opacity: 0.4;
+  &:hover {
+    opacity: 1;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: bengali;
+    counter-reset: toc-first;
+    li {
+      margin: 0;
+      &::before {
+        display: none;
+        content: "- ";
+        margin-left: -18px;
+        float: left;
+      }
+      a {
+        color: #333;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1;
+        display: inline-block;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+        padding: 0;
+        &::before {
+          font-size: 1.4rem;
+          margin-right: 5px;
+          color: #ccc;
+          margin-left: -20px;
+        }
+      }
+      h2 {
+        counter-increment: toc-first;
+        counter-reset:toc-second &::before {
+          content: counter(toc-first) ".";
+        }
+      }
+      h3 {
+        counter-increment: toc-second;
+        counter-reset: toc-third;
+        &::before {
+          content: counter(toc-first) "." counter(toc-second) ".";
+        }
+      }
+      h4 {
+        counter-increment: toc-third;
+        &::before {
+          content: counter(toc-first) "." counter(toc-second) "."
+            counter(toc-third) ".";
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
+}

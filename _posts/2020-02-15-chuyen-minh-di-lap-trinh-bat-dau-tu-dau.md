@@ -60,7 +60,7 @@ Nhớ năm đó vì không thích cái giao diện mặc định, nên mình đi
 Giải thích một cách dễ hiểu, **Chinh Phục** cũng là một forum được tạo ra bằng forumvi, mục đích của nó là trở thành cộng đồng hỗ trợ mọi vấn đề về forumvi.
 
 <div class="hero-image caption-image" markdown="1">
-![hình này phải dùng time travel để chụp đó...](assets/images/posts/lap-trinh-bat-dau-tu-dau/05.png)
+![Hình này phải dùng time travel để chụp đó...](assets/images/posts/lap-trinh-bat-dau-tu-dau/05.png)
 </div>
 
 Ở **Chinh Phục** *(CP)*, mình được làm quen với rất nhiều các anh chị trong làng forumvi:
