@@ -13,7 +13,7 @@
 }
 
 .c-archives__item {
-  padding: 0.5rem 2.5rem;
+  padding: 0.75rem 2.5rem;
   padding-right: 0;
   border-left: 1px solid #eff1f3;
   @media screen and (min-width: $mobile) {
@@ -35,11 +35,13 @@
   }
 
   h3 {
-    @include fs--body;
+    line-height: 1.5;
+    font-size: 1.6rem;
   }
-
   p {
-    @include fs--body;
-    color: #515862;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    font-family: $monospace;
+    color: $gray-300;
   }
 }

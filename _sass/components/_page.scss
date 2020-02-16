@@ -17,6 +17,9 @@
         color: $gray-300;
       }
     }
+    @media screen and (max-width: 800px) {
+      font-size: 1.4rem;
+    }
   }
 
   .header-content {
@@ -44,6 +47,28 @@
   font-family: $monospace;
   margin-bottom: 10rem;
   text-align: center;
+  @media screen and (min-width: $mobile) {
+    text-align: left;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    .links {
+      text-align: right;
+    }
+  }
+
   p {
     line-height: 1.5;
     font-size: 1.25rem;
