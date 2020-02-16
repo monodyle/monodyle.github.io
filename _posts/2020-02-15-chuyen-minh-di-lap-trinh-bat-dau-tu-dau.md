@@ -65,8 +65,9 @@ Giải thích một cách dễ hiểu, **Chinh Phục** cũng là một forum đ
 
 Ở **Chinh Phục** *(CP)*, mình được làm quen với rất nhiều các anh chị trong làng forumvi:
  * Người đàn ông không phải admin nhưng nắm mọi quyền lực trong forum - **handsomevip007**;
- * 2 người anh mình vẫn nói chuyện và làm việc cho tới bây giờ - **zzbaivong** (admin của *fmvi*, *ctrl + c*, *ctrl + v* và *devs* sau này) & **anhoang**;
+ * 2 người anh mình vẫn nói chuyện và làm việc cho tới bây giờ: 1 người là bậc thầy trong làng forumvi thời đó, tuy không có quyền lớn lao gì ở **CP** nhưng lại là người được mọi người nể và dè chừng nhất **CP** - **zzbaivong** (admin của *fmvi*, *ctrl + c*, *ctrl + v* và *devs* sau này) và 1 người không rõ sao mà quen biết hắn được hay thật, nhưng người anh này cũng giúp đỡ mình khá nhiều - **anhoang**;
  * Một người ngày xưa chuyên bán domain lậu giá `40k/tháng` vẫn còn chơi thân dù anh đang ở nước Nhật xa xôi - **bucnong**;
+ * Một anh trai không giúp gì mình trong lĩnh vực code, nhưng lại giúp mình rất nhiều trong lĩnh vực khai phá thế giới 16+ - **Junkulz** (Cảm ơn anh vì tết này lì xì cho em nha) :rolf:;
  * và còn rất nhiều các anh chị khác mà em tạm thời quên mất rồi :psad: ~~xin lỗi~~
 
 <div class="hero-image caption-image" markdown="1">
