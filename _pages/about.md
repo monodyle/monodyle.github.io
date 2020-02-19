@@ -8,12 +8,12 @@ permalink: /about/
 ![Hello, I’m Monody Le](/assets/images/me.jpg)
 {: refdef}
 
-Hello, I’m **Lê Hồng Minh**, a nickname is **Monody Le**, just a guy tends to be handsome gradually over the years..
+Xin chào, tôi là **Lê Hồng Minh**, biệt danh của tôi là **Monody Le**, một người có xu hướng đẹp trai dần theo năm tháng...
 
-I was born a child of the mountains and forests, raised on the land of sunny which named Central Highlands. Should be I had to grow vegetables and chickens, but now I go coding.
+Tôi sinh ra là đứa con của núi rừng, lớn lên trên mảnh đất Tây Nguyên đầy nắng và gió. Đáng lẽ tôi nên ở quê nhà nuôi rau và trồng gà... nhưng mà giờ thì tôi đi code.
 
-Now I'm studying at **Vietnam National University Ho Chi Minh - University of Information Technology**, main major is **Information Systems**.
+Hiện tại tôi đang theo học tại **Trường Đại học Công nghệ Thông Tin - Đại học Quốc gia Thành phố Hồ Chí Minh** (UIT - VNUHCM), chuyên ngành **Hệ Thống Thông Tin** (Information Systems).
 
-Would like to become a Front-end Engineering, and maybe a Full-stack Web Engineering.
+Tôi hướng tới trở thành Front-end Engineering, và có thể là Full-stack Web Engineering.
 
-Working contact: `monodylh@gmail.com`
+Liên hệ công việc: `monodylh@gmail.com`

@@ -1,7 +1,9 @@
 const emojiMap = {
-  pcry: "/assets/emoji/cry.png",
-  psad: "/assets/emoji/sad.png",
-  mconfused: "/assets/emoji/confused.png",
+  cry: "/assets/emoji/cry.png",
+  sad: "/assets/emoji/sad.png",
+  confused: "/assets/emoji/confused.png",
+  surrender: "/assets/emoji/surrender.png",
+  lookdown: "/assets/emoji/look_down.png",
 }
 
 const pattern = /:([\w-_]+):/g

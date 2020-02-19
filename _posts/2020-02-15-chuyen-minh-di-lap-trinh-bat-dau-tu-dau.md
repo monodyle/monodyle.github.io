@@ -2,7 +2,7 @@
 layout: post
 title: Chuyện mình đi lập trình - Bắt đầu từ đâu?
 date: 2020-02-15 20:00
-previewImage: /assets/images/posts/lap-trinh-bat-dau-tu-dau.jpg
+previewImage: /assets/images/posts/lap-trinh-bat-dau-tu-dau/featured.jpg
 description: Ừ thì... Bắt đầu từ con số không chứ từ đâu nữa?
 tags: [dev, talk]
 ---
@@ -23,7 +23,7 @@ Theo mẹ lên lớp, sĩ số còn không bằng số lượng máy nên mình 
 
 Có một kỉ niệm khá vui là mình không phải chỉ chơi điện tử ở lớp phổ cập đâu, mà mình còn học cả soạn thảo word nữa. Năm đó mình còn chỉ cho các bà cô ông chú trong lớp cách để in đậm in nghiêng văn bản mà :rofl:
 
-Sau lớp phổ cập, mình phải chia tay với mối tình đầu, nhưng không lâu sau đó, tình yêu thứ 2 đã đến với mình. Đó là chiếc máy bàn mẹ mua vào năm mình học lớp 4. Và đó là chuỗi ngày mình chìm đắm vào trò chơi điện tử :pcry:
+Sau lớp phổ cập, mình phải chia tay với mối tình đầu, nhưng không lâu sau đó, tình yêu thứ 2 đã đến với mình. Đó là chiếc máy bàn mẹ mua vào năm mình học lớp 4. Và đó là chuỗi ngày mình chìm đắm vào trò chơi điện tử :cry:
 
 <div class="hero-image caption-image" markdown="1">
 ![Chuỗi ngày chìm đắm vào thế giới điện tử](assets/images/posts/lap-trinh-bat-dau-tu-dau/01.jpg)
@@ -68,7 +68,7 @@ Giải thích một cách dễ hiểu, **Chinh Phục** cũng là một forum đ
  * 2 người anh mình vẫn nói chuyện và làm việc cho tới bây giờ: 1 người là bậc thầy trong làng forumvi thời đó, tuy không có quyền lớn lao gì ở **CP** nhưng lại là người được mọi người nể và dè chừng nhất **CP** - **zzbaivong** (admin của *fmvi*, *ctrl + c*, *ctrl + v* và *devs* sau này) và 1 người không rõ sao mà quen biết hắn được hay thật, nhưng người anh này cũng giúp đỡ mình khá nhiều - **anhoang**;
  * Một người ngày xưa chuyên bán domain lậu giá `40k/tháng` vẫn còn chơi thân dù anh đang ở nước Nhật xa xôi - **bucnong**;
  * Một anh trai không giúp gì mình trong lĩnh vực code, nhưng lại giúp mình rất nhiều trong lĩnh vực khai phá thế giới 16+ - **Junkulz** (Cảm ơn anh vì tết này lì xì cho em nha) :rolf:;
- * Chị **mía**, anh **VietK**, lão **quan** Thỏ,... và còn rất nhiều các anh chị khác mà em tạm thời quên mất rồi :psad: ~~xin lỗi~~
+ * Chị **mía**, anh **VietK**, lão **quan** Thỏ,... và còn rất nhiều các anh chị khác mà em tạm thời quên mất rồi :sad: ~~xin lỗi~~
 
 <div class="hero-image caption-image" markdown="1">
 ![Chatbox hồi đó vui cực](assets/images/posts/lap-trinh-bat-dau-tu-dau/04.png)

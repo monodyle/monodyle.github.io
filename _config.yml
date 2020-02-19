@@ -24,8 +24,8 @@ gems:
   - jekyll-katex
 # - amp-jekyll # Acceletrated Mobile Pages
 
-plugins:
-  - jemoji
+# plugins:
+#   - jemoji
 
 # AMP Settings
 # ampdir: amp/
