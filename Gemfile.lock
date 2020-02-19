@@ -254,7 +254,6 @@ DEPENDENCIES
   github-pages
   jekyll-katex
   jekyll-sitemap
-  jemoji
 
 BUNDLED WITH
    2.1.3
