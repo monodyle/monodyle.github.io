@@ -21,7 +21,7 @@ sass:
 
 gems:
   - jekyll-sitemap
-  - jekyll-katex
+  # - jekyll-katex
 # - amp-jekyll # Acceletrated Mobile Pages
 
 # plugins:

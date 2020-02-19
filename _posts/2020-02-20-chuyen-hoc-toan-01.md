@@ -32,9 +32,7 @@ Mấy trò cộng trừ nhân chia căn bản, để tính tiền, tính hoá đ
 
 Đi học IT, nhiều khi có mấy anh chị nói suốt: *"Học toán đi, không học toán thì làm sao học được IT?"*. Nghe xong cảm giác con đường mình đi có vẻ gian truân hơn nhiều, đam mê như thế... chẳng lẽ bỏ ngang?
 
-{% katexmm %}
 Thế mà đi học, toán một kiểu, tin học một kiểu, vậy thì liên quan chỗ nào? Tìm mãi vẫn chẳng thấy liên quan chỗ nào, cấp 3 học **Pascal**, cuối cùng liên quan ở chỗ... Viết phần mềm nhập vào các số `a`, `b`, `c` của đẳng thức $ax^2 + bx + c = 0$ rồi tìm `x` :surrender:
-{% endkatexmm %}
 
 Thế là chẳng còn bận tâm gì nữa, đi học IT thôi, có liên quan mẹ gì tới toán đâu?
 
