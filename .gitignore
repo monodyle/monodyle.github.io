@@ -13,5 +13,5 @@ _posts/write.todo
 .jekyll-metadata/*
 
 # draft
-# assets/images/posts/may-cai-bai-toan/*.*
-# _posts/2020-02-20-may-cai-bai-toan.md
+# assets/images/posts/may-cai-bai-toan/
+_posts/*.draft.md
