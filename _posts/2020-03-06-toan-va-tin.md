@@ -273,9 +273,12 @@ Hoán đổi lại vận tốc thực cho các vật thể:
 
 Hoàn thành!
 
-<div class="caption-image center" markdown="1">
+<div class="center" markdown="1">
 ![Kết quả](/assets/images/posts/toan-va-tin/result.gif)
+
+*Kết quả*
 </div>
+
 
 **Tại sao phải xoay lại hệ toạ độ?**
 
