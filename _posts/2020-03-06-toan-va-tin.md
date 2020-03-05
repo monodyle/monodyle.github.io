@@ -273,6 +273,10 @@ Hoán đổi lại vận tốc thực cho các vật thể:
 
 Hoàn thành!
 
+<div class="caption-image center" markdown="1">
+![Kết quả](/assets/images/posts/toan-va-tin/result.gif)
+</div>
+
 **Tại sao phải xoay lại hệ toạ độ?**
 
 Gọi $a$ là góc va chạm giữa 2 vật thể, chúng ta có thể hình dung va chạm như sau:
