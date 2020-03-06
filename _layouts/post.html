@@ -72,5 +72,18 @@ MathJax.Hub.Config({
   })
 
   start_toc_module()
+
+  let iframeResize = () => {
+    document.querySelectorAll('.center iframe').forEach(i => {
+      if (i.parentElement.offsetWidth < 560)
+        i.setAttribute('width', i.parentElement.offsetWidth)
+      else
+        i.setAttribute('width', 560)
+    })
+  }
+
+  iframeResize()
+
+  window.addEventListener("resize", iframeResize)
 })()
 </script>
