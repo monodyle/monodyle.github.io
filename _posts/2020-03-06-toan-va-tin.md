@@ -12,7 +12,7 @@ math: true
 
 Xin chào, mấy hôm nay dịch quá, mình rảnh rỗi ngoài việc làm hồ sơ chuẩn bị đi làm thì cũng chẳng biết làm gì, thế là ngồi luyện algorithms và học thêm vài thứ linh tinh. Nhưng trong lúc *Youtube* kiếm nhạc relax, vô tình lỡ nhấn vào *Facebook*, mình mất mẹ nó 1 ngày cho cái trò infinity scroll.
 
-Vô tình trong lúc lướt face, mình thấy 1  cái meme sau:
+Trong lúc lướt face, mình thấy 1  cái meme sau:
 
 <div class="caption-image" markdown="1">
 ![Học toán để làm gì?](/assets/images/posts/toan-va-tin/01.jpg)
@@ -34,7 +34,7 @@ Không phải chỉ riêng ngành công nghệ, rất nhiều ngành nghề đ�
 
 Nói về mấy năm đi code, hồi trước nhiều khi có mấy anh chị nói suốt: *"Học toán đi, không học toán thì làm sao học được IT?"*. Nghe xong cảm giác con đường mình đi có vẻ gian truân hơn nhiều, đam mê như thế... chẳng lẽ bỏ ngang?
 
-Thế mà đi học, toán một kiểu, tin học một kiểu, tìm mãi vẫn chẳng thấy liên quan chỗ nào. Cấp 3 học **Pascal**, cuối cùng liên quan ở chỗ... Viết phần mềm nhập vào các số `a`, `b`, `c` của đẳng thức $ax^2 + bx + c = 0$ rồi tìm `x` :surrender:
+Thế mà đi học, toán một kiểu, tin học một kiểu, tìm mãi vẫn chẳng thấy liên quan chỗ nào. Cấp 3 học **Pascal**, cuối cùng liên quan ở chỗ... Viết phần mềm nhập vào các số $a, b, c$ của đẳng thức $ax^2 + bx + c = 0$ rồi tìm $x$ :surrender:
 
 Thế là chẳng còn bận tâm gì nữa, đi học IT thôi, có liên quan mẹ gì tới toán đâu?
 
@@ -118,9 +118,13 @@ Cơ bản là như thế, cũng khá dễ phải không?
 
 Trước hết, chúng ta cần phải hiểu *va chạm đàn hồi* hoạt động như thế nào: Xét các vật 1 và 2 có khối lượng $m_1$ và $m_2$ và vận tốc $u_1$ và $u_2$ trước khi va chạm, và $v_1$ và $v_2$ sau khi va chạm. Như đã nói ở [định nghĩa](#dinh-nghia), *tổng động năng* sẽ **không thay đổi** sau khi va chạm, nên động năng được __bảo toàn__.
 
-Việc bảo toàn động lượng toàn phần trước và sau va chạm được thể hiện bằng công thức: $m_1u_1 + m_2u_2 = m_1v_1 + m_2v_2$
+Việc bảo toàn động lượng toàn phần trước và sau va chạm được thể hiện bằng công thức:
 
-Tương tự vậy, việc bảo toàn động năng sẽ được biểu thị bằng:
+<div class="center" markdown="1">
+$m_1u_1 + m_2u_2 = m_1v_1 + m_2v_2$
+</div>
+
+Tương tự vậy, việc bảo toàn động năng sẽ được biểu thị bằng cách:
 
 <div class="center" markdown="1">
 $\frac{1}{2}m_1u_1^2 + \frac{1}{2}m_2u_2^2 = \frac{1}{2}m_1v_1^2 + \frac{1}{2}m_2v_2^2$
@@ -155,11 +159,11 @@ Sau khi va chạm:
  * Quả bóng B sẽ có vận tốc là *1.5 m/s*
 
 <div class="caption-image" markdown="1">
-![Va chạm đàn hồi giữa 2 vật thể không cùng khối lượng](/assets/images/posts/toan-va-tin/06.jpg)
+![Va chạm giữa 2 vật thể không cùng khối lượng](/assets/images/posts/toan-va-tin/06.jpg)
 </div>
 
 <div class="hero-image caption-image" markdown="1">
-![Va chạm đàn hồi giữa 2 vật thể có cùng khối lượng](/assets/images/posts/toan-va-tin/07.jpg)
+![Va chạm giữa 2 vật thể có cùng khối lượng](/assets/images/posts/toan-va-tin/07.jpg)
 </div>
 
 Như vậy, chúng ta có thể tạm thời phân tích xong cách để xử lý va chạm đàn hồi, giờ thì từ toán sang tin nàoooo
@@ -187,13 +191,14 @@ const resolveCollision = (particle, otherParticle) => {
   const yDist = otherParticle.y - particle.y;
 
   // Lưu lại khối lượng trong biến để dễ đọc hơn
+  // Tuy nhiên việc này sẽ tạo ra thêm bộ nhớ, hãy cân nhắc khi áp dụng
   const m1 = particle.mass;
   const m2 = otherParticle.mass;
 
   ...
 ```
 
-Chúng ta phải xác định rằng các vật thể không bị chồng chéo lên nhau, vì như thế không thể xử lý được thuật toán:
+Chúng ta phải xác định rằng các vật thể không bị chồng chéo lên nhau, vì các vật thể chồng lên nhau như thế không thể xử lý được va chạm:
 
 ```js
   ...
@@ -214,7 +219,7 @@ Góc của 2 vật thể va chạm bằng **atan2**[^2]
   )
 ```
 
-Viết hàm tính vận tốc trước va chạm, bằng cách xoay lại hệ toạ độ để tìm ra vận tốc của vật
+Viết hàm tính vận tốc trước va chạm bằng cách xoay lại hệ toạ độ để tìm ra vận tốc ban đầu của vật thể:
 
 ```js
 /**
@@ -233,40 +238,31 @@ const rotate = (velocity, angle) => {
 }
 ```
 
-Vận tốc của các vật thể trước phương trình:
+Giờ thì bắt đầu xử lý va chạm theo toán học được rồi:
 
 ```js
+  // Vận tốc của các vật thể trước phương trình
   const u1 = rotate(particle.velocity, angle);
   const u2 = rotate(otherParticle.velocity, angle);
-```
 
-Vận tốc của các vật thể sau khi va chạm 1 chiều:
-
-```js
+  // Vận tốc của các vật thể sau khi va chạm 1 chiều:
   const v1 = {
     x: u1.x * (m1 - m2) / (m1 + m2) + u2.x * 2 * m2 / (m1 + m2),
     y: u1.y
-  }
-
+  };
   const v2 = {
     x: u2.x * (m1 - m2) / (m1 + m2) + u1.x * 2 * m2 / (m1 + m2),
     y: u2.y
-  }
-```
+  };
 
-Vận tốc chính xác của vật thể sau khi quay hệ toạ độ trở lại như ban đầu:
-
-```js
+  // Vận tốc chính xác của vật thể sau khi quay hệ toạ độ trở lại như ban đầu
   const vf1 = rotate(v1, -angle);
   const vf2 = rotate(v2, -angle);
-```
 
-Hoán đổi lại vận tốc thực cho các vật thể:
+  // Hoán đổi lại vận tốc thực cho các vật thể
 
-```js
   particle.velocity.x = vf1.x;
   particle.velocity.y = vf1.y;
-
   otherParticle.velocity.x = vf2.x;
   otherParticle.velocity.y = vf2.y;
 ```
@@ -276,7 +272,7 @@ Hoàn thành!
 <div class="center" markdown="1">
 ![Kết quả](/assets/images/posts/toan-va-tin/result.gif)
 
-*Kết quả*
+*Kết quả chúng ta có được*
 </div>
 
 
@@ -284,13 +280,19 @@ Hoàn thành!
 
 Gọi $a$ là góc va chạm giữa 2 vật thể, chúng ta có thể hình dung va chạm như sau:
 
+<div class="caption-image" markdown="1">
 ![Hệ toạ độ ban đầu](/assets/images/posts/toan-va-tin/08.jpg)
+</div>
 
-Chúng ta có thể thấy, vận tốc vật A không thể tính như một vector thông thường vì tâm của 2 vật thể hình tròn không cùng nằm trên 1 đường thẳng theo *trục toạ độ x*. Và như đã nói, *góc lượng giác ngược* $a$ trả về giá trị radian từ $-\pi$ tới $\pi$ giữa *trục toạ độ x* và tia từ gốc toạ độ $(0, 0)$ tới điểm $(x, y)$, thế nên ta cần phải xoay cả hệ toạ độ lại sao cho đƯờng thẳng nối tâm của 2 vật thể hình tròn nằm song song cùng trục toạ độ x.
+Có thể thấy, vận tốc vật **A** không thể tính như một vector thông thường vì tâm của 2 vật thể hình tròn không cùng nằm trên 1 đường thẳng theo *trục toạ độ x*.
 
-Vì vậy khi xoay hệ toạ độ lại theo góc $a$, chúng ta có thể tính được vận tốc vật trước va chạm
+Và như đã nói, *góc lượng giác ngược* $a$ trả về giá trị radian từ $-\pi$ tới $\pi$ giữa *trục toạ độ x* và tia từ gốc toạ độ $(0, 0)$ tới điểm $(x, y)$, thế nên ta cần phải xoay cả hệ toạ độ lại sao cho đƯờng thẳng nối tâm của 2 vật thể hình tròn nằm song song cùng trục toạ độ x.
 
+Vì vậy khi xoay hệ toạ độ lại bằng một góc $a$ radian, chúng ta có thể tính được vận tốc vật trước va chạm
+
+<div class="caption-image" markdown="1">
 ![Hệ toạ độ sau khi xoau](/assets/images/posts/toan-va-tin/09.jpg)
+</div>
 
 Lúc này ta có thể dễ dàng tính được vận tốc của 2 vật thể trước va chạm, sau đó tính được các bước tiếp theo theo công thức đã phân tích, như vậy mới có thể giải quyết được bài toán. Cuối cùng, chúng ta xoay đúng hệ toạ độ về góc ban đầu để chuyển động không trở nên "dị dạng" bởi góc lệch.
 
@@ -300,7 +302,7 @@ Bài toán đã được giải quyết, không quá khó, cũng không phải �
 
 Ngoài vấn đề này ra, chúng ta còn rất nhiều vấn đề của Tin học sẽ đụng tới Toán, ví dụ như bạn lập trình một con AI đơn giản cho game Tic-Tac-Toe, bạn cũng cần sử dụng tới toán học để [kiểm tra tính thắng thua](https://math.stackexchange.com/questions/467757/determine-the-winner-of-a-tic-tac-toe-board-with-a-single-matrix-expression) trong trò chơi này.
 
-Bạn không nhất thiết phải giỏi toán để trở thành một lập trình viên giỏi, đó là điều hiển nhiên. Nhưng ai cũng giỏi, vậy thì ai là người vượt trội hơn sẽ là người có lợi thế, bởi thời đại 4.0, chẳng có giới hạn nào trong cái ngành công nghệ này cả. Để cạnh tranh với những lập trình viên khác, bạn bắt buộc phải vượt trội.
+Bạn không nhất thiết phải giỏi toán để trở thành một lập trình viên giỏi, đó là điều hiển nhiên. Nhưng ai cũng giỏi, vậy thì ai là người vượt trội hơn sẽ là người có lợi thế. Thời đại 4.0 rồi, chẳng có giới hạn nào trong cái ngành công nghệ này cả. Để cạnh tranh với những lập trình viên khác, bạn bắt buộc phải vượt trội.
 
 > Giá trị của bạn nằm ở việc bạn có những gì.
 
