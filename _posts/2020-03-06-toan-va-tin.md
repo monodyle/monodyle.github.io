@@ -10,9 +10,9 @@ math: true
 
 ## Toán học & Học toán
 
-Xin chào, mấy hôm nay dịch quá, mình rảnh rỗi ngoài việc làm hồ sơ chuẩn bị đi làm thì cũng chẳng biết làm gì, thế là ngồi luyện algorithms và học thêm vài thứ linh tinh. Nhưng trong lúc *Youtube* kiếm nhạc relax, vô tình lỡ nhấn vào *Facebook*, mình mất mẹ nó 1 ngày cho cái trò infinity scroll.
+Xin chào, mấy hôm nay dịch quá, mình rảnh rỗi ngoài việc làm hồ sơ chuẩn bị đi làm thì cũng chẳng biết làm gì, thế là ngồi luyện algorithms và học thêm vài thứ linh tinh. Nhưng trong lúc *Youtube* kiếm nhạc relax, vô tình lỡ nhấn vào *Facebook*, mình mất mẹ nó một ngày cho cái trò infinity scroll.
 
-Trong lúc lướt face, mình thấy 1  cái meme sau:
+Trong lúc lướt face, mình thấy cái meme sau:
 
 <div class="caption-image" markdown="1">
 ![Học toán để làm gì?](/assets/images/posts/toan-va-tin/01.jpg)
@@ -30,7 +30,7 @@ Mình bắt đầu suy nghĩ xem việc học toán có giúp ích gì ngoài vi
 
 ## Học toán có ích gì?
 
-Không phải chỉ riêng ngành công nghệ, rất nhiều ngành nghề đều cần sử dụng toán, nhưng vẫn dừng lại ở mức độ cơ bản: *Cộng trừ nhân chia* hoặc *cấp số cộng, cấp số nhân*. Vậy cụ thể, học nhiều như thế để làm gì?
+Không phải chỉ riêng ngành công nghệ, rất nhiều ngành nghề đều cần sử dụng toán, nhưng vẫn dừng lại ở mức độ cơ bản: *Cộng trừ nhân chia* hoặc *cấp số cộng, cấp số nhân*. Vậy học nhiều như thế để làm gì?
 
 Nói về mấy năm đi code, hồi trước nhiều khi có mấy anh chị nói suốt: *"Học toán đi, không học toán thì làm sao học được IT?"*. Nghe xong cảm giác con đường mình đi có vẻ gian truân hơn nhiều, đam mê như thế... chẳng lẽ bỏ ngang?
 
@@ -53,8 +53,6 @@ Sau đó mình đi làm, nghiệm ra điều đó càng được khẳng định
 Câu chuyện bên trên để các bạn cũng hiểu một phần là tác giả bài viết không ưa gì Toán, và viết từ góc nhìn cá nhân nên chắc cũng sẽ gây ra tranh cãi. Tuy nhiên nói đi cũng phải nói lại, nếu bạn đi theo hướng nghiên cứu hoặc muốn học sâu vào việc implement một vấn đề, bạn không thể không học Toán, vì Toán học là bản chất của gần như mọi vấn đề.
 
 Gần đây mình có gặp một vấn đề về algorithm trong *canvas* cần phải implement: Làm sao để detect 2 object chạm vào nhau, sau đó áp dụng *chuyển động đàn hồi* (*elastic collision*) để di chuyển 2 object đó sau va chạm. Thế là vò đầu bứt tai đi đọc đủ thứ tài liệu.
-
-![Đặt vấn đề](/assets/images/posts/toan-va-tin/03.jpg)
 
 ### Vấn đề 1: Collision detection - Phát hiện va chạm
 
@@ -82,7 +80,7 @@ Nếu 2 object là hình tròn, thì khá đơn giản hơn, vì chỉ cần ki�
 
 ![](/assets/images/posts/toan-va-tin/05.jpg)
 
-Từ công thức: $f(a, b) = \sqrt{(a_x - b_x)^2 + (a_y - b_y)^2} <= a_{radius} + b_{radius}$
+Từ công thức: $f(a, b) = \sqrt{(x_a - x_b)^2 + (y_a - y_b)^2} < r_a + r_b$
 
 ```js
 let a = { x: 5, y: 5, radius: 20 }
@@ -118,7 +116,7 @@ Cơ bản là như thế, cũng khá dễ phải không?
 
 Trước hết, chúng ta cần phải hiểu *va chạm đàn hồi* hoạt động như thế nào: Xét các vật 1 và 2 có khối lượng $m_1$ và $m_2$ và vận tốc $u_1$ và $u_2$ trước khi va chạm, và $v_1$ và $v_2$ sau khi va chạm. Như đã nói ở [định nghĩa](#dinh-nghia), *tổng động năng* sẽ **không thay đổi** sau khi va chạm, nên động năng được __bảo toàn__.
 
-Việc bảo toàn động lượng toàn phần trước và sau va chạm được thể hiện bằng công thức:
+Việc bảo toàn động lượng toàn phần trước và sau va chạm được thể hiện bằng công thức: <a name="cong-thuc"></a>
 
 <div class="center" markdown="1">
 $m_1u_1 + m_2u_2 = m_1v_1 + m_2v_2$
@@ -134,7 +132,8 @@ Chúng ta có thể tìm $v_1, v_2$ khi biết $u_1, u_2$ bằng cách:
 
 <div class="center" markdown="1">
 $v_1=\frac{m_1-m_2}{m_1+m_2}u_1 + \frac{2m_2}{m_1+m_2}u_2$
-
+</div>
+<div class="center" markdown="1">
 $v_2=\frac{2m_1}{m_1+m_2}u_1 + \frac{m_2-m_1}{m_1+m_2}u_2$
 </div>
 
@@ -150,21 +149,34 @@ Giờ thì dễ hiểu hơn rồi, đơn giản là tương ứng với các v�
 
 **Ví dụ**
 
- * Quả bóng A có khối lượng *3 kg*, vận tốc là *4 m/s*
- * Quả bóng B có khối lượng *5 kg*, vận tốc là *-6 m/s*
+|    Quả bóng   |  A = 3kg | B = 5kg |
+|:-------------:|:--------:|:-------:|
+| Trước va chạm |   4 m/s  |  -6m/s  |
+|  Sau va chạm  | -8.5 m/s | 1.5 m/s |
 
-Sau khi va chạm:
-
- * Quả bóng A sẽ có vận tốc là *-8.5 m/s*
- * Quả bóng B sẽ có vận tốc là *1.5 m/s*
+Để dễ hình dung, mời bạn xem qua các mẫu va chạm sau:
 
 <div class="caption-image" markdown="1">
 ![Va chạm giữa 2 vật thể không cùng khối lượng](/assets/images/posts/toan-va-tin/06.jpg)
 </div>
 
+2 vật thể không cùng khối lượng va chạm ngược chiều với cùng vận tốc, khối lượng không bằng nhau, sau khi va chạm, động năng được bảo toàn, khối lượng không thay đổi, vì vậy áp dụng [công thức](#cong-thuc) ta có được vận tốc của 2 vật sau va chạm:
+
+<div class="center" markdown="1">
+$v_1 = \frac{2m - m}{2m + m}v + \frac{2m}{2m + m}(-v) = \frac{1}{3}v - \frac{2}{3}v = -\frac{1}{3}v$
+</div>
+<div class="center" markdown="1">
+$v_2 = \frac{2 x 2m}{2m + m}(-v) + \frac{m - 2m}{2m + m}v = -\frac{4}{3}v - \frac{1}{3}v = -\frac{5}{3}v$
+</div>
+
 <div class="hero-image caption-image" markdown="1">
 ![Va chạm giữa 2 vật thể có cùng khối lượng](/assets/images/posts/toan-va-tin/07.jpg)
 </div>
+
+Ở trường hợp 2 vật thể có cùng khối lượng, hãy thử lấy nhiều ví dụ hơn:
+ 1. Khi vật A chuyển động với vận tốc $\vec{v}$ chạm vào vật B đứng yên, vật B sẽ di chuyển với vận tốc bằng $\vec{v}$, vật A sau va chạm sẽ đứng yên.
+ 2. Khi vật A chuyển động với vận tốc $\vec{v}$, vật B di chuyển ngược chiều với vận tốc $-\frac{1}{2}\vec{v}$. Sau va chạm, chúng đổi chiều và hoán đổi vận tốc cho nhau.
+ 3. Khi vật A và B chuyển động cùng chiều với vận tốc lần lượt là $\vec{v}$ và $\frac{1}{2}\vec{v}$, sau một thời gian vật A chạm vào vật B, chúng vẫn di chuyển cùng chiều và hoán đổi vận tốc cho nhau.
 
 Như vậy, chúng ta có thể tạm thời phân tích xong cách để xử lý va chạm đàn hồi, giờ thì từ toán sang tin nàoooo
 
@@ -284,9 +296,13 @@ Gọi $a$ là góc va chạm giữa 2 vật thể, chúng ta có thể hình dun
 ![Hệ toạ độ ban đầu](/assets/images/posts/toan-va-tin/08.jpg)
 </div>
 
-Có thể thấy, vận tốc vật **A** không thể tính như một vector thông thường vì tâm của 2 vật thể hình tròn không cùng nằm trên 1 đường thẳng theo *trục toạ độ x*.
+Có thể thấy, vận tốc vật không thể tính như một vector thông thường trong tin học vì tâm của 2 vật thể hình tròn không cùng nằm trên 1 đường thẳng song song với *trục toạ độ x*.
 
 Và như đã nói, *góc lượng giác ngược* $a$ trả về giá trị radian từ $-\pi$ tới $\pi$ giữa *trục toạ độ x* và tia từ gốc toạ độ $(0, 0)$ tới điểm $(x, y)$, thế nên ta cần phải xoay cả hệ toạ độ lại sao cho đƯờng thẳng nối tâm của 2 vật thể hình tròn nằm song song cùng trục toạ độ x.
+
+<div class="caption-image" markdown="1">
+![Kiểu như thế này](/assets/images/posts/toan-va-tin/03.jpg)
+</div>
 
 Vì vậy khi xoay hệ toạ độ lại bằng một góc $a$ radian, chúng ta có thể tính được vận tốc vật trước va chạm
 
