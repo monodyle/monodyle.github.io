@@ -137,13 +137,13 @@
   sup .footnote {
     padding: 0 2px;
     font-size: .8em;
-    &::before {
+    font-style: italic;
+    &::before, &::after {
       content: "[";
-      font-size: .85em;
+      font-size: .9em;
     }
     &::after {
       content: "]";
-      font-size: .85em;
     }
     &:hover {
       text-decoration: underline;
@@ -182,7 +182,7 @@
   word-wrap: break-word;
   hyphens: auto;
   code {
-    font-size: 1.6rem
+    font-size: 1.5rem
   }
   .emoji {
     width: 3rem;
@@ -221,11 +221,14 @@
   h5,
   h6 {
     position: relative;
+    @media screen and (max-width: $desktop) {
+      padding-left: 2rem;
+    }
     &::before {
       content: "#";
       color: #CCC;
       margin-right: 8px;
-      margin-left: -20px;
+      margin-left: -2rem;
       font-weight: 700;
     }
   }
