@@ -166,7 +166,7 @@ Giờ thì dễ hiểu hơn rồi, đơn giản là tương ứng với các v�
 $v_1 = \frac{2m - m}{2m + m}v + \frac{2m}{2m + m}(-v) = \frac{1}{3}v - \frac{2}{3}v = -\frac{1}{3}v$
 </div>
 <div class="center" markdown="1">
-$v_2 = \frac{2 x 2m}{2m + m}(-v) + \frac{m - 2m}{2m + m}v = -\frac{4}{3}v - \frac{1}{3}v = -\frac{5}{3}v$
+$v_2 = \frac{2.2m}{2m + m}(-v) + \frac{m - 2m}{2m + m}v = -\frac{4}{3}v - \frac{1}{3}v = -\frac{5}{3}v$
 </div>
 
 <div class="hero-image caption-image" markdown="1">
