@@ -60,7 +60,7 @@
       }
       h2 {
         counter-increment: toc-first;
-        counter-reset:toc-second;
+        counter-reset: toc-second;
         &::before {
           content: counter(toc-first) ".";
         }

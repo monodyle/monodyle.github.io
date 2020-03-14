@@ -188,6 +188,11 @@
     width: 3rem;
     height: 3rem;
     display: inline-block;
+    vertical-align: middle;
+  }
+  blockquote .emoji {
+    width: 4rem;
+    height: 4rem;
   }
   .hero-image {
     margin: 0 -10rem 5rem;
@@ -234,5 +239,36 @@
   }
   .center {
     text-align: center;
+  }
+
+  .alert {
+    font-size: 0.8em;
+    border-left: 2px solid;
+    padding: 0.75rem 1rem 0.75rem 1.5rem;
+    border-radius: 4px;
+    p:first-child > strong {
+      font-size: 1em;
+    }
+  }
+  .warn {
+    background-color: #fff3db;
+    color: #804224;
+    strong {
+      color: #804224;
+    }
+  }
+
+  .language-log {
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 2.5rem;
+    margin-top: 1rem;
+    border: 1px solid #e1e4e8;
+    border-radius: 3px;
+    background: #fefefe;
+
+    max-width: 100%;
+    display: block;
+    word-wrap: normal;
+    white-space: break-spaces;
   }
 }
