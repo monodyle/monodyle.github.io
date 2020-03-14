@@ -24,7 +24,12 @@ const emojiMap = {
 }
 
 const pattern = /:([\w-_]+):/g
-let container = document.querySelectorAll(".article-body > p, .article-body > ul")
+let container = document.querySelectorAll(`
+  .article-body > p,
+  .article-body > ul,
+  .article-body > blockquote > p,
+  .article-body [emoji="1"]
+  `)
 
 const emojiParse = (regex, content) => {
   let result = ""
