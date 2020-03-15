@@ -29,7 +29,7 @@ Một vài phần mềm patcher khá nổi tiếng dùng để patch file `amtli
 ![Universal Adobe Patcher (bên trái) và AMTEmu (Bên phải)](/assets/images/posts/privacy-of-adobe-cc-2019/02.jpg)
 </div>
 
-## Creative Cloud 2019 - Cách mạng AI
+## Đi tìm cách Active Creative Cloud 2019
 
 Ở tại sự kiện **Adobe MAX 2018** diễn ra gần đây, *Adobe* đã show 1 nùi sản phẩm mới cùng hàng loạt những tính năng mới trên các sản phẩm cũ khiến người dùng phải choáng ngợp với sự bá chiếm thị trường của *Adobe*. Các sản phẩm *Artificial Intelligent (trí tuệ nhân tạo)*, *Machine Learning (máy học)* đang giúp người dùng của *Adobe* tiết kiệm rất nhiều thời gian và công sức trong quá trình sáng tạo. Cũng như sự cải tiến của các sản phẩm cũ cũng thu hút rất nhiều sự chú ý của người trong giới.
 
