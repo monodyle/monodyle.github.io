@@ -1,8 +1,5 @@
 _site
 _site/*
-_posts/2016-10-18-very-long-title-post.md
-_posts/2019-03-08-markdown-syntax.md
-_posts/write.todo
 .sass-cache
 .sass-cache/*
 .idea
@@ -13,5 +10,5 @@ _posts/write.todo
 .jekyll-metadata/*
 
 # draft
-# assets/images/posts/may-cai-bai-toan/
 _posts/*.draft.md
+*.draft.*
