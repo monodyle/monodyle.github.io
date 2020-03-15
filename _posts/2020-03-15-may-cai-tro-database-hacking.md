@@ -14,17 +14,17 @@ Bản thân là sinh viên chuyên ngành **Hệ Thống Thông Tin**, tức là
 
 ## Thằng chó, mày hack web bố mày...
 
-Hè vừa rồi mình có trò chuyện với một ông anh trong nghề, ổng kể về câu chuyện bị thằng nào thả bot nó clean mẹ cái database, để lại đúng 1 dòng duy nhất:
+Hè vừa rồi mình có trò chuyện với một ông anh trong nghề, ổng tâm sự về chuyện bị thằng nào thả bot nó clean mẹ cái database, để lại đúng một dòng duy nhất:
 
 > Gửi bố mày vài Bitcoin đê, bố mày trả lại dữ liệu cho... :lookdown:
 
-Và kèm theo đó là 1 địa chỉ ví bitcoin :surrender: Tính anh mình được cái thật thà, nhà cũng không có gì ngoài điều kiện, thế là gửi cho nó vài bitcoin coi như tiền ăn sáng, hôm sau thấy nó restore lại dữ liệu thật :mokas:
+Và kèm theo đó là địa chỉ ví bitcoin của hắn :surrender: Tính ông anh mình được cái thật thà, nhà cũng không có gì ngoài điều kiện, thế là gửi cho nó vài bitcoin coi như tiền ăn sáng, hôm sau thấy nó restore lại dữ liệu thật :mokas:
 
 Nhưng mà tức quá, ai đời làm lập trình có sản phẩm đang chạy phà phà lại có thằng choá nào hack, nghĩ có cay không cơ chứ? :yikes:
 
-Thực ra mình không rõ là cái database đó bị hack như thế nào, nhưng khá chắc chắn phần lớn là bởi vì code chưa đủ bảo mật và có nhiều lỗ hổng. Các hacker sẽ viết một con bot chuyên đi dạo trên mạng để attack vào những case bảo mật thường dễ bị hack nhất.
+Mình không rõ là cái database đó bị hack như thế nào, nhưng khá chắc chắn phần lớn là bởi vì code chưa đủ bảo mật và có nhiều lỗ hổng. Các hacker sẽ viết một con bot chuyên đi dạo trên mạng để attack vào những case bảo mật thường dễ bị hack nhất.
 
-Vì vậy bài viết này mình sẽ giới thiệu cho các bạn một loại lỗ hổng cơ bản nhưng cực kỳ nguy hiểm, giải thích cơ chế và hướng dẫn cách phòng chống cho các bạn. Và xin giới thiệu một trò gọi là **SQL Injection**.
+Vì vậy bài viết này mình sẽ giới thiệu cho các bạn một loại lỗ hổng **cơ bản** nhưng cực kỳ nguy hiểm, giải thích cơ chế và hướng dẫn cách phòng chống. Và xin giới thiệu cái trò gọi là **SQL Injection**.
 
 <div class="alert warn" markdown="1" emoji="1">
 **Lưu ý:**
@@ -34,7 +34,7 @@ Bài viết này nhằm mục đích giao lưu kỹ năng bảo mật lập trì
 
 ## Nhập môn hack Cơ sở dữ liệu SQL
 
-Trong nhiều cuộc tấn công lỗ hổng nhằm vào website, tấn công **SQL Injection** là một trong những loại nguy hiểm và phổ biến nhất. Nó đã gây ra nhiều thiệt hại đáng kể cho nhiều doanh nghiệp và tổ chức trong rất nhiều năm, và đương nhiên sẽ còn tiếp diễn trong tương lai.
+Trong nhiều loại tấn công lỗ hổng nhằm vào website, tấn công **SQL Injection** là một trong những loại nguy hiểm và phổ biến nhất. Nó đã từng gây ra nhiều thiệt hại đáng kể cho nhiều doanh nghiệp và tổ chức trong rất nhiều năm, và đương nhiên sẽ còn tiếp diễn trong tương lai.
 
 <div class="caption-image" markdown="1">
 ![SQL Injection là gì??](/assets/images/posts/may-cai-tro-database-hacking/draw-01.jpg)
@@ -46,17 +46,17 @@ Theo [Wikipedia](https://vi.wikipedia.org/wiki/SQL_injection) :popcorn::
 
 Ờ thì khái niệm như vậy đấy, hiểu một cách đơn giản tức là loại tấn công này nhằm vào các **input** có **tương tác trực tiếp** với **database** ở **back-end** (ví dụ như các input email, password ở form login). Thông thường, attacker sẽ tấn công để ăn cắp dữ liệu, loại này về cơ bản là hiền nhất, sau đó tới xáo trộn dữ liệu để cản trở sự hoạt động của website, và trường hợp xấu nhất, là quyền truy cập quản trị vào máy chủ database bị chiếm. :moka:
 
-Trong lịch sử, đã có một số cuộc tấn công SQL Injection nhằm mục đích:
-* Trích xuất thông tin nhạy cảm, ví dụ như về An sinh xã hội, hay thông tin thẻ tín dụng
+Trong lịch sử, đã có rất nhiều đợt tấn công SQL Injection nhằm mục đích:
+* Trích xuất thông tin nhạy cảm, ví dụ như về an sinh xã hội, hay thông tin thẻ tín dụng
 * Trích xuất thông tin người dùng đã được đăng ký trên các website, ở Việt Nam cũng không ít trường hợp
 * Xoá luôn cái database, có rất nhiều trang web không sử dụng backup dữ liệu, và khi bị xoá thì coi như cả hệ thống tê liệt, ví dụ của ông anh bên trên là ví dụ gần gũi nhất
 * Tiêm mã độc thực thi vào trang web khi người dùng truy cập
 
-Nhắc lại một lần nữa: Các cuộc tấn công về SQL Injection cực kỳ phổ biến. Các công ty lớn như **Yahoo** hay **Sony** đã từng là nhạn nhân của trò chơi này. Các nhóm hacker còn viết hẳn các script để tự đi tấn công dạo trên internet, vì vậy hãy luôn cẩn thận với sản phẩm của bạn.
+**Nhắc lại một lần nữa:** Tấn công về SQL Injection cực kỳ phổ biến. Các công ty lớn như **Yahoo** hay **Sony** đã từng là nhạn nhân của trò chơi này. Các nhóm hacker còn viết hẳn các script bot để tự đi tấn công dạo trên internet, vì vậy hãy luôn cẩn thận với sản phẩm của bạn.
 
 ### Cơ chế khai thác và tấn công
 
-SQL Injection được tấn công bằng cách gửi một mã lệnh SQL độc đến back-end của máy chủ cơ sở đữ liệu, thông qua các request người dùng mà website cho phép. Bất kỳ input nào cũng có thể được sử dụng để gửi mã độc, tức là bao gồm cả: các thẻ `<input>` nhập liệu, query strings, cookies và file upload.
+SQL Injection tấn công bằng cách gửi một mã lệnh SQL độc đến back-end của máy chủ cơ sở đữ liệu, thông qua các request của người dùng mà website cho phép. Bất kỳ input nào cũng có thể được sử dụng để gửi mã độc, tức là bao gồm cả: các thẻ `<input>` nhập liệu, query strings, cookies và file upload.
 
 Mình sẽ có một ví dụ như sau: Giả sử đây là trang đăng nhập vào ngân hàng **PankHub**, với form đăng nhập gồm 2 fields là `email` và `password`:
 
@@ -66,7 +66,7 @@ Bây giờ mình sẽ thử đăng nhập tài khoản của người dùng tên
 
 ![](/assets/images/posts/may-cai-tro-database-hacking/03.jpg)
 
-Ừ thì đương nhiên là không đăng nhập được rồi :okay: Đây là trường hợp giả sử mình là một attacker, và mình tình cờ địa được email của người dùng này sau khi đi ngang qua lúc nó đang đăng nhập vào ngân hàng ở tiệm net :smug: Victim của mình là một thằng đại gia con nhà giàu, tiền không những được quy ra bằng vàng để trong két mà còn có cả một đống trong nhà băng. Xác định được mục tiêu thì trích xuất thông tin mục tiêu là điều cần thiết. Vì vậy mình chỉ thử đăng nhập cho vui thôi, đương nhiên làm gì có thằng ~~ngu~~ nào đặt mật khẩu là `password` cơ chứ (jk)
+Ừ thì đương nhiên là không đăng nhập được rồi :okay: Đây là trường hợp giả sử mình là một attacker, và mình tình cờ địa được email của người dùng này sau khi đi ngang qua lúc nó đang đăng nhập vào ngân hàng ở tiệm net :smug: Victim của mình là một thằng đại gia nhà giàu, tiền không những được quy ra bằng vàng để trong két mà còn có cả một đống trong nhà băng. Xác định được mục tiêu thì trích xuất thông tin mục tiêu là điều cần thiết. Vì vậy mình chỉ thử đăng nhập cho vui thôi, đương nhiên làm gì có thằng ~~ngu~~ nào đặt mật khẩu là `password` cơ chứ (jk)
 
 Bây giờ hãy nhìn vấn đề từ phía server log nhé, chúng ta sẽ có 1 cái logging như sau:
 
@@ -106,9 +106,9 @@ SELECT *
    AND pass  = 'password'' LIMIT 1
 ```
 
-Dư 1 dấu nháy đơn, câu lệnh này chạy trong SQL chắc chắn sẽ lỗi. Và đây chính là thứ gọi là **SQL Injection**
+Dư 1 dấu nháy đơn, câu lệnh này chạy trong SQL chắc chắn sẽ lỗi. Và đây chính là thứ gọi là **SQL Injection**.
 
-Sau khi xác nhận được lỗi, mình sẽ thử đăng nhập lại với password là **`' OR 1=1--`**. Câu lệnh SQL lúc này được thực thi trên server sẽ là:
+Sau khi xác định được lỗ hổng, mình sẽ thử đăng nhập lại với password là **`' OR 1=1--`**. Câu lệnh SQL lúc này được thực thi trên server sẽ là:
 
 ```sql
 SELECT *
@@ -155,16 +155,18 @@ SELECT *
    AND password = 'password' LIMIT 1
 ```
 
-Tức là cái gì gửi lên, thì param tương đương sẽ được thay thế bằng cái đó. Điều này vô tình tạo ra một lỗ hổng cực kỳ nguy hiểm. Nếu bạn từng học các môn liên quan tới database hoặc được làm việc với database nhiều, các bạn có thể hiểu được chỉ với những câu lệnh SQL thôi cũng đủ để chúng làm bất cứ thứ gì liên quan tới dữ liệu. Không những thế, SQL Injection còn có thể thực thi được mã HTML hoặc PHP trong nhiều trường hợp. Đó là lý do tại sao lỗ hổng này nghiêm trọng như vậy.
+Tức là cái gì gửi lên, thì param tương đương sẽ được thay thế bằng cái đó. Điều này vô tình tạo ra một lỗ hổng cực kỳ nguy hiểm. Nếu bạn từng học các môn liên quan tới database hoặc làm việc với database nhiều, các bạn có thể hiểu rằng chỉ với những câu lệnh SQL thôi cũng đủ để chúng làm bất cứ thứ gì liên quan tới dữ liệu.
+
+Không những thế, SQL Injection còn có thể thực thi được mã HTML hoặc PHP trong nhiều trường hợp. Đó là lý do tại sao lỗ hổng này nghiêm trọng như vậy.
 
 
 ### Chống injection như thế nào?
 
 #### Truy vấn tham số (Parameterized Statements)
 
-Đa số các ngôn ngữ lập trình hỗ trợ truy vấn SQL đều sẽ hỗ trợ chạy các câu lệnh SQL bằng cách tạo truy vấn để trích xuất các tham số khi cần thiết. Các câu lệnh nên được tham số hoá để đảm bảo rằng các tham số (tức là dữ liệu đầu vào) được đưa vào câu lệnh SQL được xử lý một cách an toàn nhất.
+Đa số các ngôn ngữ lập trình hỗ trợ truy vấn SQL đều sẽ hỗ trợ chạy các câu lệnh SQL bằng cách tạo truy vấn để trích xuất các tham số khi cần thiết. Các câu lệnh nên được *tham số hoá* để đảm bảo rằng các *tham số* (tức là *dữ liệu đầu vào*) đưa vào câu lệnh SQL được xử lý một cách an toàn nhất.
 
-Với những phận tích ở [phần trên](#nh%c6%b0ng-t%e1%ba%a1i-sao-c%c3%b3-l%e1%bb%97-h%e1%bb%95ng-n%c3%a0y), chúng ta sẽ thử đưa nó về dạng truy vấn tham số:
+Với ví dụ ở [phần trên](#nh%c6%b0ng-t%e1%ba%a1i-sao-c%c3%b3-l%e1%bb%97-h%e1%bb%95ng-n%c3%a0y), chúng ta sẽ thử đưa nó về dạng truy vấn tham số:
 
 ```php
 // Câu lệnh SQL chờ tham số
@@ -266,17 +268,21 @@ connection.end();
 
 #### Hãy validation từ Front-end cho tới Back-end
 
-**Validation** dữ liệu chưa bao giờ là công việc thú vị, tuy nhiên việc validation 2 bước giúp bảo mật tốt hơn, và tránh được các lỗi lặt vặt không cần thiết.
+**Validation** dữ liệu chưa bao giờ là công việc thú vị :okay: tuy nhiên việc validation 2 bước giúp bảo mật tốt hơn, và đồng thời cũng tránh được các lỗi lặt vặt không cần thiết.
 
-Ví dụ trên Front-end các field nhập vào dữ liệu số, nên dùng input `number` thay vì input `text`. Các field bắt buộc thì nên `required`. Mặc dù trên front-end có thể verify dữ liệu đầu vào, nhưng attacker vẫn có thể skip những rule này để trực tiếp gửi dữ liệu vào back-end, vậy nên trên Back-end chúng ta nên verify lại dữ liệu, như kiểu `$age = (int)$_POST['age']`. Điều này sẽ tránh được các yếu tố lỗi không đáng có.
+Ví dụ trên front-end các field nhập vào dữ liệu số, nên dùng input `number` thay vì input `text`. Các field bắt buộc thì nên `required`. Mặc dù trên front-end có thể verify dữ liệu đầu vào, nhưng attacker vẫn có thể ignore những rule này để trực tiếp gửi dữ liệu vào back-end, vậy nên trên back-end chúng ta nên verify lại dữ liệu, như kiểu `$age = (int)$_POST['age']`. Điều này sẽ tránh được các yếu tố gây ra lỗi không đáng có.
 
 #### Phân quyền quản trị
 
-Mình thấy rất nhiều bạn khi xây dựng project, thường sử dụng tài khoản **`root`** của DBMS để làm tất cả mọi thứ... Đó là một sai lầm cực kỳ lớn. Phần lớn các bạn đều chưa hiểu mức độ nghiêm trọng của vấn đề này, vấn đề này giải thích cũng khó hiểu, phải trong trường hợp thực tế các bạn học được thì dễ nhớ hơn. Tuy nhiên mình vẫn sẽ đưa ra một ví dụ đơn giản như sau:
+Mình thấy rất nhiều bạn khi xây dựng project, thường sử dụng tài khoản **`root`** của DBMS để làm tất cả mọi thứ... Đó là một sai lầm cực kỳ lớn. Phần lớn các bạn đều chưa hiểu mức độ nghiêm trọng của vấn đề này, vấn đề này giải thích cũng khó hiểu, phải trong trường hợp thực tế các bạn học được thì dễ nhớ hơn.
 
-Khi bạn đăng nhập, việc cần làm của database chỉ là vào đọc dữ liệu để verify thông tin. Trong khi các bạn lại cấp full quyền cho **user** của DBMS chỉ dùng để đọc... Giả sử trang đăng nhập trên hệ thống có lỗ hổng SQL Injection, thì việc attack từ cái form login xoá toàn bộ dữ liệu của bạn là điều cực kỳ đơn giản, còn nếu form login chỉ có quyền đọc, thì attacker cũng chỉ có thể truy cập tài khoản đó mà thôi. Tức là bạn chỉ gặp một nguy cơ nhỏ hơn là cái nguy cơ cực kỳ khủng khiếp kia.
+Tuy nhiên mình vẫn sẽ đưa ra một ví dụ đơn giản như sau:
 
-Vậy nên không phải tự dưng mà **Oracle** được cho là hệ quản trị database SQL bảo mật nhất, lý do là vì phân quyền của **Oracle** quá chặt chẽ. Do đó, tốt nhất nên phân quyền cho các user trong DBMS mọt cách chặt chẽ và hợp lý, để tránh hối hận về lâu về dài.
+Khi bạn đăng nhập, việc cần làm của database chỉ là vào đọc dữ liệu (quyền **READ**) để verify thông tin. Trong khi các bạn lại cấp full quyền cho **user** của DBMS chỉ dùng để đọc... Giả sử form đăng nhập trên hệ thống có lỗ hổng SQL Injection, thì việc attack từ cái form login xoá toàn bộ dữ liệu của bạn là điều cực kỳ đơn giản, còn nếu user tương tác với database chỉ có quyền đọc, thì attacker cũng chỉ có thể truy cập tài khoản đó mà thôi.
+
+Nghĩa là bạn chỉ gặp một nguy cơ nhỏ hơn so với cái nguy cơ cực kỳ khủng khiếp kia.
+
+Đó, không phải tự dưng mà **Oracle** được cho là hệ quản trị database SQL bảo mật nhất, lý do là vì phân quyền của **Oracle** cực kỳ chặt chẽ. Do đó, tốt nhất nên phân quyền cho các user trong DBMS một cách chặt chẽ và hợp lý, để tránh hối hận về lâu về dài.
 
 Vấn đề phân quyền không phải chỉ ở trong DBMS, mà còn ở trong cả hệ thống, và cấu hình **server**. Nhắc lại lần nữa: **Phân quyền cực kỳ quan trọng**
 
