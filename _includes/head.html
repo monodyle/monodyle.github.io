@@ -30,6 +30,9 @@
   {% if page.previewImage %}
   <meta key="image" name="image" content="{{ page.previewImage | prepend: site.baseurl | prepend: site.url }}">
   <meta key="og:image" property="og:image" content="{{ page.previewImage | prepend: site.baseurl | prepend: site.url }}">
+  {% else %}
+  <meta key="image" name="image" content="{{ '/assets/images/posts/blank.jpg' | prepend: site.baseurl | prepend: site.url }}">
+  <meta key="og:image" property="og:image" content="{{ '/assets/images/posts/blank.jpg' | prepend: site.baseurl | prepend: site.url }}">
   {% endif %}
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
