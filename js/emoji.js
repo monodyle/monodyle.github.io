@@ -21,6 +21,7 @@ const emojiMap = {
   stab: "/assets/emoji/stab.png",
   surrender: "/assets/emoji/surrender.png",
   yikes: "/assets/emoji/yikes.png",
+  sosad: "/assets/emoji/sosad.gif",
 }
 
 const pattern = /:([\w-_]+):/g

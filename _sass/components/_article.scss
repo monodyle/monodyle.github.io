@@ -222,6 +222,18 @@
   .right-image {
     float: right;
     margin-left: 20px;
+    margin-right: -10rem;
+    @media screen and (max-width: $desktop) {
+      margin-right: 0;
+    }
+  }
+  .left-image {
+    float: left;
+    margin-right: 20px;
+    margin-left: -10rem;
+    @media screen and (max-width: $desktop) {
+      margin-left: 0;
+    }
   }
   .clear {
     clear: both;
