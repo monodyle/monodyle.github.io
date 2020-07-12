@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Luận về vấn đề bảo mật người dùng
+title: Học cách bảo mật
 date: 2020-05-15 00:00
 previewImage: /assets/images/posts/bao-mat-nguoi-dung/featured.jpg
 description: Hôm nay online Slack, anh huytd có đăng một cái blog của excalidraw nói về End-to-End, xong anh em bàn về cái encryption scheme của nó... tự dưng lòi một đống vấn đề

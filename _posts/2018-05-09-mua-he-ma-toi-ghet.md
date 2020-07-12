@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Life - Mùa hè mà tôi ghét
+title: Đời - Mùa hè mà tôi ghét
 date: 2018-05-09 00:00
 previewImage: /assets/images/posts/mua-he-ma-toi-ghet/featured.jpg
 tags: [life]

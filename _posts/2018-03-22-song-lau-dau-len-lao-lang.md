@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Think - Sống lâu đâu lên Lão làng?
+title: Ngẫm - Sống lâu đâu lên Lão làng?
 date: 2018-03-22 00:00
 previewImage: /assets/images/posts/song-lau-dau-len-lao-lang/featured.jpg
 tags: [life, opinion, thinking]
 ---
 
-Hello, seri **Think** này mình rewrite từ seri **Madness Things That I Think** từ trước, chủ yếu là để migrate qua blog này cũng như chau chuốt lại câu từ, sửa một vài nội dung không phù hợp.
+Hello, seri **Ngẫm** này mình rewrite từ seri **Madness Things That I Think** từ trước, chủ yếu là để migrate qua blog này cũng như chau chuốt lại câu từ, sửa một vài nội dung không phù hợp.
 
 Nhắc nhở thân thiện: Những blog có tag  **#thinking** và **#opinion** là những bài viết mình viết về những câu chuyện xàm lờ trong cuộc sống và viết trên quan điểm góc nhìn cá nhân. Nên có thể nó sẽ đụng chạm tới một số cá nhân không cùng quan điểm, nếu bạn nằm trong trường hợp này thì hy vọng được bỏ qua hoặc góp ý. Xin cảm ơn :smug: Giờ thì đổi đại từ nhân xưng nhé
 
