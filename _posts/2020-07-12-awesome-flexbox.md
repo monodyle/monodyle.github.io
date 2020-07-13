@@ -7,11 +7,9 @@ description: Công nghệ phát triển nhanh quá, học thôi còn bắt kịp
 tags: [dev, front-end, css, flexbox]
 ---
 
-Hôm nay lên [Slack](https://slack.com/), mình thấy có một huynh trưởng làm một trang web static chỉ bằng HTML & CSS, đại loại là có một danh sách bài viết từ cũ tới mới (Bài cuối ở đầu trang). Nhưng có người lại cho rằng bài viết mới nhất nên nằm ở đầu trang. Thế nào suy nghĩ một hồi huynh trưởng lại chẳng biết làm sao, vì chẳng ai muốn nhúng JavaScript nếu thực sự không cần thiết.
+Chuyện là hôm nay lên [Slack](https://slack.com/), có một huynh trưởng làm một trang web static [Kipacast](https://kipacast.info/), nhờ mọi người góp ý về trang này. Sau một hồi góp ý thì mình để ý có một anh trai góp ý là có danh sách bài viết đang được sắp xếp từ cũ tới mới (Bài cuối ở đầu trang), anh cho rằng bài viết mới nhất nên nằm ở đầu trang. Suy nghĩ một hồi thì huynh trưởng chẳng biết làm sao nếu không sử dụng tới JavaScript, vì chẳng ai muốn nhúng JavaScript nếu thực sự không cần thiết.
 
-> "Thêm nút sort bằng CSS hơi quá sức"
->
-> *Huynh trưởng said*
+> "Thêm nút sort bằng CSS hơi quá sức" - *Huynh trưởng said*
 
 ## CSS siêu cường
 
