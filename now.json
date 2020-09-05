@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "name": "The Monody's Blog",
+  "build": {
+    "env": {
+    }
+  }
+}

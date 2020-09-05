@@ -1,0 +1,19 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "extensions": [".md", ".mdx"],
+    "markdownExtensions": [".md", ".mdx"]
+  },
+  "extends": [
+    "react-app",
+    "plugin:prettier/recommended",
+    "plugin:mdx/recommended"
+  ],
+  "plugins": ["react-hooks"],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react/jsx-pascal-case": "off",
+    "jsx-a11y/anchor-is-valid": "off"
+  }
+}
