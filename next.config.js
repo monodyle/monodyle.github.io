@@ -6,6 +6,8 @@ const rehypeSlug = require("rehype-slug")
 const rehypeKatex = require("rehype-katex")
 const rehypeShiki = require("rehype-shiki")
 
+const debug = process.env.NODE_ENV !== "production"
+
 const withMDX = nextMDX({
   extension: /\.mdx?$/,
   options: {
@@ -19,6 +21,7 @@ const withMDX = nextMDX({
 })
 
 const nextConfig = {
+  assetPrefix: !debug ? "/" : "",
   devIndicators: {
     autoPrerender: false,
   },
