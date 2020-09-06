@@ -21,7 +21,7 @@ const withMDX = nextMDX({
 })
 
 const nextConfig = {
-  assetPrefix: !debug ? "/" : "",
+  assetPrefix: !debug ? "" : "",
   devIndicators: {
     autoPrerender: false,
   },

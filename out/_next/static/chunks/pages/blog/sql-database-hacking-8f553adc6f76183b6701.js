@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[21],{wvdw:function(w,n,_){(window.__NEXT_P=window.__NEXT_P||[]).push(["/blog/sql-database-hacking",function(){return _("fMoX")}])}},[["wvdw",0,2,3,1,4,5]]]);
