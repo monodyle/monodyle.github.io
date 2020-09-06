@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[16],{"/i5L":function(_,n,o){(window.__NEXT_P=window.__NEXT_P||[]).push(["/blog/awesome-flexbox",function(){return o("kad3")}])}},[["/i5L",0,2,3,1,4,6]]]);
