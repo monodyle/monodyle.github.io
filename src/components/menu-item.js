@@ -1,18 +1,14 @@
 import Link from "next/link"
-import classcat from "classcat"
 
 export default function MenuItem({ title, path, isActive }) {
   return (
-    <Link href={path}>
+    <Link href={path} passHref>
       <a>
         <li
-          className={classcat([
+          className={[
             "flex items-center tracking-wide h-10 px-6",
-            {
-              "text-black hover:bg-solitude-214": !isActive,
-              "bg-primary text-white": isActive,
-            },
-          ])}
+            isActive ? "bg-primary text-white" : "text-black hover:bg-solitude-214"
+          ].join(" ")}
         >
           {title}
         </li>

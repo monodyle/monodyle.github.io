@@ -18,9 +18,22 @@ module.exports = {
       columbia: "#ADD6FF",
     },
     fontFamily: {
-      mono: ['"JetBrains"', "monospace"],
       sans: ["Open Sans", "sans-serif"],
       serif: ["Vollkorn", "serif"],
+      mono: [
+        'JetBrains',
+        "ui-monospace",
+        "SFMono-Regular",
+        "Menlo",
+        "Monaco",
+        "Consolas",
+        '"Liberation Mono"',
+        '"Courier New"',
+        "monospace",
+      ],
+    },
+    letterSpacing: {
+      wide: "0.01em",
     },
     screens: {
       tablet: "768px",

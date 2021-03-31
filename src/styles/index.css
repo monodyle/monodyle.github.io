@@ -1,11 +1,37 @@
-/* purgecss start ignore */
-@import "./reset.css";
-@import "./fontface.css";
-@import "./nprogress.css";
-@import "./article.css";
+@import "tailwindcss/base";
 @import "tailwindcss/components";
-/* purgecss end ignore */
-
 @import "tailwindcss/utilities";
 
+@import "./fonts.css";
+@import "./nprogress.css";
+@import "./article.css";
 @import "./override.css";
+
+*,
+*::before,
+*::after {
+  @apply border-solid;
+}
+
+tt,
+code,
+kbd,
+samp {
+  @apply font-mono;
+}
+
+::selection {
+  @apply text-white bg-black;
+}
+
+html,
+body,
+#__next {
+  @apply h-full;
+}
+
+input,
+textarea,
+select {
+  @apply appearance-none;
+}

@@ -1,5 +1,3 @@
-import classcat from "classcat"
-
 export default function TextField({
   multiline,
   label,
@@ -10,7 +8,7 @@ export default function TextField({
 }) {
   const hasError = Boolean(errorText)
   return (
-    <label className={classcat(["block", className])}>
+    <label className={["block", className].join(" ")}>
       {label && <div className="font-semibold">{label}</div>}
       {helpText && (
         <div className="text-xs tracking-wide text-dark-gray">{helpText}</div>
@@ -19,32 +17,24 @@ export default function TextField({
         <input
           type="text"
           {...props}
-          className={classcat([
-            "w-full h-10 px-3 mt-1 text-base border focus:border-black",
-            {
-              "border-mid-gray": !hasError,
-              "border-error": hasError,
-            },
-          ])}
+          className={[
+            "w-full h-10 px-3 mt-1 text-base border focus:border-black rounded outline-none",
+            !hasError ? "border-mid-gray" : "border-error"
+          ].join(" ")}
         />
       )}
       {multiline && (
         <textarea
           rows="8"
           {...props}
-          className={classcat([
-            "w-full px-3 py-2 mt-1 text-base border focus:border-black",
-            {
-              "border-mid-gray": !hasError,
-              "border-error": hasError,
-            },
-          ])}
+          className={[
+            "w-full block px-3 py-2 mt-1 text-base border focus:border-black rounded outline-none",
+            !hasError ? "border-mid-gray" : "border-error"
+          ].join(" ")}
         />
       )}
       {hasError && (
-        <div className="mt-px text-xs tracking-wide text-error">
-          {errorText}
-        </div>
+        <div className="mt-1 text-xs tracking-wide text-error">{errorText}</div>
       )}
     </label>
   )

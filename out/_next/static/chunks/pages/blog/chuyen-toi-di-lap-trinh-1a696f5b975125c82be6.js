@@ -1,1 +1,0 @@
-_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[17],{lnFZ:function(n,_,o){(window.__NEXT_P=window.__NEXT_P||[]).push(["/blog/chuyen-toi-di-lap-trinh",function(){return o("MXne")}])}},[["lnFZ",0,2,3,1,4,9]]]);

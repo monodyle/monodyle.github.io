@@ -2,31 +2,24 @@ import React from "react"
 import Link from "next/link"
 import compareDesc from "date-fns/compareDesc"
 
-import { importAll } from "utils"
-import Page from "components/page"
 import SEO from "components/seo"
+import { getFrontMatters } from "utils"
 
-const postList = importAll(require.context(".", true, /.mdx?$/))
-
-export default function BlogListing() {
-  const [posts, setPosts] = React.useState(postList)
-
-  React.useEffect(() => {
-    setPosts((prev) =>
-      prev
-        .slice()
-        .sort((a, b) =>
-          compareDesc(new Date(a.meta.date), new Date(b.meta.date)),
-        ),
-    )
-  }, [])
-
+export default function Blog({ posts }) {
   return (
-    <Page className="pb-10">
+    <div className="pb-10">
       <SEO title="Blog — The Monody's Blog" />
-      <div className="mx-auto">
-        {posts.map(({ meta }, index) => (
-          <Link href={meta.slug} key={index}>
+      {posts
+        .filter(p => p.date)
+        .sort((a, b) =>
+          compareDesc(new Date(a.date), new Date(b.date)),
+        ).map((meta) => (
+          <Link
+            passHref
+            href="/blog/[slug]"
+            as={`/blog/${meta.slug}`}
+            key={meta.slug}
+          >
             <a className="block mt-8 text-xl hover:cursor-pointer group">
               <time className="font-mono text-sm text-dark-gray">
                 {meta.date}
@@ -37,7 +30,17 @@ export default function BlogListing() {
             </a>
           </Link>
         ))}
-      </div>
-    </Page>
+    </div>
   )
+}
+
+export async function getStaticProps() {
+  const frontMatters = await getFrontMatters("posts")
+  const isPublished = ({ publish }) => publish !== false
+
+  return {
+    props: {
+      posts: frontMatters.filter(isPublished),
+    },
+  }
 }

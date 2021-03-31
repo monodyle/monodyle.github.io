@@ -1,47 +1,19 @@
-export const pageTranstion = {
-  incoming: {
-    y: 20,
-    opacity: 0,
-  },
-  enter: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      ease: [0.0, 0.0, 0.2, 1],
-      duration: 0.1,
-      opacity: { duration: 0.1 },
-    },
-  },
-}
-
-export const postTranstion = {
-  incoming: {
-    y: 100,
-    opacity: 0,
-  },
-  enter: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      ease: [0.0, 0.0, 0.2, 1],
-      duration: 0.1,
-      opacity: { duration: 0.1 },
-    },
-  },
-}
-
 export const menus = [
   {
     title: "Home",
     path: "/",
   },
   {
+    title: "Blog",
+    path: "/blog",
+  },
+  {
     title: "About",
     path: "/about",
   },
   {
-    title: "☕ Buy me a coffee",
-    path: "https://ko-fi.com/monodyle",
+    title: "GitHub",
+    path: "https://github.com/monodyle",
   },
 ]
 
