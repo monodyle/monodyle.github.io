@@ -1,22 +1,8 @@
-import { useEffect } from "react"
 import { MDXProvider } from "@mdx-js/react"
 import SEO from "components/seo"
 import components from "./mdx-components"
-import { emojiPattern, emojiParse } from "utils"
 
 export default function Post({ metadata, children }) {
-  useEffect(() => {
-      let container = document.querySelectorAll(`
-        #content > p,
-        #content > ul,
-        #content > blockquote > p,
-        #content [emoji="1"]
-      `)
-
-      if (emojiPattern.test(document.querySelector("#content").textContent))
-        container.forEach((i) => (i.innerHTML = emojiParse(i.innerHTML)))
-  }, [])
-
   return (
     <MDXProvider components={components}>
       <article className="py-8">
@@ -51,6 +37,7 @@ export default function Post({ metadata, children }) {
           </div>
         )}
         <div id="content">{children}</div>
+        <script src="/assets/scripts/emoji.js" />
       </article>
     </MDXProvider>
   )
