@@ -1,12 +1,13 @@
-import { Fragment } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { aC } from "lazysizes";
+import { Cursor } from "components/cursor/cursor";
 
 export type ActiveHeaderItem = "hi" | "work" | "blog";
 interface MenuItem {
   title: string;
   emoji?: string;
   slug: string;
+  effect?: boolean;
 }
 
 const MENU: {
@@ -29,13 +30,39 @@ const MENU: {
   },
 };
 
-const Item = ({ slug, title }: MenuItem) => {
+const Item = ({ slug, title, emoji, effect }: MenuItem) => {
+  const ref = useRef<HTMLAnchorElement>(null);
+  const [cursor, setCursor] = useState<boolean>(false);
+
+  const onMouseEnter = () => setCursor(true);
+  const onMouseLeave = () => setCursor(false);
+
+  useEffect(() => {
+    if (!ref.current) return;
+    ref.current.addEventListener("mouseenter", onMouseEnter);
+    ref.current.addEventListener("mouseleave", onMouseLeave);
+    return () => {
+      if (!ref.current) return;
+      ref.current.removeEventListener("mouseenter", onMouseEnter);
+      ref.current.removeEventListener("mouseleave", onMouseLeave);
+    };
+  }, []);
+
   return (
-    <Link href={slug}>
-      <span className="text-base font-bold leading-6 cursor-pointer rainbown">
-        {title}
-      </span>
-    </Link>
+    <Fragment>
+      <Link href={slug}>
+        <a
+          ref={ref}
+          className={[
+            "text-base font-bold leading-6 rainbown",
+            effect ? "cursor-none" : "cursor-pointer",
+          ].join(" ")}
+        >
+          {title}
+        </a>
+      </Link>
+      {effect && <Cursor show={cursor} icon={emoji} />}
+    </Fragment>
   );
 };
 
@@ -58,7 +85,12 @@ const Header = ({ active }: { active?: ActiveHeaderItem }) => {
           key !== active ? (
             <Fragment key={i}>
               <div className="w-12" />
-              <Item slug={item.slug} title={item.title} />
+              <Item
+                slug={item.slug}
+                title={item.title}
+                emoji={item.emoji}
+                effect
+              />
             </Fragment>
           ) : null
         )}

@@ -20,5 +20,10 @@ module.exports = {
       serif: "serif",
       display: "Dela Gothic One, display",
     },
+    extend: {
+      cursor: {
+        none: "none",
+      },
+    },
   },
 };
