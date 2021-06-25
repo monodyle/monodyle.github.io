@@ -1,18 +1,18 @@
-require("dotenv").config()
-
-const nextConfig = {
-  devIndicators: {
-    autoPrerender: false,
+module.exports = {
+  async rewrites() {
+    return [
+      {
+        source: "/feed",
+        destination: "/api/feed",
+      },
+    ];
   },
-  poweredByHeader: false,
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.node = {
-        fs: "empty",
-      }
-    }
-    return config
+  async headers() {
+    return [
+      {
+        source: "/feed",
+        headers: [{ key: "content-type", value: "text/xml" }],
+      },
+    ];
   },
-}
-
-module.exports = nextConfig
+};

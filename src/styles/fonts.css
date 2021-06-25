@@ -1,46 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 @font-face {
-  font-family: "JetBrains";
+  font-family: "Dela Gothic One";
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("/assets/fonts/jetbrains/JetBrainsMono-Regular.woff2") format("woff2");
-}
-@font-face {
-  font-family: "JetBrains";
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url("/assets/fonts/jetbrains/JetBrainsMono-Italic.woff2") format("woff2");
+  src: url("/fonts/DelaGothicOne.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "JetBrains";
+  font-family: "iA Writer Duospace";
+  font-weight: normal;
   font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("/assets/fonts/jetbrains/JetBrainsMono-Medium.woff2") format("woff2");
-}
-@font-face {
-  font-family: "JetBrains";
-  font-style: italic;
-  font-weight: 500;
-  font-display: swap;
-  src: url("/assets/fonts/jetbrains/JetBrainsMono-Medium-Italic.woff2") format("woff2");
+  src: url("/fonts/iAWriterDuospace-Regular.eot") format("embedded-opentype"),
+    url("/fonts/iAWriterDuospace-Regular.woff2") format("woff2"),
+    url("/fonts/iAWriterDuospace-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "JetBrains";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("/assets/fonts/jetbrains/JetBrainsMono-Bold.woff2") format("woff2");
-}
-@font-face {
-  font-family: "JetBrains";
+  font-family: "iA Writer Duospace";
+  font-weight: normal;
   font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: url("/assets/fonts/jetbrains/JetBrainsMono-Bold-Italic.woff2") format("woff2");
+  src: url("/fonts/iAWriterDuospace-Italic.eot") format("embedded-opentype"),
+    url("/fonts/iAWriterDuospace-Italic.woff2") format("woff2"),
+    url("/fonts/iAWriterDuospace-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "iA Writer Duospace";
+  font-weight: bold;
+  font-style: normal;
+  src: url("/fonts/iAWriterDuospace-Bold.eot") format("embedded-opentype"),
+    url("/fonts/iAWriterDuospace-Bold.woff2") format("woff2"),
+    url("/fonts/iAWriterDuospace-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "iA Writer Duospace";
+  font-weight: bold;
+  font-style: italic;
+  src: url("/fonts/iAWriterDuospace-BoldItalic.eot") format("embedded-opentype"),
+    url("/fonts/iAWriterDuospace-BoldItalic.woff2") format("woff2"),
+    url("/fonts/iAWriterDuospace-BoldItalic.woff") format("woff");
 }

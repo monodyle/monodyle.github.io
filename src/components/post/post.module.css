@@ -1,0 +1,167 @@
+.article {
+  @apply max-w-3xl px-8 mx-auto mt-6 mb-9;
+}
+
+.hero {
+  @apply rounded-md mb-9 bg-gray md:-mx-24;
+}
+
+.title {
+  @apply text-3xl font-bold leading-relaxed mb-9;
+}
+
+.time {
+  @apply text-dark-muted;
+}
+
+.tag {
+  @apply ml-4 text-dark-muted;
+}
+.tag::before {
+  content: "#";
+  @apply mr-1 opacity-50 text-dark-muted;
+}
+
+.content {
+  @apply text-lg leading-loose break-words;
+}
+
+.content > img {
+  @apply rounded-md;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  @apply font-bold leading-tight;
+}
+
+.markdown h1 {
+  @apply text-2xl leading-9;
+}
+.markdown h2 {
+  @apply mt-8 text-2xl leading-9;
+}
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  @apply mt-8 text-lg leading-9;
+}
+
+.markdown p,
+.markdown li,
+.markdown em {
+  @apply mt-4;
+}
+
+.markdown ol {
+  @apply pl-6 mt-4 list-decimal list-inside;
+}
+
+.markdown ul {
+  @apply mt-4 list-disc list-inside;
+}
+
+.markdown li {
+  @apply mt-1;
+}
+
+.markdown pre {
+  font-size: 13.5px;
+  word-spacing: normal;
+  tab-size: 2;
+  hyphens: none;
+  @apply p-4 mt-6 rounded-md;
+  @apply relative font-mono font-medium text-left;
+  @apply break-words whitespace-pre-wrap;
+  @apply border-2 bg-light border-dark;
+}
+
+.markdown pre code::before,
+.markdown pre code::after {
+  display: none;
+}
+
+.markdown :not(pre) code {
+  @apply inline-block px-1 rounded text-dark-muted bg-gray;
+  font-family: inherit;
+}
+
+.markdown code::before,
+.markdown code::after {
+  content: "`";
+}
+
+.markdown a > code {
+  @apply text-dark;
+}
+
+.markdown blockquote {
+  @apply py-4 pl-8 mt-4 mb-8 -ml-4 -mr-20 font-serif;
+}
+.markdown blockquote > *:first-child {
+  @apply m-0;
+}
+.markdown blockquote p {
+  @apply text-3xl;
+}
+
+.markdown video {
+  @apply my-10;
+}
+
+.markdown > strong,
+.markdown > em {
+  display: block;
+}
+
+.markdown h1::before,
+.markdown h2::before,
+.markdown h3::before,
+.markdown h4::before,
+.markdown h5::before,
+.markdown h6::before {
+  content: "#";
+  @apply mr-2 -ml-6 font-mono text-2xl font-normal opacity-50 text-middle;
+}
+
+.markdown table {
+  @apply block w-full overflow-auto border-collapse;
+  border-spacing: 0;
+}
+.markdown table tr {
+  @apply border-t bg-light border-middle;
+}
+.markdown table tr:nth-child(2n) {
+  @apply bg-light-muted;
+}
+.markdown table td,
+.markdown table th {
+  @apply px-4 py-2 border border-middle;
+}
+.markdown table th {
+  @apply px-4 py-2 font-semibold border-middle;
+}
+
+.markdown img[emoji] {
+  @apply inline-block w-8;
+}
+
+.markdown .note {
+  @apply py-3 pl-6 pr-4 mt-4 text-sm border-l-2 rounded bg-light-muted text-dark-muted;
+}
+.markdown .note p:first-child > strong {
+  @apply text-base;
+}
+
+.markdown hr {
+  @apply my-10;
+}
+
+.markdown iframe {
+  @apply w-full mx-auto;
+}

@@ -2,26 +2,12 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import "./fonts.css";
-@import "./nprogress.css";
-@import "./article.css";
-@import "./override.css";
+@import url("./fonts.css");
 
 *,
 *::before,
 *::after {
-  @apply border-solid;
-}
-
-tt,
-code,
-kbd,
-samp {
-  @apply font-mono;
-}
-
-::selection {
-  @apply text-white bg-black;
+  box-sizing: border-box;
 }
 
 html,
@@ -30,8 +16,30 @@ body,
   @apply h-full;
 }
 
-input,
-textarea,
-select {
-  @apply appearance-none;
+html,
+body {
+  @apply overflow-x-hidden font-mono bg-light-muted text-dark;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+.rainbown {
+  @apply text-dark;
+}
+
+.rainbown:hover {
+  color: hsla(0, 0%, 100%, 0);
+  background: linear-gradient(
+    110.78deg,
+    #76e650 -1.13%,
+    #f9d649 15.22%,
+    #f08e35 32.09%,
+    #ec5157 48.96%,
+    #ff18bd 67.94%,
+    #1a4bff 85.34%,
+    #62d8f9 99.57%
+  );
+  background-clip: text;
 }
