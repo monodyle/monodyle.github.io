@@ -2,28 +2,22 @@
   @apply w-full h-full;
   @apply bg-repeat-x;
   background-image: url("/illustration/ground.svg");
-  animation-name: bg-forward;
-  animation-duration: 96s;
-  animation-iteration-count: infinite;
+  animation: bg-forward 96s linear infinite;
 }
 
 .cloud {
   @apply absolute top-0 left-0 w-full h-full;
   @apply bg-repeat-x;
   background-image: url("/illustration/cloud.svg");
-  animation-name: bg-forward;
-  animation-duration: 72s;
-  animation-iteration-count: infinite;
+  animation: bg-forward 256s linear reverse infinite;
 }
 
 .sun {
   @apply absolute top-0 left-1/3;
   @apply w-6 h-6;
+  @apply transform;
   background-image: url("/illustration/sun.svg");
-  animation-name: sun-move;
-  animation-duration: 32s;
-  animation-direction: alternate-reverse;
-  animation-iteration-count: infinite;
+  animation: sun 36s linear infinite;
 }
 
 .me {
@@ -43,20 +37,29 @@
     0 0 4px rgb(248, 248, 248);
 }
 
-@keyframes sun-move {
+@keyframes sun {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes bg-forward {
   from {
-    @apply left-1/3;
+    background-position: left 1440px top 0;
   }
   to {
-    @apply left-2/3;
+    background-position: left 0 top 0;
   }
 }
 
 @keyframes bg-forward {
   from {
-    background-position-x: left 1440px;
+    background-position: left 1440px top 0;
   }
   to {
-    background-position-x: left;
+    background-position: left 0 top 0;
   }
 }
