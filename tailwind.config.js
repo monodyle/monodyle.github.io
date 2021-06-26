@@ -4,6 +4,7 @@ module.exports = {
   darkMode: false,
   theme: {
     colors: {
+      transparent: "transparent",
       dark: {
         DEFAULT: "#403F4B",
         muted: "#676674",

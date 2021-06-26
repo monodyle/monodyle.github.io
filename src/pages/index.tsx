@@ -1,4 +1,5 @@
 import { Layout } from "components/layout/layout";
+import LookLike from "components/look-like/look-like";
 
 const IndexPage = () => (
   <Layout footer>
@@ -18,9 +19,8 @@ const IndexPage = () => (
           vegetables and chickens, but now I go coding and design.
         </p>
       </div>
-      <div>
-        <img src="/assets/face.png" alt="Look like this!" />
-      </div>
+      <div className="w-16 h-16" />
+      <LookLike />
     </div>
   </Layout>
 );

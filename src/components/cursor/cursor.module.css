@@ -1,11 +1,14 @@
 .cursor {
   @apply fixed;
   @apply w-16 h-16 rounded-full;
-  @apply border-2 border-solid border-dark;
   @apply transform -translate-x-1/2 -translate-y-1/2;
   @apply pointer-events-none cursor-none;
   transition: all 150ms ease;
   z-index: 999;
+}
+
+.circle {
+  @apply border-2 border-solid border-dark;
 }
 
 .hide {

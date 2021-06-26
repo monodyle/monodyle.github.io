@@ -1,14 +1,14 @@
 import { Fragment } from "react";
 import { Layout } from "components/layout/layout";
+import LookLike from "components/look-like/look-like";
 import { socials } from "config/config";
 
 const HiPage = () => {
   return (
     <Layout active="hi">
-      <div className="flex justify-between pt-12 mx-24">
-        <div>
-          <img src="/assets/hi.png" alt="Hello!" />
-        </div>
+      <div className="flex justify-center pt-12 mx-24">
+        <LookLike />
+        <div className="w-16 h-16" />
         <div className="w-3/5">
           <h2 className="mb-4 text-2xl leading-9 tracking-wide uppercase font-display">
             Having something to share? 👀
