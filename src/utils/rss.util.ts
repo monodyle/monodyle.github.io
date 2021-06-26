@@ -4,10 +4,10 @@ import { PreviewPost } from 'types/post.type'
 export async function generateRssItem (post: PreviewPost) {
   return `
     <item>
-      <guid>${config.url}/posts/${post.slug}</guid>
+      <guid>${config.url}/blog/${post.slug}</guid>
       <title>${post.title}</title>
       <description>${post.excerpt}</description>
-      <link>${config.url}/posts/${post.slug}</link>
+      <link>${config.url}/blog/${post.slug}</link>
       <pubDate>${new Date(post.date).toUTCString()}</pubDate>
     </item>
   `
