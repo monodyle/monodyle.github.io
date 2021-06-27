@@ -1,8 +1,6 @@
-import { useEffect } from "react";
 import Link from "next/link";
-import {PostType} from "types/post.type";
+import { PostType } from "types/post.type";
 import DateTime from "utils/date.util";
-import { emoji } from "utils/emoji.util";
 import styles from "./post.module.css";
 
 interface Props {
@@ -10,18 +8,6 @@ interface Props {
 }
 
 const Post = ({ post }: Props) => {
-  useEffect(() => {
-    const container = document.querySelectorAll(`
-      #content > p,
-      #content > ul,
-      #content > blockquote > p
-    `);
-    const content = document.querySelector("#content")?.textContent;
-    if (emoji.pattern.test(content || ""))
-      container.forEach((i) => (i.innerHTML = emoji.parser(i.innerHTML)));
-
-  }, []);
-
   return (
     <article className={styles.article}>
       <div className="mb-6 font-bold">

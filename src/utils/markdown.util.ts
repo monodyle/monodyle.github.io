@@ -9,6 +9,7 @@ import rehypeShiki from '@leafac/rehype-shiki'
 import * as shiki from 'shiki'
 import gfm from 'remark-gfm'
 import footnotes from 'remark-footnotes'
+import { emoji } from './emoji.util'
 
 const pattern = /\!\((?:https?:\/\/(?:www.)?youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})\)/
 
@@ -40,7 +41,7 @@ async function parser (content: string) {
     .use(slug)
     .use(stringify)
     .process(content)
-  return youtubeParser(result.toString())
+  return youtubeParser(emoji.parser(result.toString()))
 }
 
 export const md = {
