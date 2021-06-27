@@ -16,12 +16,7 @@ CSS bây giờ không những mạnh mẽ, mà còn có nhiều tính năng vư�
 
 Điển hình, xếp layout web dùng **grid** hẳn là tiện thật, nhưng mà browser cũ không hỗ trợ thì dùng làm chi rồi phải fix mớ bug vỡ layout khi vẫn còn người dùng sử dụng IE? :cry:
 
-<img
-  title="Flexbox & Grid"
-  alt="Flexbox & Grid"
-  className="desktop:-mx-24"
-  src="/assets/blog/awesome-flexbox/01.jpg"
-/>
+![Flexbox & Grid](/assets/blog/awesome-flexbox/01.jpg)
 
 Và giải pháp chính là **flexbox**. Thực chất, flexbox không hề mới, nhưng nó chưa có tính phổ biến, nên việc sử dụng flexbox vẫn đang còn khá mơ hồ, chưa kể phải nhớ đống thuộc tính cũng tương đối vất vả. Thế nên nhiều người vẫn bỏ qua nó.
 

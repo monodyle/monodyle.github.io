@@ -16,15 +16,13 @@ Mùa hè cũng là mùa mà những kỷ niệm về tuổi học trò trong tô
 
 > "Tuổi trẻ của mình, đã trôi qua như vậy sao?"
 
-<img className="desktop:-mx-24" src="/assets/blog/my-summer/01.jpg" />
+![Chuỗi ngày chìm đắm vào thế giới điện tử](/assets/blog/my-summer/01.jpg)
 
 Mùa hè, mọi thứ đều trở nên gấp gáp hơn. Trông từng tháng từng ngày để đến kỳ thi, trông từng ngày từng giờ để xem điểm, trông từng giờ từng phút để có kết quả, trông từng phút từng giây để chờ người ta trả lời tin nhắn.
 
 Mùa hè, cái tiết trời thật oi ả, nóng dã man. Chỉ muốn trốn đi đâu đó thật xa, thật xa để quên đi những mệt nhọc, phiền toái và những cơn nóng mà mùa hè gây ra. Xuống biển thì đông quá, tốt nhất là lên rừng, tìm một cái gốc cây thoáng mát nào đó, dăng võng ra rồi đánh một giấc không mộng mị cho sảng khoái.
 
-<div className="w-1/2 float-left desktop:-ml-16">
-  <img title="Xời, thấy tui chất chơi chưa?" src="/assets/blog/my-summer/02.jpg" />
-</div>
+![Chuỗi ngày chìm đắm vào thế giới điện tử](/assets/blog/my-summer/02.jpg)
 
 Đó là mùa mà chúng tôi có những tấm ảnh kỷ yếu, cùng nhau chia sẻ những khoảnh khắc tuổi học trò. Những thước ảnh bựa nhất có thể, đồng thời không quên làm sao cho mình ngầu lòi, hoặc nổi bật nhất có thể.
 
@@ -32,11 +30,7 @@ Mùa hè, cái tiết trời thật oi ả, nóng dã man. Chỉ muốn trốn �
 
 Và tôi đã có bộ ảnh kỷ yếu theo chất riêng của mình như vậy đó.
 
-<img
-  title="Ảnh kỷ yếu cứ phải gọi là vô địch"
-  className="desktop:-mx-24"
-  src="/assets/blog/my-summer/03.jpg"
-/>
+![Ảnh kỷ yếu cứ phải gọi là vô địch](/assets/blog/my-summer/03.jpg)
 
 Nhìn vậy thôi chứ cũng có mấy tấm ngầu bỏ mẹ à! :”>
 
@@ -48,11 +42,7 @@ Và đó là mùa mà cây phượng vĩ lắng nghe tôi hơn bao giờ hết. 
 
 Sân trường buổi trưa, vắng lắm, bởi vậy nên tôi thích tới trường vào buổi trưa vì chả có ai làm phiền tôi cả. Đi vòng quanh ngôi trường mình đã gắn bó ba năm. Ngắm những chiếc ghế đá mà mình vẫn thường ngồi, rồi lại đi vào phòng học năm 12, hết một vòng quanh trường thì dừng lại ở gốc phượng trước phòng hội đồng. Cây phượng hay lắm, mỗi lúc tôi ngồi dưới gốc cây, nó lại khẽ rung rinh cho hoa phượng rớt xuống, không biết tình cờ hay thực sự vậy. Có người sẽ bảo tôi bịa chuyện, nhưng với tôi, sao cũng được.
 
-<img
-  title="Sân trường của tôi giờ ban trưa"
-  className="desktop:-mx-24"
-  src="/assets/blog/my-summer/04.jpg"
-/>
+![Sân trường của tôi giờ ban trưa](/assets/blog/my-summer/04.jpg)
 
 Cây phượng đó là nơi tôi chia sẻ cảm xúc 3 năm đi học của mình. Và nó cũng là nơi duy nhất tôi gửi gắm những giọt nước mắt kìm nén suốt 3 năm đi học. Về những câu chuyện buồn, về những người bạn, thầy cô, và người tôi đã yêu năm 17 tuổi.
 
@@ -64,4 +54,4 @@ Mùa hè lại tới, tôi lại ngồi nhớ về những kỷ niệm cũ, có 
 
 Và gửi vào mùa hè, tình yêu mà tôi chưa bao giờ nói. Tiếp tục với vai nhân vật phản diện để mang hạnh phúc tới cho người khác. Vì đơn giản, tôi chưa bao giờ yêu em nhiều đến như vậy.
 
-<img src="/assets/blog/my-summer/05.jpg" />
+![](/assets/blog/my-summer/05.jpg)

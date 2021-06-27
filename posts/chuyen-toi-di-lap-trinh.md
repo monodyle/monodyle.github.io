@@ -22,12 +22,7 @@ Có một kỉ niệm khá vui là mình không phải chỉ chơi điện tử 
 
 Sau lớp phổ cập, mình phải chia tay với mối tình đầu, nhưng không lâu sau đó, tình yêu thứ 2 đã đến với mình. Đó là chiếc máy bàn mẹ mua vào năm mình học lớp 4. Và đó là chuỗi ngày mình chìm đắm vào trò chơi điện tử :cry:
 
-<img
-  title="Chuỗi ngày chìm đắm vào thế giới điện tử"
-  alt="Chuỗi ngày chìm đắm vào thế giới điện tử"
-  className="desktop:-mx-24"
-  src="/assets/blog/chuyen-toi-di-lap-trinh/01.jpg"
-/>
+![Chuỗi ngày chìm đắm vào thế giới điện tử](/assets/blog/chuyen-toi-di-lap-trinh/01.jpg)
 
 Tạm biệt chiếc máy tính tuổi thơ, nơi mà mình suốt ngày ngồi chơi điện tử với đủ thứ trò mà hầu như thời đó ai cũng chơi. Thời đó tư duy của trẻ con, nên thấy điện tử thì cứ chơi thôi, chẳng nghĩ ngợi gì, nó như thế nào... Thì mãi đến năm học lớp 6, mình bén duyên với công nghệ.
 
@@ -35,11 +30,7 @@ Năm đó năn nỉ ỉ ôi mãi, mẹ mới lắp *internet* cho với một l�
 
 > "Ủa, sao mấy cái này này chạy được, kỳ ta?" :confused:
 
-<img
-  title="Đặt ra nghi vấn khởi đầu câu chuyện"
-  alt="Đặt ra nghi vấn khởi đầu câu chuyện"
-  src="/assets/blog/chuyen-toi-di-lap-trinh/02.jpg"
-/>
+![Đặt ra nghi vấn khởi đầu câu chuyện](/assets/blog/chuyen-toi-di-lap-trinh/02.jpg)
 
 Mặc dù là câu hỏi tiền đề, song mình vẫn không cưỡng lại được các trò chơi online thời bấy giờ như *CrossFire*, *Gunny*, *Võ Lâm 2*,...
 
@@ -55,21 +46,11 @@ Nói về forumvi, thì nó là cái nôi của mình khi bước đi trên con 
 
 Nhớ năm đó vì không thích cái giao diện mặc định, nên mình đi tìm thử xem có cách nào làm thay đổi giao diện không? Và bài học đầu tiên mình nhận được là kỹ năng tìm kiếm Google. Mặc dù trước đó mình Google không gọi là tệ, nhưng vào thời điểm này cách mình sử dụng *keyword* đã hiệu quả hơn nhiều. Và cũng nhờ đó mình tìm tới **Chinh Phục** - Sân chơi số 1 của forumvi.
 
-<img
-  title="Trông cái giao diện là lại hoài niệm"
-  alt="Trông cái giao diện là lại hoài niệm"
-  className="desktop:-mx-24"
-  src="/assets/blog/chuyen-toi-di-lap-trinh/03.png"
-/>
+![Trông cái giao diện là lại hoài niệm](/assets/blog/chuyen-toi-di-lap-trinh/03.png)
 
 Giải thích một cách dễ hiểu, **Chinh Phục** cũng là một forum được tạo ra bằng forumvi, mục đích của nó là trở thành cộng đồng hỗ trợ mọi vấn đề về forumvi.
 
-<img
-  title="Hình này phải dùng time travel để chụp đó..."
-  alt="Hình này phải dùng time travel để chụp đó..."
-  className="desktop:-mx-24"
-  src="/assets/blog/chuyen-toi-di-lap-trinh/05.png"
-/>
+![Hình này phải dùng time travel để chụp đó...](/assets/blog/chuyen-toi-di-lap-trinh/05.png)
 
 Ở **Chinh Phục** *(CP)*, mình được làm quen với rất nhiều các anh chị trong làng forumvi:
  * Người đàn ông không phải admin nhưng nắm mọi quyền lực trong forum - **handsomevip007**;
@@ -78,12 +59,7 @@ Giải thích một cách dễ hiểu, **Chinh Phục** cũng là một forum đ
  * Một anh trai không giúp gì mình trong lĩnh vực code, nhưng lại giúp mình rất nhiều trong lĩnh vực khai phá thế giới 16+ - **Junkulz** (Cảm ơn anh vì tết này lì xì cho em nha) :rolf:;
  * Chị **mía**, anh **VietK**, lão **quan** Thỏ,... và còn rất nhiều các anh chị khác mà em tạm thời quên mất rồi :sad: ~~xin lỗi~~
 
-<img
-  title="Chatbox hồi đó vui cực"
-  alt="Chatbox hồi đó vui cực"
-  className="desktop:-mx-24"
-  src="/assets/blog/chuyen-toi-di-lap-trinh/04.png"
-/>
+![Chatbox hồi đó vui cực](/assets/blog/chuyen-toi-di-lap-trinh/04.png)
 
 Kỉ niệm ở **CP** giống như một cái bóng lớn, vì tới lúc **CP** chết, mình vẫn còn cảm giác nó là một community mà mình gắn bó nhất từ trước tới giờ.
 
@@ -103,12 +79,7 @@ Nhưng điểm vui là khi đi cùng đoàn của tỉnh mình, mình quen 1 th�
 
 Cuộc thi năm 2016 kết thúc, cầm 1 triệu giải an ủi quay trở về, mình mới nhận ra mình là ếch ngồi đáy giếng thế nào.
 
-<img
-  title="Nhưng vẫn có bằng chứng nhận..."
-  alt="Nhưng vẫn có bằng chứng nhận..."
-  className="desktop:-mx-24"
-  src="/assets/blog/chuyen-toi-di-lap-trinh/06.jpg"
-/>
+![Nhưng vẫn có bằng chứng nhận...](/assets/blog/chuyen-toi-di-lap-trinh/06.jpg)
 
 ## Hành trình phục thù và vấp ngã
 

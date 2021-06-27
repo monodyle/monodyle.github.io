@@ -166,7 +166,7 @@
   @apply w-full mx-auto;
 }
 
-.post a[href] {
+.markdown a[href] {
   display: inline-block;
   text-decoration: underline;
 }

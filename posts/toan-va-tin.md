@@ -12,11 +12,7 @@ Xin chào, mấy hôm nay dịch quá, mình rảnh rỗi ngoài việc làm h�
 
 Trong lúc lướt face, mình thấy cái meme sau:
 
-<img
-  title="Học toán để làm gì?"
-  alt="Học toán để làm gì?"
-  src="/assets/blog/toan-va-tin/01.jpg"
-/>
+![Học toán để làm gì?](/assets/blog/toan-va-tin/01.jpg)
 
 Dựa lưng vào ghế, mình nghiệm lại từ những ngày lọt lòng mẹ, mình được làm quen với những con số vào mẫu giáo, Cấp 1 vật vã với _bảng cửu chương_, _bài toán chia đều_, tới giờ vẫn không rõ là mình có thuộc bảng 7 và 8 hay không :sad: Cấp 2 còn nhiều thứ đau não hơn, đó là những bài _tìm x_, _biểu thức đột biến_, _đa thức_,... :surrender: Và tới cấp 3, cũng chẳng rõ là học cái gì, _tích phân vi phân_, _hình không gian_, _lượng giác_,...
 
@@ -36,11 +32,7 @@ Thế mà đi học, toán một kiểu, tin học một kiểu, tìm mãi vẫn
 
 Thế là chẳng còn bận tâm gì nữa, đi học IT thôi, có liên quan mẹ gì tới toán đâu?
 
-<img
-  title="Say no with Math"
-  alt="Say no with Math"
-  src="/assets/blog/toan-va-tin/02.jpg"
-/>
+![Say no with Math](/assets/blog/toan-va-tin/02.jpg)
 
 Sau đó mình đi làm, nghiệm ra điều đó càng được khẳng định hơn khi những project đó chỉ xoay quanh **CRUD**[^1] :lookdown: Cảm giác thoát khỏi toán thật tuyệt. Nghe bảo làm game cũng cần toán, thử dùng **Unity** mà xem, engine nó hỗ trợ hết rồi.
 
@@ -58,7 +50,7 @@ Gần đây mình có gặp một vấn đề về algorithm trong _canvas_ cầ
 
 Nếu 2 object là hình vuông, thông thường chúng ta chỉ cần kiểm tra xem 1 trong 4 cạnh của object A có nằm trong object B hay không
 
-<img src="/assets/blog/toan-va-tin/04.jpg" />
+![](/assets/blog/toan-va-tin/04.jpg)
 
 Dễ dàng chúng ta sẽ có:
 
@@ -78,7 +70,7 @@ if (
 
 Nếu 2 object là hình tròn, thì khá đơn giản hơn, vì chỉ cần kiểm tra khoảng cách giữa 2 tâm hình tròn có nhỏ hơn tổng bán kính 2 hình tròn hay không là được:
 
-<img src="/assets/blog/toan-va-tin/05.jpg" />
+![](/assets/blog/toan-va-tin/05.jpg)
 
 Từ công thức:
 
@@ -106,11 +98,11 @@ Cơ bản là như thế, cũng khá dễ phải không?
 > *Va chạm đàn hồi*, tức là va chạm giữa hai vật thể,
 > trong đó ***tổng động năng* của hai vật thể không thay đổi**
 
-<img src="/assets/blog/toan-va-tin/translational_motion.gif" />
+![](/assets/blog/toan-va-tin/translational_motion.gif)
 
 Để mà nói thì vấn đề này khá phức tạp vì nó đụng vào Toán học và Vật lý rất nhiều, sau đó từ vấn đề Toán Lý, chúng ta phải chuyển nó về Tin học, vậy nên phần này khá nặng lý thuyết, mình cũng sẽ cố diễn giải theo cách dễ hiểu nhất.
 
-!(https://www.youtube.com/embed/ogiY6xt_TRM)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ogiY6xt_TRM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Trước hết, chúng ta cần phải hiểu _va chạm đàn hồi_ hoạt động như thế nào: Xét các vật 1 và 2 có khối lượng $m_1$ và $m_2$ và vận tốc $u_1$ và $u_2$ trước khi va chạm, và $v_1$ và $v_2$ sau khi va chạm. Như đã nói ở định nghĩa, _tổng động năng_ sẽ **không thay đổi** sau khi va chạm, nên động năng được **bảo toàn**.
 
@@ -157,11 +149,7 @@ Ví dụ:
 
 Để dễ hình dung, mời bạn xem qua các mẫu va chạm sau:
 
-<img
-  title="Va chạm giữa 2 vật thể không cùng khối lượng"
-  alt="Va chạm giữa 2 vật thể không cùng khối lượng"
-  src="/assets/blog/toan-va-tin/06.jpg"
-/>
+![Va chạm giữa 2 vật thể không cùng khối lượng](/assets/blog/toan-va-tin/06.jpg)
 
 2 vật thể không cùng khối lượng va chạm ngược chiều với cùng vận tốc, khối lượng không bằng nhau, sau khi va chạm, động năng được bảo toàn, khối lượng không thay đổi, vì vậy áp dụng [công thức](#cong-thuc) ta có được vận tốc của 2 vật sau va chạm:
 
@@ -173,11 +161,7 @@ $$
 v_2 = \frac{2.2m}{2m + m}(-v) + \frac{m - 2m}{2m + m}v = -\frac{4}{3}v - \frac{1}{3}v = -\frac{5}{3}v
 $$
 
-<img
-  title="Va chạm giữa 2 vật thể có cùng khối lượng"
-  alt="Va chạm giữa 2 vật thể có cùng khối lượng"
-  src="/assets/blog/toan-va-tin/07.jpg"
-/>
+![Va chạm giữa 2 vật thể có cùng khối lượng](/assets/blog/toan-va-tin/07.jpg)
 
 Ở trường hợp 2 vật thể có cùng khối lượng, hãy thử lấy nhiều ví dụ hơn:
 
@@ -287,39 +271,23 @@ otherParticle.velocity.y = vf2.y
 
 Hoàn thành!
 
-<img
-  title="Kết quả chúng ta có được"
-  alt="Kết quả chúng ta có được"
-  src="/assets/blog/toan-va-tin/result.gif"
-/>
+![Kết quả chúng ta có được](/assets/blog/toan-va-tin/result.gif)
 
 **Tại sao phải xoay lại hệ toạ độ?**
 
 Gọi $a$ là góc va chạm giữa 2 vật thể, chúng ta có thể hình dung va chạm như sau:
 
-<img
-  title="Hệ toạ độ ban đầu"
-  alt="Hệ toạ độ ban đầu"
-  src="/assets/blog/toan-va-tin/08.jpg"
-/>
+![Hệ toạ độ ban đầu](/assets/blog/toan-va-tin/08.jpg)
 
 Có thể thấy, vận tốc vật không thể tính như một vector thông thường trong tin học vì tâm của 2 vật thể hình tròn không cùng nằm trên 1 đường thẳng song song với _trục toạ độ x_.
 
 Và như đã nói, _góc lượng giác ngược_ $a$ trả về giá trị radian từ $-\pi$ tới $\pi$ giữa _trục toạ độ x_ và tia từ gốc toạ độ $(0, 0)$ tới điểm $(x, y)$, thế nên ta cần phải xoay cả hệ toạ độ lại sao cho đƯờng thẳng nối tâm của 2 vật thể hình tròn nằm song song cùng trục toạ độ x.
 
-<img
-  title="Kiểu như thế này"
-  alt="Kiểu như thế này"
-  src="/assets/blog/toan-va-tin/03.jpg"
-/>
+![Kiểu như thế này](/assets/blog/toan-va-tin/03.jpg)
 
 Vì vậy khi xoay hệ toạ độ lại bằng một góc $a$ radian, chúng ta có thể tính được vận tốc vật trước va chạm
 
-<img
-  title="Hệ toạ độ sau khi xoay"
-  alt="Hệ toạ độ sau khi xoay"
-  src="/assets/blog/toan-va-tin/09.jpg"
-/>
+![Hệ toạ độ sau khi xoay](/assets/blog/toan-va-tin/09.jpg)
 
 Lúc này ta có thể dễ dàng tính được vận tốc của 2 vật thể trước va chạm, sau đó tính được các bước tiếp theo theo công thức đã phân tích, như vậy mới có thể giải quyết được bài toán. Cuối cùng, chúng ta xoay đúng hệ toạ độ về góc ban đầu để chuyển động không trở nên "dị dạng" bởi góc lệch.
 

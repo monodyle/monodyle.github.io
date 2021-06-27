@@ -23,7 +23,7 @@ Không, tôi đang nói đến “*Bạn - thực sự bản thân bạn là ai?
 
 Một cái là ***cuộc đời mà bạn muốn sống*** và một cái là ***cuộc đời mà bạn thực sự đang sống***.
 
-<img src="/assets/blog/doi-ve-co-ban-la-buon/01.jpg" />
+![](/assets/blog/doi-ve-co-ban-la-buon/01.jpg)
 
 > It’s impossible to live the way I really want.
 
@@ -44,7 +44,7 @@ Mời các bạn nghe bản nhạc ***Lớn rồi* - DSK**
 
 Đừng tự xuống tinh thần chỉ vì mấy trò bắt nạt nơi công sở. Bạn phải tự xốc mình lên, đi tới đỉnh cao như vị lãnh tụ **Lenin**, kể cả khi trong lòng bạn còn đang buồn hơn cả **Victor Hugo**.
 
-<img src="/assets/blog/doi-ve-co-ban-la-buon/02.jpg" />
+![](/assets/blog/doi-ve-co-ban-la-buon/02.jpg)
 
 Lớn lên thì phải đi hẹn hò. Thuở mẫu giáo cho dù bạn gia nhập **Anti Social Social Club**, và bạn tự thề: “*Lớn lên không hẹn hò, không lấy vợ*” thì lớn lên bạn vẫn phải học cách hẹn hò. Nhưng không phải là gạ con gái người ta vào *nhà nghỉ Đại Dương Xanh*.
 
@@ -52,7 +52,7 @@ Bởi lẽ, hẹn hò là gia vị của cuộc sống. Bạn có thể ăn chu�
 
 Đừng nghĩ như bọn giáo hội FA: “*Tốt nhất cứ ở một mình cho nó sướng, có gấu mất tự do*”. Mình bản thân cũng chưa từng hẹn hò, chưa có người yêu.
 
-<img src="/assets/blog/doi-ve-co-ban-la-buon/03.jpg" />
+![](/assets/blog/doi-ve-co-ban-la-buon/03.jpg)
 
 ## "But it's not that easy."
 
@@ -86,7 +86,7 @@ Nếu sáng nay bạn cùng cả thế giới vượt đèn đỏ ở ngã tư T
 
 Nhưng biết sao không? Bạn không được kể với người con gái của bạn. Chính xác là **Không được phép** kể. Tin tôi đi, chả cô gái nào thích nghe người đàn ông của mình kể lể về những câu chuyện than vãn đầy tính tiêu cực đâu. Có thể hai bạn yêu nhau nồng thắm “cái gì cũng phải nói cho nhau”. Nhưng thân là thằng đàn ông, bạn không nên nói những thứ như vậy. Bởi thế, đời thằng đàn ông đã buồn nay còn buồn hơn.
 
-<img src="/assets/blog/doi-ve-co-ban-la-buon/04.jpg" />
+![](/assets/blog/doi-ve-co-ban-la-buon/04.jpg)
 
 Khoan hãy uống, bỏ chai Vodka xuống nào bạn hiền.
 
@@ -110,7 +110,7 @@ Cho tới khi bạn đủ dũng cảm để kể cho ba mẹ bạn câu chuyện
 
 Cho tới khi bạn tìm được câu trả lời “*Tôi là ai?*”. Bạn sẽ sống cuộc đời mà không phải tìm kiếm bất kì điều gì làm mình hứng thú bởi lẽ mọi thứ đó đã vây quanh bạn rồi.
 
-<img src="/assets/blog/doi-ve-co-ban-la-buon/05.jpg" />
+![](/assets/blog/doi-ve-co-ban-la-buon/05.jpg)
 
 ## Kết
 

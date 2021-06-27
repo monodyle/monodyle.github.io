@@ -16,11 +16,7 @@ Mình cũng từng như thế, tranh giành khốc liệt, server phía bên tr�
 
 Xem cái meme nghỉ mắt tý
 
-<img
-  title="Meme nghỉ mắt tý"
-  alt="Meme nghỉ mắt tý"
-  src="https://i.imgur.com/4h8ssQu.png"
-/>
+![Meme nghỉ mắt tý](https://i.imgur.com/4h8ssQu.png)
 
 Tự dưng lúc đó chẹp lưỡi, bảo giá như có thằng nào canh hộ mình, đỡ mất công ngồi đây canh.... Thế mà quên mất mình là dân CNTT, tại sao không giải quyết bằng phương pháp Công nghệ Thông tin? Thế là lại lọ mọ ngồi code, cứ thế mà quên mất đang phải ĐKHP, cứ thế mà ĐKHP Helper đã ra đời.
 
@@ -30,11 +26,7 @@ Phác thảo ý tưởng: Ý tưởng ban đầu là spam request __liên tục_
 
 Nói sơ sơ thì chắc mọi người cũng hiểu về bản chất của tool này: Thay thế tay người làm một loạt các hành động thay vì phải ngồi trực và click bằng tay, chứ không phải khai thác lỗi dữ liệu để chiếm slot. Việc một thao tác bằng tay sẽ tốn nhiều thời gian hơn gấp trăm/ngàn lần so với việc để máy thực hiện thao tác giúp chúng ta.
 
-<img
-  title="Request Request Request"
-  alt="Request Request Request"
-  src="https://i.imgur.com/ujWzizu.png"
-/>
+![Request Request Request](https://i.imgur.com/ujWzizu.png)
 
 Bắt tay viết code nào.
 
@@ -55,11 +47,7 @@ Nếu các bạn đã dùng ajax, hẳn sẽ biết việc **request** của aja
 
 Tuy nhiên vì vẫn sẽ có những lúc server sập, thế nên chúng ta phải phòng hờ trường hợp này bằng cách bắt lỗi từ ajax
 
-<img
-  title="Lỗi khi request"
-  alt="Lỗi khi request"
-  src="https://i.imgur.com/K63jLcw.png"
-/>
+![Lỗi khi request](https://i.imgur.com/K63jLcw.png)
 
 ```javascript
 request.fail(function (xhr, status, errorThrown){
@@ -72,11 +60,7 @@ request.fail(function (xhr, status, errorThrown){
 
 Bước thứ 2, lấy thông tin trong form. Việc các bạn gửi thông tin trong bất kỳ form nào: Đăng nhập, đăng ký, post bài lên facebook, tạo group mới, gửi email, hầu như đều cần một vài thứ thông tin, quan trọng nhất là **token** đối với những form yêu cầu tính bảo mật cao và cũng là thứ để chống spam, chúng thường được lưu trong các hidden input nên ở giao diện sẽ không được hiển thị, nhưng toàn bộ các input có name trong form đều sẽ được gửi như một thông tin kèm theo lên server. Thế nên không thể thiếu những thông tin này.
 
-<img
-  title="form token"
-  alt="form token"
-  src="https://i.imgur.com/KTr5Pg6.png"
-/>
+![form token](https://i.imgur.com/KTr5Pg6.png)
 
 Thông tin tiếp theo chúng ta cần là những môn học cần đăng ký.
 ```javascript
@@ -87,47 +71,27 @@ Phương thức đăng ký, trong trang ĐKHP của UIT có 2 kiểu đăng ký:
 
 1 là check vào checkbox ở những môn mình muốn học rồi đăng ký.
 
-<img
-  title="dkhp cách 1"
-  alt="dkhp cách 1"
-  src="https://i.imgur.com/vNMFO8e.png"
-/>
+![dkhp cách 1](https://i.imgur.com/vNMFO8e.png)
 
 2 là sử dụng mã môn học, lập 1 danh sách rồi bỏ vào textarea ở khung đăng ký nhanh rồi đăng ký:
 
-<img
-  title="dkhp cách 2"
-  alt="dkhp cách 2"
-  src="https://i.imgur.com/QaTeegB.png"
-/>
+![dkhp cách 2](https://i.imgur.com/QaTeegB.png)
 
 Chúng ta phải chọn 1 trong 2 cách để gửi dữ liệu, gửi cả 2 cũng được, nhưng chả ai gửi cả 2 làm gì, lỡ server xử lý cồng kềnh hơn, đâm ra chậm hơn à?
 
 Nếu sử dụng cách 1, chúng ta phải đi check từng cái input để kiếm cái nào phù hợp với danh sách của mình, sau đó lấy dữ liệu từ đó mà post request.
 
-<img
-  title="Cách 1"
-  alt="Cách 1"
-  src="https://i.imgur.com/Z9q6sHR.png"
-/>
+![Cách 1](https://i.imgur.com/Z9q6sHR.png)
 
 Thử inspect xem thử, có vẻ chúng ta sẽ có một name để dùng làm thông tin đăng ký.
 
-<img
-  title="Inspect mã lớp"
-  alt="Inspect mã lớp"
-  src="https://i.imgur.com/78QFkzO.png"
-/>
+![Inspect mã lớp](https://i.imgur.com/78QFkzO.png)
 
 Nhưng mà parse HTML ra sương sương cũng thấy gần 10.000 line, thế nên việc dò thế này khá tốn kém.
 
 Đối với cách 2 chỉ cần 1 cái textarea, mà mình đa đề cập bất kỳ một cái input nào trong form cũng sẽ có name riêng của nó, việc nhập liệu cũng khá dễ, thế nên mình prefer cách thứ 2 hơn.
 
-<img
-  title="Cách 2"
-  alt="Cách 2"
-  src="https://i.imgur.com/9fFCa0R.png"
-/>
+![Cách 2](https://i.imgur.com/9fFCa0R.png)
 
 Việc cần làm còn lại là post tất cả thông tin chúng ta có lên server đkhp để nhận response.
 
@@ -156,21 +120,13 @@ var response = post.done(function(xhr, status) {
 
 Thử nghiệm nay nàoooo
 
-<img
-  title="Kết quả thử nghiệm"
-  alt="Kết quả thử nghiệm"
-  src="https://i.imgur.com/2drvjYk.png"
-/>
+![Kết quả thử nghiệm](https://i.imgur.com/2drvjYk.png)
 
 Có vẻ khá ổn, bây giờ thì chúng ta phải kiểm tra danh sách các môn học đã được đăng ký thành công, và loại bỏ chúng ra khỏi danh sách request.
 
 Chúng ta có response trả về từ post request, có một mớ đống hổ lốn đó thì việc check khá dễ dàng, thử inspect các lớp đã đăng ký ta sẽ thấy input name khác với những lớp còn lại:
 
-<img
-  title="Các lớp đã đăng ký"
-  alt="Các lớp đã đăng ký"
-  src="https://i.imgur.com/lucgRiq.png"
-/>
+![Các lớp đã đăng ký](https://i.imgur.com/lucgRiq.png)
 
 Việc cần làm là check làm sao? Lúc này phải dùng **RegEx** thần thánh rồi :evil_laugh:
 
@@ -264,8 +220,4 @@ Coi như hết lỗi rồi á, hứa.
 
 Cảm ơn các bạn đã xem bài viết, hy vọng blog này có ích cho các bạn. Σ(ノ°▽°)ノ
 
-<img
-  title="Kết quả"
-  alt="Kết quả"
-  src="https://i.imgur.com/ujWzizu.png"
-/>
+![Kết quả](https://i.imgur.com/ujWzizu.png)

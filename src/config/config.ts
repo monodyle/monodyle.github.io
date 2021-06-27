@@ -3,7 +3,8 @@ export const config = {
   url: 'https://monodyle.github.io',
   title: "The Monody's Space",
   excerpt: 'Hello, just a simple guy.',
-  image: '/assets/cover.png'
+  image: '/assets/cover.png',
+  kofi: 'https://ko-fi.com/monodyle'
 }
 
 export const socials = {

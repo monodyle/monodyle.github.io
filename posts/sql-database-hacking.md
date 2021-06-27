@@ -35,11 +35,7 @@ Bài viết này nhằm mục đích giao lưu kỹ năng bảo mật lập trì
 
 Trong nhiều loại tấn công lỗ hổng nhằm vào website, tấn công **SQL Injection** là một trong những loại nguy hiểm và phổ biến nhất. Nó đã từng gây ra nhiều thiệt hại đáng kể cho nhiều doanh nghiệp và tổ chức trong rất nhiều năm, và đương nhiên sẽ còn tiếp diễn trong tương lai.
 
-<img
-  title="SQL Injection là gì??"
-  alt="SQL Injection là gì??"
-  src="/assets/blog/sql-database-hacking/draw-01.jpg"
-/>
+![SQL Injection là gì??](/assets/blog/sql-database-hacking/draw-01.jpg)
 
 Theo [Wikipedia](https://vi.wikipedia.org/wiki/SQL_injection) :popcorn::
 
@@ -62,11 +58,11 @@ SQL Injection tấn công bằng cách gửi một mã lệnh SQL độc đến 
 
 Mình sẽ có một ví dụ như sau: Giả sử đây là trang đăng nhập vào ngân hàng **PankHub**, với form đăng nhập gồm 2 fields là `email` và `password`:
 
-<img src="/assets/blog/sql-database-hacking/02.jpg" />
+![](/assets/blog/sql-database-hacking/02.jpg)
 
 Bây giờ mình sẽ thử đăng nhập tài khoản của người dùng tên là **Phát** (jk, don't panic) với _email_ là: `phat.nhagiau@pankhub.com` và _password_ là `password`
 
-<img src="/assets/blog/sql-database-hacking/03.jpg" />
+![](/assets/blog/sql-database-hacking/03.jpg)
 
 Ừ thì đương nhiên là không đăng nhập được rồi :okay: Đây là trường hợp giả sử mình là một attacker, và mình tình cờ địa được email của người dùng này sau khi đi ngang qua lúc nó đang đăng nhập vào ngân hàng ở tiệm net :smug: Victim của mình là một thằng đại gia nhà giàu, tiền không những được quy ra bằng vàng để trong két mà còn có cả một đống trong nhà băng. Xác định được mục tiêu thì trích xuất thông tin mục tiêu là điều cần thiết. Vì vậy mình chỉ thử đăng nhập cho vui thôi, đương nhiên làm gì có thằng ~~ngu~~ nào đặt mật khẩu là `password` cơ chứ (jk)
 
@@ -82,7 +78,7 @@ Rendering login page.
 
 Sau đó, mình tiếp tục truy thử login vào tài khoản của victim, nhưng lần này password mình sẽ thêm một _dấu nháy đơn_ `'`, kết quả có được là:
 
-<img src="/assets/blog/sql-database-hacking/04.jpg" />
+![](/assets/blog/sql-database-hacking/04.jpg)
 
 Thấy sự khác biệt rồi phải không? Thông thường, với những trường hợp sai thông tin đăng nhập sẽ luôn cho ra một message lỗi (trang nào nó random message thì bó tay), vì vậy có gì đó không đúng xảy ra rồi, có thể nguyên do là bởi dấu nháy đơn chăng?
 
@@ -128,7 +124,7 @@ Finding user in database.
 Authentication details confirmed, establishing session for this user.
 ```
 
-<img src="/assets/blog/sql-database-hacking/05.jpg" />
+![](/assets/blog/sql-database-hacking/05.jpg)
 
 Xong, tài khoản của bạn nằm trong tay tôi :ok:
 
@@ -287,11 +283,7 @@ Nghĩa là bạn chỉ gặp một nguy cơ nhỏ hơn so với cái nguy cơ c�
 
 Vấn đề phân quyền không phải chỉ ở trong DBMS, mà còn ở trong cả hệ thống, và cấu hình **server**. Nhắc lại lần nữa: **Phân quyền cực kỳ quan trọng**
 
-<img
-  title="chmod 777 and you will see"
-  alt="chmod 777 and you will see"
-  src="/assets/blog/sql-database-hacking/06.jpg"
-/>
+![chmod 777 and you will see](/assets/blog/sql-database-hacking/06.jpg)
 
 ## Kết luận
 

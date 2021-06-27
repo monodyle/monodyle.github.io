@@ -28,7 +28,7 @@ Vậy vấn đề ở đây là gì?
 
 Tôi có một thằng bạn cấp 3, lúc lên đại học thì nó xin đi làm thêm ở một nhóm quay phim. Nó thích chụp ảnh lắm. Những lúc thằng đạo diễn có vấn đề thì nó có nhắc là “*Anh ơi, cái này chưa hợp lý, theo em thì ...*”. Và những gì thằng bạn tôi nhận được là câu: “*Im mồm, mày biết gì mà nói?*”. Cho tới ngày ra sản phẩm, nó cho tôi xem thì tôi mới biết: “*Hóa ra, thằng đạo diễn này bị **bất lực***”.
 
-<img src="/assets/blog/song-lau-dau-len-lao-lang/01.jpg" />
+![](/assets/blog/song-lau-dau-len-lao-lang/01.jpg)
 
 Trong một trường hợp khác, bạn tôi khi mới vào công ty **X**, nó làm ở bộ phận marketing. Mới đầu vào cũng bị mấy ông tướng *nhân viên 3-4 năm kinh nghiệm* đè dữ lắm. Một năm sau nó lên chức trưởng phòng marketing, thế là mấy ông tướng lại chả dám hó hé gì. Ai sống trong môi trường công sở đều biết, dù tuổi có nhỏ hơn, nhưng chức cao hơn thì bắt buộc phải xưng *anh - em* với sếp.
 
@@ -36,7 +36,7 @@ Trong một trường hợp khác, bạn tôi khi mới vào công ty **X**, nó
 
 Vậy nên mới nói, có những người đi được 10 năm kinh nghiệm, nhưng thật ra chỉ là một năm kinh nghiệm, lặp đi lặp lại 10 lần.
 
-<img src="/assets/blog/song-lau-dau-len-lao-lang/02.jpg" />
+![](/assets/blog/song-lau-dau-len-lao-lang/02.jpg)
 
 ## Mình thích điều gì, không có nghĩa là nó đúng
 
@@ -46,7 +46,7 @@ Có thể bạn là game thủ **Dota 2**, bạn ghét **League of Legends** vã
 
 Mỗi người trong chúng ta đều có một câu chuyện riêng về cuộc đời mình, ta không có cách nào thấu hiểu được người khác. Và cũng đừng vội dìm hàng ý tưởng, câu chữ của ai.
 
-<img src="/assets/blog/song-lau-dau-len-lao-lang/03.jpg" />
+![](/assets/blog/song-lau-dau-len-lao-lang/03.jpg)
 
 Nhiều người có sở thích “*phát lời khuyên miễn phí*”. Trong khi người khác không thực sự cần. Hãy biết cách lúc nào cần cho lời khuyên, và lúc nào thì không cần. Những lúc như thế, người ta sẽ nghĩ bạn là thằng thích **dạy đời**.
 

@@ -11,21 +11,6 @@ import gfm from 'remark-gfm'
 import footnotes from 'remark-footnotes'
 import { emoji } from './emoji.util'
 
-const pattern = /\!\((?:https?:\/\/(?:www.)?youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})\)/
-
-const youtubeParser = (content: string) => {
-  let finder: RegExpExecArray | null = null
-  while ((finder = pattern.exec(content))) {
-    content = content.replace(
-      finder[0],
-      `<iframe width="560" height="315" src="https://www.youtube.com/embed/${[
-        finder[1]
-      ]}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
-    )
-  }
-  return content
-}
-
 async function parser (content: string) {
   const result = await unified()
     .use(markdown)
@@ -41,7 +26,7 @@ async function parser (content: string) {
     .use(slug)
     .use(stringify)
     .process(content)
-  return youtubeParser(emoji.parser(result.toString()))
+  return emoji.parser(result.toString())
 }
 
 export const md = {

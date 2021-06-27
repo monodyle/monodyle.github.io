@@ -26,7 +26,7 @@ const Layout: React.FC<Props> = ({
           <div className="h-16" />
           <div className="flex-auto flex-shrink-0">{children}</div>
         </div>
-        {footer && <Footer />}
+        <Footer illustration={footer} />
       </div>
     </Fragment>
   );
