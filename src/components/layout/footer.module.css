@@ -1,13 +1,15 @@
 .ground {
-  @apply w-full h-full;
+  @apply w-[calc(100%+1440px)] h-full;
   @apply bg-repeat-x;
+  @apply ml-[-1440px];
   background-image: url("/illustration/ground.svg");
   animation: bg-forward 96s linear infinite;
 }
 
 .cloud {
-  @apply absolute top-0 left-0 w-full h-full;
+  @apply absolute top-0 left-0 w-[calc(100%+1440px)] h-full;
   @apply bg-repeat-x;
+  @apply ml-[-1440px];
   background-image: url("/illustration/cloud.svg");
   animation: bg-forward 256s linear reverse infinite;
 }
@@ -57,9 +59,9 @@
 
 @keyframes bg-forward {
   from {
-    background-position: left 1440px top 0;
+    transform: translateX(0);
   }
   to {
-    background-position: left 0 top 0;
+    transform: translateX(1440px);
   }
 }
