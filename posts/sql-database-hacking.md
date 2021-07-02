@@ -29,6 +29,7 @@ Vì vậy bài viết này mình sẽ giới thiệu cho các bạn một loại
 **Lưu ý:**
 
 Bài viết này nhằm mục đích giao lưu kỹ năng bảo mật lập trình, không cổ suý các bạn đi phá làng phá xóm. Hãy tỉnh táo :smug:
+
 </div>
 
 ## Nhập môn hack Cơ sở dữ liệu SQL

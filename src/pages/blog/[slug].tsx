@@ -1,12 +1,12 @@
-import { useRouter } from "next/router";
-import ErrorPage from "next/error";
-import Head from "next/head";
-import { getPostBySlug, getAllPosts } from "utils/api.util";
-import { PostType } from "types/post.type";
-import { Layout } from "components/layout/layout";
-import SEO from "components/seo";
-import { Post } from "components/post/post";
-import { md } from "utils/markdown.util";
+import { useRouter } from 'next/router';
+import ErrorPage from 'next/error';
+import Head from 'next/head';
+import { getPostBySlug, getAllPosts } from 'utils/api.util';
+import { PostType } from 'types/post.type';
+import { Layout } from 'components/layout/layout';
+import SEO from 'components/seo';
+import { Post } from 'components/post/post';
+import { md } from 'utils/markdown.util';
 
 type Props = {
   post: PostType;
@@ -50,15 +50,15 @@ type Params = {
 
 export async function getStaticProps({ params }: Params) {
   const post = getPostBySlug(params.slug, [
-    "title",
-    "date",
-    "slug",
-    "author",
-    "content",
-    "image",
-    "tags",
+    'title',
+    'date',
+    'slug',
+    'author',
+    'content',
+    'image',
+    'tags',
   ]);
-  const content = await md.parser(post.content || "");
+  const content = await md.parser(post.content || '');
 
   return {
     props: {
@@ -71,7 +71,7 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export async function getStaticPaths() {
-  const posts = getAllPosts(["slug"]);
+  const posts = getAllPosts(['slug']);
   return {
     paths: posts.map((posts) => {
       return {

@@ -1,27 +1,27 @@
 ---
 date: Mar 23, 2018
 title: Ngẫm - Đời về cơ bản là buồn
-excerpt: "Trước khi đi vào vấn đề, tôi có một câu hỏi đơn giản dành cho các bạn: \"Bạn là ai?\". Chậm đã, đây không phải là một cuộc phỏng vấn, vì vậy tôi không tìm kiếm những câu trả lời đại loại như: “Tôi là một người nghiêm túc tìm kiếm sự thành đạt. Tôi thích dành thời gian cho công việc, gia đình và bạn bè”. - Cái câu trả lời mà gần như 80% mấy ông đi xin việc đều mở mồm ra là hót một bài như vậy."
+excerpt: 'Trước khi đi vào vấn đề, tôi có một câu hỏi đơn giản dành cho các bạn: "Bạn là ai?". Chậm đã, đây không phải là một cuộc phỏng vấn, vì vậy tôi không tìm kiếm những câu trả lời đại loại như: “Tôi là một người nghiêm túc tìm kiếm sự thành đạt. Tôi thích dành thời gian cho công việc, gia đình và bạn bè”. - Cái câu trả lời mà gần như 80% mấy ông đi xin việc đều mở mồm ra là hót một bài như vậy.'
 image: /assets/blog/doi-ve-co-ban-la-buon/featured.jpg
-tags: ["life", "opinion", "thinking"]
+tags: ['life', 'opinion', 'thinking']
 ---
 
 Hello, seri **Ngẫm** này mình rewrite từ seri **Madness Things That I Think** từ trước, chủ yếu là để migrate qua blog này cũng như chau chuốt lại câu từ, sửa một vài nội dung không phù hợp.
 
-Nhắc nhở thân thiện: Những blog có tag  **#thinking** và **#opinion** là những bài viết mình viết về những câu chuyện xàm lờ trong cuộc sống và viết trên quan điểm góc nhìn cá nhân. Nên có thể nó sẽ đụng chạm tới một số cá nhân không cùng quan điểm, nếu bạn nằm trong trường hợp này thì hy vọng được bỏ qua hoặc góp ý. Xin cảm ơn :smug: Giờ thì đổi đại từ nhân xưng nhé
+Nhắc nhở thân thiện: Những blog có tag **#thinking** và **#opinion** là những bài viết mình viết về những câu chuyện xàm lờ trong cuộc sống và viết trên quan điểm góc nhìn cá nhân. Nên có thể nó sẽ đụng chạm tới một số cá nhân không cùng quan điểm, nếu bạn nằm trong trường hợp này thì hy vọng được bỏ qua hoặc góp ý. Xin cảm ơn :smug: Giờ thì đổi đại từ nhân xưng nhé
 
 ## Bạn là ai?
 
-Trước khi đi vào vấn đề, tôi có một câu hỏi đơn giản dành cho các bạn: *"**Bạn là ai?**"*
+Trước khi đi vào vấn đề, tôi có một câu hỏi đơn giản dành cho các bạn: _"**Bạn là ai?**"_
 
-Chậm đã, đây không phải là một cuộc phỏng vấn, vì vậy tôi không tìm kiếm những câu trả lời đại loại như: “*Tôi là một người nghiêm túc tìm kiếm sự thành đạt. Tôi thích dành thời gian cho công việc, gia đình và bạn bè*”. - Cái câu trả lời mà gần như 80% mấy ông đi xin việc đều mở mồm ra là hót một bài như vậy.
+Chậm đã, đây không phải là một cuộc phỏng vấn, vì vậy tôi không tìm kiếm những câu trả lời đại loại như: “_Tôi là một người nghiêm túc tìm kiếm sự thành đạt. Tôi thích dành thời gian cho công việc, gia đình và bạn bè_”. - Cái câu trả lời mà gần như 80% mấy ông đi xin việc đều mở mồm ra là hót một bài như vậy.
 
-Không, tôi đang nói đến “*Bạn - thực sự bản thân bạn là ai?*” - suy nghĩ cho *sâu* vào.
+Không, tôi đang nói đến “_Bạn - thực sự bản thân bạn là ai?_” - suy nghĩ cho _sâu_ vào.
 Đối mặt với vấn đề nào, bạn luôn thả trôi chính mình theo dòng cảm xúc, buồn thì trốn ở nhà, thất bại thì khóc. Hãy để tôi phán một câu:
 
-> “*Bạn và tôi, tất cả chúng ta đều có hai bộ mặt, sống hai cuộc đời khác nhau*”
+> “_Bạn và tôi, tất cả chúng ta đều có hai bộ mặt, sống hai cuộc đời khác nhau_”
 
-Một cái là ***cuộc đời mà bạn muốn sống*** và một cái là ***cuộc đời mà bạn thực sự đang sống***.
+Một cái là **_cuộc đời mà bạn muốn sống_** và một cái là **_cuộc đời mà bạn thực sự đang sống_**.
 
 ![](/assets/blog/doi-ve-co-ban-la-buon/01.jpg)
 
@@ -29,12 +29,12 @@ Một cái là ***cuộc đời mà bạn muốn sống*** và một cái là **
 
 ## Lớn rồi thì làm sao?
 
-Lớn lên, bạn sẽ có nhiều thứ phải suy nghĩ: Khi lớn lên, đi làm, có thể là nhân viên cùng phòng với bạn, cũng có thể là chính bạn bị sếp phòng - ban này hoặc khác “đì”. Bạn nghĩ bạn có thể ôm nhân viên khóc mếu mó hay gọi điện về cho mẹ: “*Mẹ ơi, người ta hiếp con*” không?
+Lớn lên, bạn sẽ có nhiều thứ phải suy nghĩ: Khi lớn lên, đi làm, có thể là nhân viên cùng phòng với bạn, cũng có thể là chính bạn bị sếp phòng - ban này hoặc khác “đì”. Bạn nghĩ bạn có thể ôm nhân viên khóc mếu mó hay gọi điện về cho mẹ: “_Mẹ ơi, người ta hiếp con_” không?
 Không.
 
 Lớn rồi thì phải biết tự lập. Những lúc như thế, chỉ có chính mình, không có người nào khác ở bên thì phải tự biết đứng dậy. Ngày xưa tập xe, té lên té xuống chả ai đỡ còn đứng lên được. Ngày nay, hở miếng thịt, trầy miếng da là ba mẹ sốt sắng lo đi khám bác sĩ, dần dần thành thói quen, ỷ lại lúc nào cũng có người bảo vệ mình. Sau này ra đời tự lập, ai nâng ai đỡ?
 
-Mời các bạn nghe bản nhạc ***Lớn rồi* - DSK**
+Mời các bạn nghe bản nhạc **_Lớn rồi_ - DSK**
 
 <iframe width="100%" height="166" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/283576041&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
 
@@ -46,11 +46,11 @@ Mời các bạn nghe bản nhạc ***Lớn rồi* - DSK**
 
 ![](/assets/blog/doi-ve-co-ban-la-buon/02.jpg)
 
-Lớn lên thì phải đi hẹn hò. Thuở mẫu giáo cho dù bạn gia nhập **Anti Social Social Club**, và bạn tự thề: “*Lớn lên không hẹn hò, không lấy vợ*” thì lớn lên bạn vẫn phải học cách hẹn hò. Nhưng không phải là gạ con gái người ta vào *nhà nghỉ Đại Dương Xanh*.
+Lớn lên thì phải đi hẹn hò. Thuở mẫu giáo cho dù bạn gia nhập **Anti Social Social Club**, và bạn tự thề: “_Lớn lên không hẹn hò, không lấy vợ_” thì lớn lên bạn vẫn phải học cách hẹn hò. Nhưng không phải là gạ con gái người ta vào _nhà nghỉ Đại Dương Xanh_.
 
 Bởi lẽ, hẹn hò là gia vị của cuộc sống. Bạn có thể ăn chuối mà không cần chấm muối, nhưng quả chuối của bạn sẽ không ngon bằng việc chấm muối (thử đi). :smug:
 
-Đừng nghĩ như bọn giáo hội FA: “*Tốt nhất cứ ở một mình cho nó sướng, có gấu mất tự do*”. Mình bản thân cũng chưa từng hẹn hò, chưa có người yêu.
+Đừng nghĩ như bọn giáo hội FA: “_Tốt nhất cứ ở một mình cho nó sướng, có gấu mất tự do_”. Mình bản thân cũng chưa từng hẹn hò, chưa có người yêu.
 
 ![](/assets/blog/doi-ve-co-ban-la-buon/03.jpg)
 
@@ -66,7 +66,7 @@ Chỉ đơn giản bởi vì đó mới là tôi.
 
 > It’s time for you to be yourself. Do what you’re meant to do: The right thing.
 
-Bạn có thể nói: “*Điều đó thật chẳng dễ chút nào*” cho mọi thứ, mọi vấn đề. Vậy cho tôi hỏi: “*Nó có làm cản trở bạn không?*”
+Bạn có thể nói: “_Điều đó thật chẳng dễ chút nào_” cho mọi thứ, mọi vấn đề. Vậy cho tôi hỏi: “_Nó có làm cản trở bạn không?_”
 
 > Will that stop you or not?
 
@@ -104,11 +104,11 @@ Cho tới khi bạn tìm được người mà bạn đã phô diễn tất cả
 
 Cho tới khi bạn trải quá đủ. Mùa kinh doanh vừa rồi bạn điểm thấp vãi, goặc kỳ thi vừa rồi xuýt rớt môn, mà cuối năm vẫn mén món qua môn. Bạn lại ngồi xuống, cầm chai Vodka xuề xòa cùng bạn bè, rót một cốc thật đẫy rồi khai thật:
 
-> *“Đm lúc đấy bố mày sợ vl ra ấy, nhưng tao tin mình làm đúng, nên kệ mẹ nó, cứ làm thôi!”*
+> _“Đm lúc đấy bố mày sợ vl ra ấy, nhưng tao tin mình làm đúng, nên kệ mẹ nó, cứ làm thôi!”_
 
 Cho tới khi bạn đủ dũng cảm để kể cho ba mẹ bạn câu chuyện vè cuộc đời của bạn.
 
-Cho tới khi bạn tìm được câu trả lời “*Tôi là ai?*”. Bạn sẽ sống cuộc đời mà không phải tìm kiếm bất kì điều gì làm mình hứng thú bởi lẽ mọi thứ đó đã vây quanh bạn rồi.
+Cho tới khi bạn tìm được câu trả lời “_Tôi là ai?_”. Bạn sẽ sống cuộc đời mà không phải tìm kiếm bất kì điều gì làm mình hứng thú bởi lẽ mọi thứ đó đã vây quanh bạn rồi.
 
 ![](/assets/blog/doi-ve-co-ban-la-buon/05.jpg)
 

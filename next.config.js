@@ -2,17 +2,20 @@ module.exports = {
   async rewrites() {
     return [
       {
-        source: "/feed",
-        destination: "/api/feed",
+        source: '/feed',
+        destination: '/api/feed',
       },
     ];
   },
   async headers() {
     return [
       {
-        source: "/feed",
-        headers: [{ key: "content-type", value: "text/xml" }],
+        source: '/feed',
+        headers: [{ key: 'content-type', value: 'text/xml' }],
       },
     ];
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
   },
 };

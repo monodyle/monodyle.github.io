@@ -1,8 +1,8 @@
-import { Fragment, useEffect, useRef, useState } from "react";
-import Link from "next/link";
-import { Cursor } from "components/cursor/cursor";
+import { Fragment, useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
+import { Cursor } from 'components/cursor/cursor';
 
-export type ActiveHeaderItem = "hi" | "work" | "blog";
+export type ActiveHeaderItem = 'hi' | 'work' | 'blog';
 interface MenuItem {
   title: string;
   emoji?: string;
@@ -14,19 +14,19 @@ const MENU: {
   [K in ActiveHeaderItem]: MenuItem;
 } = {
   hi: {
-    title: "say hi.",
-    emoji: "👋",
-    slug: "/hi",
+    title: 'say hi.',
+    emoji: '👋',
+    slug: '/hi',
   },
   work: {
-    title: "working.",
-    emoji: "💻",
-    slug: "/work",
+    title: 'working.',
+    emoji: '💻',
+    slug: '/work',
   },
   blog: {
-    title: "writing.",
-    emoji: "📝",
-    slug: "/blog",
+    title: 'writing.',
+    emoji: '📝',
+    slug: '/blog',
   },
 };
 
@@ -38,13 +38,14 @@ const Item = ({ slug, title, emoji, effect }: MenuItem) => {
   const onMouseLeave = () => setCursor(false);
 
   useEffect(() => {
-    if (!ref.current) return;
-    ref.current.addEventListener("mouseenter", onMouseEnter);
-    ref.current.addEventListener("mouseleave", onMouseLeave);
+    const { current } = ref;
+    if (!current) return;
+    current.addEventListener('mouseenter', onMouseEnter);
+    current.addEventListener('mouseleave', onMouseLeave);
     return () => {
-      if (!ref.current) return;
-      ref.current.removeEventListener("mouseenter", onMouseEnter);
-      ref.current.removeEventListener("mouseleave", onMouseLeave);
+      if (!current) return;
+      current.removeEventListener('mouseenter', onMouseEnter);
+      current.removeEventListener('mouseleave', onMouseLeave);
     };
   }, []);
 
@@ -54,9 +55,9 @@ const Item = ({ slug, title, emoji, effect }: MenuItem) => {
         <a
           ref={ref}
           className={[
-            "text-base font-bold leading-6 rainbown",
-            effect ? "cursor-none" : "cursor-pointer",
-          ].join(" ")}
+            'text-base font-bold leading-6 rainbown',
+            effect ? 'cursor-none' : 'cursor-pointer',
+          ].join(' ')}
         >
           {title}
         </a>
@@ -92,7 +93,7 @@ const Header = ({ active }: { active?: ActiveHeaderItem }) => {
                 effect
               />
             </Fragment>
-          ) : null
+          ) : null,
         )}
       </div>
     </nav>

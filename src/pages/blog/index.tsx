@@ -1,11 +1,11 @@
-import fs from "fs";
-import Link from "next/link";
-import { getAllPosts } from "utils/api.util";
-import DateTime from "utils/date.util";
-import { generateRss } from "utils/rss.util";
-import { Layout } from "components/layout/layout";
-import styles from "components/post/post.module.css";
-import { PreviewPost } from "types/post.type";
+import fs from 'fs';
+import Link from 'next/link';
+import { getAllPosts } from 'utils/api.util';
+import DateTime from 'utils/date.util';
+import { generateRss } from 'utils/rss.util';
+import { Layout } from 'components/layout/layout';
+import styles from 'components/post/post.module.css';
+import { PreviewPost } from 'types/post.type';
 
 interface Props {
   posts: PreviewPost[];
@@ -27,7 +27,7 @@ const BlogPage = ({ posts }: Props) => {
               <div className="flex">
                 {post.tags.map((tag, index) => (
                   <span
-                    className={[styles.tag, "opacity-50"].join(" ")}
+                    className={[styles.tag, 'opacity-50'].join(' ')}
                     key={index}
                   >
                     {tag}
@@ -50,8 +50,8 @@ const BlogPage = ({ posts }: Props) => {
 export default BlogPage;
 
 export const getStaticProps = async () => {
-  const posts = getAllPosts(["title", "slug", "tags", "excerpt", "date"]);
+  const posts = getAllPosts(['title', 'slug', 'tags', 'excerpt', 'date']);
   const rss = await generateRss(posts as PreviewPost[]);
-  fs.writeFileSync('./public/rss.xml', rss)
+  fs.writeFileSync('./public/rss.xml', rss);
   return { props: { posts } };
 };

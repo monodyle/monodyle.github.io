@@ -19,7 +19,7 @@
 }
 
 .effect::after {
-  content: " ";
+  content: ' ';
   @apply block w-11/12 h-32 whitespace-pre;
   @apply absolute left-1/2 bottom-4;
   @apply transform -translate-x-1/2;

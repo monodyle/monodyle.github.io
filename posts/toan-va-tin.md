@@ -55,8 +55,8 @@ Nếu 2 object là hình vuông, thông thường chúng ta chỉ cần kiểm t
 Dễ dàng chúng ta sẽ có:
 
 ```js
-let a = { x: 5, y: 5, width: 50, height: 50 }
-let b = { x: 20, y: 10, width: 10, height: 10 }
+let a = { x: 5, y: 5, width: 50, height: 50 };
+let b = { x: 20, y: 10, width: 10, height: 10 };
 
 if (
   a.x < b.x + b.width &&
@@ -64,7 +64,7 @@ if (
   a.y < b.y + b.height &&
   a.y + a.height > b.y
 ) {
-  alert("Collision detected!")
+  alert('Collision detected!');
 }
 ```
 
@@ -79,15 +79,15 @@ f(a, b) = \sqrt{(x_a - x_b)^2 + (y_a - y_b)^2} \lt r_a + r_b
 $$
 
 ```js
-let a = { x: 5, y: 5, radius: 20 }
-let b = { x: 12, y: 10, radius: 12 }
+let a = { x: 5, y: 5, radius: 20 };
+let b = { x: 12, y: 10, radius: 12 };
 
-var dx = a.x - b.x
-var dy = a.y - b.y
-var distance = Math.sqrt(dx ** 2 + dy ** 2)
+var dx = a.x - b.x;
+var dy = a.y - b.y;
+var distance = Math.sqrt(dx ** 2 + dy ** 2);
 
 if (distance < a.radius + b.radius) {
-  alert("Collision detected!")
+  alert('Collision detected!');
 }
 ```
 
@@ -95,8 +95,8 @@ Cơ bản là như thế, cũng khá dễ phải không?
 
 ### Vấn đề 2: Elastic collision - Va chạm đàn hồi
 
-> *Va chạm đàn hồi*, tức là va chạm giữa hai vật thể,
-> trong đó ***tổng động năng* của hai vật thể không thay đổi**
+> _Va chạm đàn hồi_, tức là va chạm giữa hai vật thể,
+> trong đó **_tổng động năng_ của hai vật thể không thay đổi**
 
 ![](/assets/blog/toan-va-tin/translational_motion.gif)
 
@@ -218,7 +218,7 @@ Góc của 2 vật thể va chạm bằng **atan2**[^2]
 const angle = -Math.atan2(
   otherParticle.y - particle.y,
   otherParticle.x - particle.x,
-)
+);
 ```
 
 Viết hàm tính vận tốc trước va chạm bằng cách xoay lại hệ toạ độ để tìm ra vận tốc ban đầu của vật thể:
@@ -244,29 +244,29 @@ Giờ thì bắt đầu xử lý va chạm theo toán học được rồi:
 
 ```js
 // Vận tốc của các vật thể trước phương trình
-const u1 = rotate(particle.velocity, angle)
-const u2 = rotate(otherParticle.velocity, angle)
+const u1 = rotate(particle.velocity, angle);
+const u2 = rotate(otherParticle.velocity, angle);
 
 // Vận tốc của các vật thể sau khi va chạm 1 chiều:
 const v1 = {
   x: (u1.x * (m1 - m2)) / (m1 + m2) + (u2.x * 2 * m2) / (m1 + m2),
   y: u1.y,
-}
+};
 const v2 = {
   x: (u2.x * (m1 - m2)) / (m1 + m2) + (u1.x * 2 * m2) / (m1 + m2),
   y: u2.y,
-}
+};
 
 // Vận tốc chính xác của vật thể sau khi quay hệ toạ độ trở lại như ban đầu
-const vf1 = rotate(v1, -angle)
-const vf2 = rotate(v2, -angle)
+const vf1 = rotate(v1, -angle);
+const vf2 = rotate(v2, -angle);
 
 // Hoán đổi lại vận tốc thực cho các vật thể
 
-particle.velocity.x = vf1.x
-particle.velocity.y = vf1.y
-otherParticle.velocity.x = vf2.x
-otherParticle.velocity.y = vf2.y
+particle.velocity.x = vf1.x;
+particle.velocity.y = vf1.y;
+otherParticle.velocity.x = vf2.x;
+otherParticle.velocity.y = vf2.y;
 ```
 
 Hoàn thành!

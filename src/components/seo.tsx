@@ -1,11 +1,11 @@
-import { config } from "config/config";
-import Head from "next/head";
+import { config } from 'config/config';
+import Head from 'next/head';
 
 export default function SEO({
   title = config.title,
   description = config.excerpt,
   image = config.image,
-  slug = "/",
+  slug = '/',
 }) {
   const url = `${config.url}${slug}`;
   const previewImage = `${config.url}${image}`;

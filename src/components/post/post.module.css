@@ -18,7 +18,7 @@
   @apply ml-4 text-dark-muted;
 }
 .tag::before {
-  content: "#";
+  content: '#';
   @apply mr-1 opacity-50 text-dark-muted;
 }
 
@@ -93,7 +93,7 @@
 
 .markdown code::before,
 .markdown code::after {
-  content: "`";
+  content: '`';
 }
 
 .markdown a > code {
@@ -125,7 +125,7 @@
 .markdown h4::before,
 .markdown h5::before,
 .markdown h6::before {
-  content: "#";
+  content: '#';
   @apply mr-2 -ml-6 font-mono text-2xl font-normal opacity-50 text-middle;
 }
 

@@ -1,7 +1,7 @@
-import { Fragment } from "react";
-import { Layout } from "components/layout/layout";
-import { LookLike } from "components/look-like/look-like";
-import { config, socials } from "config/config";
+import { Fragment } from 'react';
+import { Layout } from 'components/layout/layout';
+import { LookLike } from 'components/look-like/look-like';
+import { config, socials } from 'config/config';
 
 const HiPage = () => {
   return (
@@ -15,16 +15,17 @@ const HiPage = () => {
           </h2>
           <div>or want to have a chit chat, just drop me a message.</div>
           <div className="h-12" />
-          <div style={{ transform: "rotate(-4deg)" }} className="mb-6">
+          <div style={{ transform: 'rotate(-4deg)' }} className="mb-6">
             email ✉️
           </div>
           <a
             href="mailto:monodylh@gmail.com"
             className="text-2xl leading-9 tracking-wide uppercase font-display rainbown"
-            children={config.email}
-          />
+          >
+            {config.email}
+          </a>
           <div className="h-12" />
-          <div style={{ transform: "rotate(2.5deg)" }}>social network 🤖</div>
+          <div style={{ transform: 'rotate(2.5deg)' }}>social network 🤖</div>
           <div className="flex -mt-3">
             {Object.entries(socials).map(([page, url]) => (
               <Fragment key={page}>
@@ -32,6 +33,7 @@ const HiPage = () => {
                   href={url}
                   target="_blank"
                   className="text-2xl leading-9 tracking-wide uppercase font-display rainbown"
+                  rel="noreferrer"
                 >
                   {page}
                 </a>

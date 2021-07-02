@@ -1,5 +1,5 @@
-import { useCallback, useEffect, useState } from "react";
-import styles from "./cursor.module.css";
+import { useCallback, useEffect, useState } from 'react';
+import styles from './cursor.module.css';
 
 interface Props {
   show?: boolean;
@@ -18,23 +18,23 @@ const Cursor = ({ show, icon, circle }: Props) => {
   }, []);
 
   useEffect(() => {
-    document.addEventListener("mousemove", onMouseMove);
+    document.addEventListener('mousemove', onMouseMove);
     return () => {
-      document.removeEventListener("mousemove", onMouseMove);
+      document.removeEventListener('mousemove', onMouseMove);
     };
-  }, []);
+  }, [onMouseMove]);
 
   return (
     <div
       className={[
         styles.cursor,
-        show ? "" : styles.hide,
-        circle ? styles.circle : "",
-      ].join(" ")}
+        show ? '' : styles.hide,
+        circle ? styles.circle : '',
+      ].join(' ')}
       style={{ left: position.x, top: position.y }}
     >
       <div className={styles.icon}>
-        {icon === "👋" ? <div className={styles.wave} children={icon} /> : icon}
+        {icon === '👋' ? <div className={styles.wave}>{icon}</div> : icon}
       </div>
     </div>
   );

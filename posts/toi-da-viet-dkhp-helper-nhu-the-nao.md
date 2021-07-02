@@ -22,7 +22,7 @@ Tự dưng lúc đó chẹp lưỡi, bảo giá như có thằng nào canh hộ 
 
 ## Từ ý tưởng tới thực tế
 
-Phác thảo ý tưởng: Ý tưởng ban đầu là spam request __liên tục__ lên server để giành slot trước, tuy nhiên việc spam một số lượng request lớn sẽ làm server nặng thêm, chưa kể nếu server **limit request** thì mình chết chắc. Thế nên phải giãn khoảng cách các request ra. Trước hết là phải viết get request lấy thông tin form để thực hiện post request tiếp theo. Sau đó post request theo token và các thông tin cần thiết trong form kèm danh sách lớp mong muốn lên server, rồi nhận response để kiểm tra việc đăng ký đã hoàn thành hay chưa? Nếu đã đăng ký thành công thì log ra 1 thông báo, cùng việc xóa môn học đó ra khỏi danh sách cần đăng ký, thực hiện lại vòng lặp với các môn học chưa được hoàn thành.
+Phác thảo ý tưởng: Ý tưởng ban đầu là spam request **liên tục** lên server để giành slot trước, tuy nhiên việc spam một số lượng request lớn sẽ làm server nặng thêm, chưa kể nếu server **limit request** thì mình chết chắc. Thế nên phải giãn khoảng cách các request ra. Trước hết là phải viết get request lấy thông tin form để thực hiện post request tiếp theo. Sau đó post request theo token và các thông tin cần thiết trong form kèm danh sách lớp mong muốn lên server, rồi nhận response để kiểm tra việc đăng ký đã hoàn thành hay chưa? Nếu đã đăng ký thành công thì log ra 1 thông báo, cùng việc xóa môn học đó ra khỏi danh sách cần đăng ký, thực hiện lại vòng lặp với các môn học chưa được hoàn thành.
 
 Nói sơ sơ thì chắc mọi người cũng hiểu về bản chất của tool này: Thay thế tay người làm một loạt các hành động thay vì phải ngồi trực và click bằng tay, chứ không phải khai thác lỗi dữ liệu để chiếm slot. Việc một thao tác bằng tay sẽ tốn nhiều thời gian hơn gấp trăm/ngàn lần so với việc để máy thực hiện thao tác giúp chúng ta.
 
@@ -34,12 +34,12 @@ Bắt tay viết code nào.
 
 ```javascript
 var request = $.ajax({
-    url: "https://dkhp.uit.edu.vn/sinhvien/hocphan/dangky",
-    type: "get"
+  url: 'https://dkhp.uit.edu.vn/sinhvien/hocphan/dangky',
+  type: 'get',
 });
 
-var formData = request.done(function(response) {
-    console.log(response);
+var formData = request.done(function (response) {
+  console.log(response);
 });
 ```
 
@@ -50,11 +50,9 @@ Tuy nhiên vì vẫn sẽ có những lúc server sập, thế nên chúng ta ph
 ![Lỗi khi request](https://i.imgur.com/K63jLcw.png)
 
 ```javascript
-request.fail(function (xhr, status, errorThrown){
-    // Log the error to the console
-    console.error(
-        "The following error occurred: " + status, errorThrown
-    );
+request.fail(function (xhr, status, errorThrown) {
+  // Log the error to the console
+  console.error('The following error occurred: ' + status, errorThrown);
 });
 ```
 
@@ -63,6 +61,7 @@ Bước thứ 2, lấy thông tin trong form. Việc các bạn gửi thông tin
 ![form token](https://i.imgur.com/KTr5Pg6.png)
 
 Thông tin tiếp theo chúng ta cần là những môn học cần đăng ký.
+
 ```javascript
 var ClassList = ['IS401.K11', 'IS402.K11', 'IS405.K11', 'IS405.K11.1'];
 ```
@@ -97,25 +96,28 @@ Việc cần làm còn lại là post tất cả thông tin chúng ta có lên s
 
 ```javascript
 var post = $.ajax({
-    url: "https://dkhp.uit.edu.vn/sinhvien/hocphan/dangky",
-    type: "POST",
-    data: {
-        /*
+  url: 'https://dkhp.uit.edu.vn/sinhvien/hocphan/dangky',
+  type: 'POST',
+  data: {
+    /*
             txtmasv: auth.name,
             form_build_id: form_build_id,
             form_token: form_token,
             form_id: 'uit_dkhp_dangky_form',
             ...
          */
-        // everything you got here
-    }
+    // everything you got here
+  },
 });
 
-var response = post.done(function(xhr, status) {
+var response = post
+  .done(function (xhr, status) {
     console.log(status);
-}).fail(function (xhr, status, error) { // dont forget the error
+  })
+  .fail(function (xhr, status, error) {
+    // dont forget the error
     console.error(status, error);
-});
+  });
 ```
 
 Thử nghiệm nay nàoooo
@@ -131,20 +133,21 @@ Chúng ta có response trả về từ post request, có một mớ đống hổ
 Việc cần làm là check làm sao? Lúc này phải dùng **RegEx** thần thánh rồi :evil_laugh:
 
 ```javascript
-new RegExp("table_lophoc_dadk\\[" + subject_id.replace(".", "\\.") + "\\]");
+new RegExp('table_lophoc_dadk\\[' + subject_id.replace('.', '\\.') + '\\]');
 ```
 
 Check xong lưu array vào một variable tạm gọi là `registered`, sau đó lần lượt vứt chúng ra khỏi danh sách lớp ban đầu
 
 ```javascript
 for (var subject in registered) {
-    if (ClassList.includes(subject)) ClassList.splice(ClassList.indexOf(subject), 1);
+  if (ClassList.includes(subject))
+    ClassList.splice(ClassList.indexOf(subject), 1);
 }
 ```
 
 Yé, coi như xong ĐKHP Helper rồi đó.
 
-*Nhưng...*
+_Nhưng..._
 
 ## Làm gì có việc nào dễ dàng bao giờ?
 
@@ -152,7 +155,7 @@ Viết chơi chơi, chạy rồi mừng hết sức, nhưng cảm giác không a
 
 Yé, vừa có cảm giác liền bắt ngay cú lỗi đến từ một câu chuyện như sau: Trước đó mình có cho một biến `registered` chứa các lớp đã được đăng ký thành công để sau khi ajax hoàn thành thì tiến hành xóa những lớp đó khỏi danh sách ban đầu. Nhưng không hiểu sao khi chạy lại vòng lặp thì nó vẫn còn những lớp đã đăng ký ở đó.
 
-Sau một hồi ngồi vật vờ lẩn quẩn với mấy cái vòng for, điều kiện if, mình mới để ý tới việc bất **đồng bộ (*sync*)** của ajax. Nếu bạn có nghiên cứu sâu về ajax, sẽ biết một thứ gọi là **async** (bất đồng bộ). Biến `registered` được gán bên trong ajax thì ra bên ngoài không có các giá trị được gán vào, bởi vì khi ajax chưa chạy tới đó thì biến `registered` đã được chạy rồi.
+Sau một hồi ngồi vật vờ lẩn quẩn với mấy cái vòng for, điều kiện if, mình mới để ý tới việc bất **đồng bộ (_sync_)** của ajax. Nếu bạn có nghiên cứu sâu về ajax, sẽ biết một thứ gọi là **async** (bất đồng bộ). Biến `registered` được gán bên trong ajax thì ra bên ngoài không có các giá trị được gán vào, bởi vì khi ajax chưa chạy tới đó thì biến `registered` đã được chạy rồi.
 
 Tuy nhiên nếu chạy ajax với async mặc định là true thì chúng ta sẽ ăn một cú **undefined** đến từ việc bất đồng bộ biến bên trong và bên ngoài ajax. Thế nên ta phải set lại giá trị `async: false` thì mới đổ được data vào trong các biến bên ngoài ajax.
 
@@ -160,11 +163,11 @@ Hiểu nguyên nhân, thì giải quyết thôi nào, ez ez:
 
 ```javascript
 $.ajaxSetup({
-    async: false
+  async: false,
 });
 ```
 
-Bạn tưởng hết lỗi rồi phải không? **Nồ.** Đời làm gì có cái gì như mơ, tránh vỏ dưa thì gặp vỏ dừa thôi. Thứ mà mình quên mất lần này là việc *session login **hết hạn***. Ở UIT bất cứ trang nào cũng có login session không vĩnh cửu, sau một khoảng thời gian đăng nhập sẽ bị logout. Mặc dù có nút ghi nhớ, nhưng không bao giờ hoạt động, chả hiểu để đó làm gì :confused:
+Bạn tưởng hết lỗi rồi phải không? **Nồ.** Đời làm gì có cái gì như mơ, tránh vỏ dưa thì gặp vỏ dừa thôi. Thứ mà mình quên mất lần này là việc \*session login **hết hạn\***. Ở UIT bất cứ trang nào cũng có login session không vĩnh cửu, sau một khoảng thời gian đăng nhập sẽ bị logout. Mặc dù có nút ghi nhớ, nhưng không bao giờ hoạt động, chả hiểu để đó làm gì :confused:
 
 Yah, tức là phải có thêm 1 vòng ajax post để login, sau đó login thành công thì mới tiến hành ajax get để lấy thông tin, có thông tin rồi thì mới ajax post để đăng ký.
 
@@ -176,8 +179,8 @@ Giờ thì khởi tạo một biến config người dùng
 
 ```javascript
 var auth = {
-    name: "17520750",
-    pass: "bantuongdaylapasswordcuatoiu?khongphaidauu!hahaha"
+  name: '17520750',
+  pass: 'bantuongdaylapasswordcuatoiu?khongphaidauu!hahaha',
 };
 ```
 
@@ -185,27 +188,29 @@ Sau đó viết ajax login
 
 ```javascript
 var login = $.ajax({
-    url: "https://dkhp.uit.edu.vn/",
-    type: "POST",
-    data: {
-        name: auth.name,
-        pass: auth.pass,
-    }
+  url: 'https://dkhp.uit.edu.vn/',
+  type: 'POST',
+  data: {
+    name: auth.name,
+    pass: auth.pass,
+  },
 });
 
-login.done(function (xhrLogin, status) {
+login
+  .done(function (xhrLogin, status) {
     console.log(status);
-}).fail(function (xhrFail, status, error) {
+  })
+  .fail(function (xhrFail, status, error) {
     console.error(status, error);
-});
+  });
 ```
 
 Ờ, có vẻ ổn, cơ mà sao nó cứ chạy mãi không dừng ấy nhỉ? **Lại quên.** Quên mất hết lớp để đăng ký thì phải dừng
 
 ```javascript
 if (ClassList.length == 0) {
-    console.log("Hết lớp đăng ký rồi bạn tôi ơiiiii!");
-    // break;
+  console.log('Hết lớp đăng ký rồi bạn tôi ơiiiii!');
+  // break;
 }
 ```
 
@@ -213,11 +218,11 @@ Coi như hết lỗi rồi á, hứa.
 
 ## Bài học rút lại
 
-* Bản chất của cái tool này không có gì ghê gớm, chỉ là thay vì phải hoạt động bằng tay thì mình sử dụng code để làm việc thay cho mình.
-* Có tool không có nghĩa là bạn sẽ đăng ký được lớp trước, mạng của bạn yếu mà có tool thì vẫn vậy.
-* **Về việc share code thì mình xin phép không share**, vì như mình đã nói, lượng request quá lớn lên server là lý do thứ nhất làm server sập. Bản thân mình hiểu mình đang làm gì nên mình mới dám làm, thời gian giữa các request mình cũng điều chỉnh có chừng mực.
-* Và điều cuối cùng: mình không quan tâm bất cứ dư luận nào nói về việc làm này là chơi bẩn hay cái gì, mình là dân CNTT, mình chỉ giải quyết vấn đề mình đang gặp phải bằng phương pháp CNTT, và mình hiểu mình đang làm gì.
+- Bản chất của cái tool này không có gì ghê gớm, chỉ là thay vì phải hoạt động bằng tay thì mình sử dụng code để làm việc thay cho mình.
+- Có tool không có nghĩa là bạn sẽ đăng ký được lớp trước, mạng của bạn yếu mà có tool thì vẫn vậy.
+- **Về việc share code thì mình xin phép không share**, vì như mình đã nói, lượng request quá lớn lên server là lý do thứ nhất làm server sập. Bản thân mình hiểu mình đang làm gì nên mình mới dám làm, thời gian giữa các request mình cũng điều chỉnh có chừng mực.
+- Và điều cuối cùng: mình không quan tâm bất cứ dư luận nào nói về việc làm này là chơi bẩn hay cái gì, mình là dân CNTT, mình chỉ giải quyết vấn đề mình đang gặp phải bằng phương pháp CNTT, và mình hiểu mình đang làm gì.
 
-Cảm ơn các bạn đã xem bài viết, hy vọng blog này có ích cho các bạn. Σ(ノ°▽°)ノ
+Cảm ơn các bạn đã xem bài viết, hy vọng blog này có ích cho các bạn. Σ(ノ °▽°)ノ
 
 ![Kết quả](https://i.imgur.com/ujWzizu.png)

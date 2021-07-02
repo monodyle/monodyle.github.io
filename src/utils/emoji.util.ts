@@ -1,4 +1,4 @@
-const pattern = /:([\w-_]+):/g
+const pattern = /:([\w-_]+):/g;
 const emojis: Record<string, string> = {
   adore: 'adore.png',
   argggg: 'argggg.png',
@@ -22,19 +22,19 @@ const emojis: Record<string, string> = {
   stab: 'stab.png',
   surrender: 'surrender.png',
   yikes: 'yikes.png',
-  sosad: 'sosad.gif'
-}
+  sosad: 'sosad.gif',
+};
 
 const parser = (content: string) => {
-  let result: RegExpExecArray | null = null
+  let result: RegExpExecArray | null = null;
   while ((result = pattern.exec(content))) {
     if (emojis[result[1]])
       content = content.replace(
         result[0],
-        `<img src="/assets/emoji/${emojis[result[1]]}" emoji />`
-      )
+        `<img src="/assets/emoji/${emojis[result[1]]}" emoji />`,
+      );
   }
-  return content
-}
+  return content;
+};
 
-export const emoji = { parser, pattern }
+export const emoji = { parser, pattern };

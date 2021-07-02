@@ -8,31 +8,31 @@ tags: [life, opinion, thinking]
 
 Hello, seri **Ngẫm** này mình rewrite từ seri **Madness Things That I Think** từ trước, chủ yếu là để migrate qua blog này cũng như chau chuốt lại câu từ, sửa một vài nội dung không phù hợp.
 
-Nhắc nhở thân thiện: Những blog có tag  **#thinking** và **#opinion** là những bài viết mình viết về những câu chuyện xàm lờ trong cuộc sống và viết trên quan điểm góc nhìn cá nhân. Nên có thể nó sẽ đụng chạm tới một số cá nhân không cùng quan điểm, nếu bạn nằm trong trường hợp này thì hy vọng được bỏ qua hoặc góp ý. Xin cảm ơn :smug: Giờ thì đổi đại từ nhân xưng nhé
+Nhắc nhở thân thiện: Những blog có tag **#thinking** và **#opinion** là những bài viết mình viết về những câu chuyện xàm lờ trong cuộc sống và viết trên quan điểm góc nhìn cá nhân. Nên có thể nó sẽ đụng chạm tới một số cá nhân không cùng quan điểm, nếu bạn nằm trong trường hợp này thì hy vọng được bỏ qua hoặc góp ý. Xin cảm ơn :smug: Giờ thì đổi đại từ nhân xưng nhé
 
 ## Cứ sống lâu là thành lão làng?
 
 Ngàn năm văn vở của nước An Nam, lưu truyền hậu thế một triết lý:
 
-> *Kính lão đắc thọ*
+> _Kính lão đắc thọ_
 
 Ngụ ý là người nhỏ tuổi phải biết kính trọng người lớn tuổi, dần dần nó trở thành nguyên tắc của cuộc sống mà tất cả mọi người đều nghe theo. Điều đó thật tốt :ok:
 
-Nhưng đã bao giờ bạn gặp người lớn tuổi **kính trọng** những người nhỏ tuổi hơn? Uây, nghe từ *"kính trọng"* mà từ lớn sang nhỏ kiểu nó bị gượng gạo nhỉ. À mà tôi không vơ đũa cả nắm đâu, vì bản thân tôi cũng có những đàn anh rất xem trọng và kính trọng bản thân của tôi.
+Nhưng đã bao giờ bạn gặp người lớn tuổi **kính trọng** những người nhỏ tuổi hơn? Uây, nghe từ _"kính trọng"_ mà từ lớn sang nhỏ kiểu nó bị gượng gạo nhỉ. À mà tôi không vơ đũa cả nắm đâu, vì bản thân tôi cũng có những đàn anh rất xem trọng và kính trọng bản thân của tôi.
 
 Vậy vấn đề ở đây là gì?
 
-Ở Việt Nam, có không ít các hội nhóm, các tập thể, đặc biệt các văn phòng đều có một thói 'xấu' mang tên: **“Ma cũ bắt nạt ma mới”**. Không phải tự dưng mà nó sinh ra cái vấn đề tiêu cực đó đâu. Họ cho rằng những người mới vào nghề là những kẻ *nghèo kinh nghiệm*, *chưa trải sự đời* nên xem mấy đứa đàn em này như là “*công cụ*” để giải trí, đồng thời “*rèn dũa*” các em để sau này có “*gặp giông to*” thì còn biết cách ứng phó. Có thật là vậy?
+Ở Việt Nam, có không ít các hội nhóm, các tập thể, đặc biệt các văn phòng đều có một thói 'xấu' mang tên: **“Ma cũ bắt nạt ma mới”**. Không phải tự dưng mà nó sinh ra cái vấn đề tiêu cực đó đâu. Họ cho rằng những người mới vào nghề là những kẻ _nghèo kinh nghiệm_, _chưa trải sự đời_ nên xem mấy đứa đàn em này như là “_công cụ_” để giải trí, đồng thời “_rèn dũa_” các em để sau này có “_gặp giông to_” thì còn biết cách ứng phó. Có thật là vậy?
 
-“*Người lớn*” luôn có một cái tư tưởng mặc định là: “*Mấy đứa nhỏ tuổi hơn chắc gì chúng nó giỏi bằng mình*”. Tôi cũng một người từng có tư tưởng như vậy. Thời học cấp 3, khi học lớp 12 hỏi bọn lớp 11: “*Biết Logarit là gì không?*”. Bọn nó lắc đầu chịu thua, thế là tôi được phen cười thầm, cảm giác như tôi là một đấng toàn năng.
+“_Người lớn_” luôn có một cái tư tưởng mặc định là: “_Mấy đứa nhỏ tuổi hơn chắc gì chúng nó giỏi bằng mình_”. Tôi cũng một người từng có tư tưởng như vậy. Thời học cấp 3, khi học lớp 12 hỏi bọn lớp 11: “_Biết Logarit là gì không?_”. Bọn nó lắc đầu chịu thua, thế là tôi được phen cười thầm, cảm giác như tôi là một đấng toàn năng.
 
-Tôi có một thằng bạn cấp 3, lúc lên đại học thì nó xin đi làm thêm ở một nhóm quay phim. Nó thích chụp ảnh lắm. Những lúc thằng đạo diễn có vấn đề thì nó có nhắc là “*Anh ơi, cái này chưa hợp lý, theo em thì ...*”. Và những gì thằng bạn tôi nhận được là câu: “*Im mồm, mày biết gì mà nói?*”. Cho tới ngày ra sản phẩm, nó cho tôi xem thì tôi mới biết: “*Hóa ra, thằng đạo diễn này bị **bất lực***”.
+Tôi có một thằng bạn cấp 3, lúc lên đại học thì nó xin đi làm thêm ở một nhóm quay phim. Nó thích chụp ảnh lắm. Những lúc thằng đạo diễn có vấn đề thì nó có nhắc là “_Anh ơi, cái này chưa hợp lý, theo em thì ..._”. Và những gì thằng bạn tôi nhận được là câu: “_Im mồm, mày biết gì mà nói?_”. Cho tới ngày ra sản phẩm, nó cho tôi xem thì tôi mới biết: “\*Hóa ra, thằng đạo diễn này bị **bất lực\***”.
 
 ![](/assets/blog/song-lau-dau-len-lao-lang/01.jpg)
 
-Trong một trường hợp khác, bạn tôi khi mới vào công ty **X**, nó làm ở bộ phận marketing. Mới đầu vào cũng bị mấy ông tướng *nhân viên 3-4 năm kinh nghiệm* đè dữ lắm. Một năm sau nó lên chức trưởng phòng marketing, thế là mấy ông tướng lại chả dám hó hé gì. Ai sống trong môi trường công sở đều biết, dù tuổi có nhỏ hơn, nhưng chức cao hơn thì bắt buộc phải xưng *anh - em* với sếp.
+Trong một trường hợp khác, bạn tôi khi mới vào công ty **X**, nó làm ở bộ phận marketing. Mới đầu vào cũng bị mấy ông tướng _nhân viên 3-4 năm kinh nghiệm_ đè dữ lắm. Một năm sau nó lên chức trưởng phòng marketing, thế là mấy ông tướng lại chả dám hó hé gì. Ai sống trong môi trường công sở đều biết, dù tuổi có nhỏ hơn, nhưng chức cao hơn thì bắt buộc phải xưng _anh - em_ với sếp.
 
-Đọc truyện tiên hiệp - kiếm hiệp đều có câu: “**Cường giả vi tôn**” (Đại ý là: Kẻ mạnh mới được làm vua). Không biết thằng cu này miệng còn hôi sữa hay không, miễn sao hắn là cường giả đỉnh đỉnh thiên địa, ngàn vạn ông cụ cả ngàn tuổi đều phải quỳ xuống mà hô lên một tiếng: “*Tiền bối*”.
+Đọc truyện tiên hiệp - kiếm hiệp đều có câu: “**Cường giả vi tôn**” (Đại ý là: Kẻ mạnh mới được làm vua). Không biết thằng cu này miệng còn hôi sữa hay không, miễn sao hắn là cường giả đỉnh đỉnh thiên địa, ngàn vạn ông cụ cả ngàn tuổi đều phải quỳ xuống mà hô lên một tiếng: “_Tiền bối_”.
 
 Vậy nên mới nói, có những người đi được 10 năm kinh nghiệm, nhưng thật ra chỉ là một năm kinh nghiệm, lặp đi lặp lại 10 lần.
 
@@ -48,9 +48,9 @@ Mỗi người trong chúng ta đều có một câu chuyện riêng về cuộc
 
 ![](/assets/blog/song-lau-dau-len-lao-lang/03.jpg)
 
-Nhiều người có sở thích “*phát lời khuyên miễn phí*”. Trong khi người khác không thực sự cần. Hãy biết cách lúc nào cần cho lời khuyên, và lúc nào thì không cần. Những lúc như thế, người ta sẽ nghĩ bạn là thằng thích **dạy đời**.
+Nhiều người có sở thích “_phát lời khuyên miễn phí_”. Trong khi người khác không thực sự cần. Hãy biết cách lúc nào cần cho lời khuyên, và lúc nào thì không cần. Những lúc như thế, người ta sẽ nghĩ bạn là thằng thích **dạy đời**.
 
-Đừng vội phán xét một điều gì đó *như đúng rồi*. Chỉ vì một vài đứa trẻ con ngu hơn mình, không có nghĩa mọi đứa trẻ con đều ngu hơn mình. Ngày xưa tôi nghĩ ở thời cấp 3, tôi là đứa giỏi Tin Học nhất nhì thành phố. Nhưng cho đến ngày tôi tìm ra những con “*quái vật thực thụ*”, và bất ngờ hơn là nó học *cấp 2*, thua tôi đến **3 tuổi**. Trong khi mình mới chỉ làm ra vài ba cái giao diện website vớ vẩn, thì nó đã lập trình cả **AI**.
+Đừng vội phán xét một điều gì đó _như đúng rồi_. Chỉ vì một vài đứa trẻ con ngu hơn mình, không có nghĩa mọi đứa trẻ con đều ngu hơn mình. Ngày xưa tôi nghĩ ở thời cấp 3, tôi là đứa giỏi Tin Học nhất nhì thành phố. Nhưng cho đến ngày tôi tìm ra những con “_quái vật thực thụ_”, và bất ngờ hơn là nó học _cấp 2_, thua tôi đến **3 tuổi**. Trong khi mình mới chỉ làm ra vài ba cái giao diện website vớ vẩn, thì nó đã lập trình cả **AI**.
 
 > Hãy biết khi nào thì nên dừng, đừng tự rước nhục vào thân.
 

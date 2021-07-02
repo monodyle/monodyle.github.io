@@ -1,5 +1,5 @@
-import { Layout } from "components/layout/layout";
-import { LookLike } from "components/look-like/look-like";
+import { Layout } from 'components/layout/layout';
+import { LookLike } from 'components/look-like/look-like';
 
 const IndexPage = () => (
   <Layout footer>
@@ -9,8 +9,8 @@ const IndexPage = () => (
           Introduce Me ✌️
         </h2>
         <p>
-          My name is <strong>Minh "Monody" Le Hong</strong>. Just a guy tends to
-          be handsome gradually over the years…
+          My name is <strong>Minh &quot;Monody&quot; Le Hong</strong>. Just a
+          guy tends to be handsome gradually over the years…
         </p>
         <div className="h-5" />
         <p className="text-middle">

@@ -1,7 +1,7 @@
-import { config } from 'config/config'
-import { PreviewPost } from 'types/post.type'
+import { config } from 'config/config';
+import { PreviewPost } from 'types/post.type';
 
-export async function generateRssItem (post: PreviewPost) {
+export async function generateRssItem(post: PreviewPost) {
   return `
     <item>
       <guid>${config.url}/blog/${post.slug}</guid>
@@ -10,11 +10,11 @@ export async function generateRssItem (post: PreviewPost) {
       <link>${config.url}/blog/${post.slug}</link>
       <pubDate>${new Date(post.date).toUTCString()}</pubDate>
     </item>
-  `
+  `;
 }
 
-export async function generateRss (posts: PreviewPost[]) {
-  const xml = await Promise.all(posts.map(generateRssItem))
+export async function generateRss(posts: PreviewPost[]) {
+  const xml = await Promise.all(posts.map(generateRssItem));
 
   return `
     <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
@@ -25,11 +25,10 @@ export async function generateRss (posts: PreviewPost[]) {
         <language>vi</language>
         <lastBuildDate>${new Date(posts[0].date).toUTCString()}</lastBuildDate>
         <atom:link href="${
-          config.title
-        }" rel="self" type="application/rss+xml" />
+  config.title
+}" rel="self" type="application/rss+xml" />
         ${xml.join('')}
       </channel>
     </rss>
-  `
+  `;
 }
-

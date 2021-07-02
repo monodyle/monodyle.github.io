@@ -5,15 +5,17 @@ import {
   useRef,
   useState,
   Fragment,
-} from "react";
-import styles from "./look-like.module.css";
+} from 'react';
+import Image from 'next/image';
+import styles from './look-like.module.css';
+import { config } from 'config/config';
 
 const map = (
   mouse: number,
   minA: number,
   maxA: number,
   minB: number,
-  maxB: number
+  maxB: number,
 ) => minB + ((mouse - minA) * (maxB - minB)) / (maxA - minA);
 
 const LookLike = () => {
@@ -27,7 +29,7 @@ const LookLike = () => {
       y: map(offsetX, 0, 180, -25, 25),
       x: map(offsetY, 0, 250, 25, -25),
     };
-    let brightness = map(offsetY, 0, 250, 1.5, 0.5);
+    const brightness = map(offsetY, 0, 250, 1.5, 0.5);
     setStyle({
       transform: `rotateX(${rotate.x}deg) rotateY(${rotate.y}deg)`,
       filter: `brightness(${brightness})`,
@@ -36,27 +38,33 @@ const LookLike = () => {
 
   const onMouseLeave = useCallback(() => {
     setStyle({
-      transform: "rotateX(0deg) rotateY(0deg)",
-      filter: "brightness(1)",
+      transform: 'rotateX(0deg) rotateY(0deg)',
+      filter: 'brightness(1)',
     });
   }, []);
 
   useEffect(() => {
-    if (!ref.current) return;
-    ref.current.addEventListener("mousemove", onMouseMove);
-    ref.current.addEventListener("mouseleave", onMouseLeave);
+    const { current } = ref;
+    if (!current) return;
+    current.addEventListener('mousemove', onMouseMove);
+    current.addEventListener('mouseleave', onMouseLeave);
     return () => {
-      if (!ref.current) return;
-      ref.current.removeEventListener("mousemove", onMouseMove);
-      ref.current.removeEventListener("mouseleave", onMouseLeave);
+      if (!current) return;
+      current.removeEventListener('mousemove', onMouseMove);
+      current.removeEventListener('mouseleave', onMouseLeave);
     };
-  }, []);
+  }, [onMouseLeave, onMouseMove]);
 
   return (
     <Fragment>
       <div className={styles.card} ref={ref}>
         <div className={styles.effect} style={style}>
-          <img src="/assets/me.png" alt="Look like this!" />
+          <Image
+            src="/assets/me.png"
+            alt="Look like this!"
+            width={256}
+            height={384}
+          />
         </div>
       </div>
     </Fragment>

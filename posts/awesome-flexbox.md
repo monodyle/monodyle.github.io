@@ -8,7 +8,7 @@ tags: [dev, frontend, css, flexbox]
 
 Chuyện là hôm nay lên [Slack](https://slack.com/), có một huynh trưởng làm một trang web static [Kipacast](https://kipacast.info/), nhờ mọi người góp ý về trang này. Sau một hồi góp ý thì mình để ý có một anh trai góp ý là có danh sách bài viết đang được sắp xếp từ cũ tới mới (Bài cuối ở đầu trang), anh cho rằng bài viết mới nhất nên nằm ở đầu trang. Suy nghĩ một hồi thì huynh trưởng chẳng biết làm sao nếu không sử dụng tới JavaScript, vì chẳng ai muốn nhúng JavaScript nếu thực sự không cần thiết.
 
-> "Thêm nút sort bằng CSS hơi quá sức" - *Huynh trưởng said*
+> "Thêm nút sort bằng CSS hơi quá sức" - _Huynh trưởng said_
 
 ## CSS siêu cường
 
@@ -110,7 +110,7 @@ Việc sorting một danh sách có sẵn theo chiều ngược lại quá là �
   flex-direction: column-reverse
 ```
 
-Looking good, CSS is awesome! :smug: Trời, dễ vậy cũng viết blog sao? Vậy thử thêm một tính năng là thêm nút sorting vào cho tập người dùng *khó tính* nhé.
+Looking good, CSS is awesome! :smug: Trời, dễ vậy cũng viết blog sao? Vậy thử thêm một tính năng là thêm nút sorting vào cho tập người dùng _khó tính_ nhé.
 
 Việc tạo ra nút sorting cũng không khó, chỉ là vấn đề CSS thinking khi bạn đã nắm được hầu hết những gì CSS có thể thực hiện. Mình sẽ tạo ra 2 cái radio input trước container, một cho ASC và một cho DESC nhé:
 
@@ -119,7 +119,7 @@ Việc tạo ra nút sorting cũng không khó, chỉ là vấn đề CSS thinki
 <input type="radio" name="sorting" value="ASC" />
 ```
 
-Sau đó mình sẽ kiểm tra, nếu cái nào đang check thì sẽ sorting lại theo cái đó, tức là thay đổi giá trị của thuộc tính `flex-direction` qua lại giữa `column` và `column-reverse`. Để kiểm tra được input nào đang được chọn, mình sử dụng **pseudo** `:checked` cho input, và sau đó dùng **General sibling combinator `~`** để tác động vào *flexbox container*:
+Sau đó mình sẽ kiểm tra, nếu cái nào đang check thì sẽ sorting lại theo cái đó, tức là thay đổi giá trị của thuộc tính `flex-direction` qua lại giữa `column` và `column-reverse`. Để kiểm tra được input nào đang được chọn, mình sử dụng **pseudo** `:checked` cho input, và sau đó dùng **General sibling combinator `~`** để tác động vào _flexbox container_:
 
 ```sass
 #posts

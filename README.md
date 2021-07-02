@@ -8,5 +8,3 @@
 </div>
 
 Build with [Next.js](https://nextjs.org/) and [TailwindCSS](https://tailwindcss.com/) 💖
-
-![](./public/illustration/footer.svg)

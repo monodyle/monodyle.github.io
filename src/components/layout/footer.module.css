@@ -2,7 +2,7 @@
   @apply w-[calc(100%+1440px)] h-full;
   @apply bg-repeat-x;
   @apply ml-[-1440px];
-  background-image: url("/illustration/ground.svg");
+  background-image: url('/illustration/ground.svg');
   animation: bg-forward 96s linear infinite;
 }
 
@@ -10,7 +10,7 @@
   @apply absolute top-0 left-0 w-[calc(100%+1440px)] h-full;
   @apply bg-repeat-x;
   @apply ml-[-1440px];
-  background-image: url("/illustration/cloud.svg");
+  background-image: url('/illustration/cloud.svg');
   animation: bg-forward 256s linear reverse infinite;
 }
 
@@ -18,7 +18,7 @@
   @apply absolute top-0 left-1/3;
   @apply w-6 h-6;
   @apply transform;
-  background-image: url("/illustration/sun.svg");
+  background-image: url('/illustration/sun.svg');
   animation: sun 36s linear infinite;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .me::before {
-  content: "On my way\ato get rich";
+  content: 'On my way\ato get rich';
   @apply absolute transform -translate-x-1/2 left-1/2 -top-6;
   @apply block text-center whitespace-pre max-w-max;
   @apply leading-3 text-center;

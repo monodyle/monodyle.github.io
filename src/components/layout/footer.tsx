@@ -1,5 +1,5 @@
-import { links } from "config/config";
-import styles from "./footer.module.css";
+import { links } from 'config/config';
+import styles from './footer.module.css';
 
 interface Props {
   illustration?: boolean;
@@ -11,21 +11,22 @@ const Footer = (props: Props) => {
       <div className={styles.ground} />
       <div className={styles.cloud} />
       <div className={styles.sun} />
-      <div className={styles.me} children="🌝" />
+      <div className={styles.me}>🌝</div>
     </footer>
   ) : (
     <footer className="flex items-center justify-center w-full p-9">
       <div className="text-center text-middle">
-        Hello, here the Monody's space!
+        Hello, here the Monody&apos;s space!
         <br />
-        You can{" "}
+        You can{' '}
         <a
           href={links.kofi}
           className="underline"
           target="_blank"
+          rel="noreferrer"
         >
           buy me a coffee
-        </a>{" "}
+        </a>{' '}
         if you feel enjoy this blog.
       </div>
     </footer>

@@ -1,7 +1,7 @@
-import { Fragment } from "react";
-import Head from "next/head";
-import { ActiveHeaderItem, Header } from "./header";
-import { Footer } from "./footer";
+import { Fragment } from 'react';
+import Head from 'next/head';
+import { ActiveHeaderItem, Header } from './header';
+import { Footer } from './footer';
 
 interface Props {
   title?: string;
@@ -10,7 +10,7 @@ interface Props {
 }
 
 const Layout: React.FC<Props> = ({
-  title = "The Monody's Space",
+  title = 'The Monody\'s Space',
   active,
   footer,
   children,
