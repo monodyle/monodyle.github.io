@@ -1,2 +1,5 @@
+node_modules
+.husky
 .next
-/node_modules
+.vercel
+out
