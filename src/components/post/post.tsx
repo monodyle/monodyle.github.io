@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { PostType } from 'types/post.type';
 import DateTime from 'utils/date.util';
 import styles from './post.module.css';
