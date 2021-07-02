@@ -5,12 +5,10 @@ const NotFoundPage = () => {
   return (
     <Layout>
       <div className="text-center">
-        <Image
+        <img
           src="/illustration/ancient.svg"
           alt="Ancient"
-          className="block mx-auto"
-          width={256}
-          height={256}
+          className="block w-64 mx-auto"
         />
         <span className="text-2xl text-middle">
           Ohhh! You found lost space...

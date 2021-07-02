@@ -18,13 +18,7 @@ const Post = ({ post }: Props) => {
       </div>
       {post.image && (
         <div className={styles.hero}>
-          <Image
-            src={post.image}
-            alt={post.title}
-            title={post.title}
-            width={896}
-            height={470}
-          />
+          <img src={post.image} alt={post.title} title={post.title} />
         </div>
       )}
       <div className="flex items-center justify-between mb-2">
