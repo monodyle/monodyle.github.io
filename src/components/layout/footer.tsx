@@ -1,4 +1,4 @@
-import { config } from "config/config";
+import { links } from "config/config";
 import styles from "./footer.module.css";
 
 interface Props {
@@ -20,7 +20,7 @@ const Footer = (props: Props) => {
         <br />
         You can{" "}
         <a
-          href={config.kofi}
+          href={links.kofi}
           className="underline"
           target="_blank"
         >

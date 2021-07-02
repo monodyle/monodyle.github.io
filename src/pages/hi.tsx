@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Layout } from "components/layout/layout";
-import LookLike from "components/look-like/look-like";
-import { socials } from "config/config";
+import { LookLike } from "components/look-like/look-like";
+import { config, socials } from "config/config";
 
 const HiPage = () => {
   return (
@@ -21,9 +21,8 @@ const HiPage = () => {
           <a
             href="mailto:monodylh@gmail.com"
             className="text-2xl leading-9 tracking-wide uppercase font-display rainbown"
-          >
-            monodylh@gmail.com
-          </a>
+            children={config.email}
+          />
           <div className="h-12" />
           <div style={{ transform: "rotate(2.5deg)" }}>social network 🤖</div>
           <div className="flex -mt-3">

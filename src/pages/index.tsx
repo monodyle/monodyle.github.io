@@ -1,5 +1,5 @@
 import { Layout } from "components/layout/layout";
-import LookLike from "components/look-like/look-like";
+import { LookLike } from "components/look-like/look-like";
 
 const IndexPage = () => (
   <Layout footer>

@@ -63,4 +63,4 @@ const LookLike = () => {
   );
 };
 
-export default LookLike;
+export { LookLike };
