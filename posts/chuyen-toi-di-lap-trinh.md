@@ -3,7 +3,7 @@ date: Feb 15, 2020
 image: /assets/blog/chuyen-toi-di-lap-trinh/featured.jpg
 title: Chuyện mình đi lập trình - Bắt đầu từ đâu?
 excerpt: Ừ thì... Bắt đầu từ con số không chứ từ đâu nữa?
-tags: [dev, talk]
+tags: [talk]
 ---
 
 Nếu bây giờ bạn thử tìm tiếm trên **Google** với từ khoá **"Học lập trình nên bắt đầu từ đâu"**, chắc có cả triệu kết quả dành cho bạn. Nên viết bài này, có khi chẳng có ích với bạn. Vì mình sẽ không chỉ dẫn cho các bạn bắt đầu như thế nào, mà mình viết về quãng thời gian mình học lập trình và những bài học mà mình có được trong suốt quãng thời gian đó.

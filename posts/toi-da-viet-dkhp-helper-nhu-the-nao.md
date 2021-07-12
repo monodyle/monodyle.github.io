@@ -3,7 +3,7 @@ date: Aug 07, 2019
 image: /assets/blog/toi-da-viet-dkhp-helper-nhu-the-nao/featured.jpg
 title: Tôi đã viết ĐKHP Helper như thế nào?
 excerpt: Cứ 9h sáng, kỳ nào cũng thế, không có sự khoan nhượng nào, một trận chiến khốc liệt, đẫm máu, tất cả vỏn vẹn chưa tới một giây...
-tags: [dev, web, javascript]
+tags: [web, javascript]
 ---
 
 ## Ngày xửa ngày xưa...

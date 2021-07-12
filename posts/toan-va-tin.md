@@ -3,7 +3,7 @@ date: Mar 06, 2020
 image: /assets/blog/toan-va-tin/featured.jpg
 title: Toán và Tin - Học toán để làm gì?
 excerpt: Học toán để làm gì? Câu hỏi khó phết đấy, đố bạn biết học toán dể làm gì, và nó ứng dụng thế nào trong tin học?
-tags: [dev, math, algorithm]
+tags: [math, algorithm]
 ---
 
 ## Toán học & Học toán

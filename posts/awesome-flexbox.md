@@ -3,7 +3,7 @@ title: Flexbox vi diệu - Sorting bằng CSS như thế nào cho đúng?
 excerpt: Công nghệ phát triển nhanh quá, học thôi còn bắt kịp thời đại.
 date: Jul 12, 2020
 image: /assets/blog/awesome-flexbox/featured.jpg
-tags: [dev, frontend, css, flexbox]
+tags: [frontend, css, flexbox]
 ---
 
 Chuyện là hôm nay lên [Slack](https://slack.com/), có một huynh trưởng làm một trang web static [Kipacast](https://kipacast.info/), nhờ mọi người góp ý về trang này. Sau một hồi góp ý thì mình để ý có một anh trai góp ý là có danh sách bài viết đang được sắp xếp từ cũ tới mới (Bài cuối ở đầu trang), anh cho rằng bài viết mới nhất nên nằm ở đầu trang. Suy nghĩ một hồi thì huynh trưởng chẳng biết làm sao nếu không sử dụng tới JavaScript, vì chẳng ai muốn nhúng JavaScript nếu thực sự không cần thiết.
