@@ -10,7 +10,7 @@ interface Props {
 }
 
 const Layout: React.FC<Props> = ({
-  title = "The Monody's Space",
+  title = 'The Monody Space',
   active,
   footer,
   children,
