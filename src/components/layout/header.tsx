@@ -1,34 +1,15 @@
-import { Fragment, useEffect, useRef, useState } from 'react';
-import Link from 'next/link';
 import { Cursor } from 'components/cursor/cursor';
+import { MENU } from 'config/config';
+import Link from 'next/link';
+import { Fragment, useEffect, useRef, useState } from 'react';
 
 export type ActiveHeaderItem = 'hi' | 'work' | 'blog';
-interface MenuItem {
+export interface MenuItem {
   title: string;
   emoji?: string;
   slug: string;
   effect?: boolean;
 }
-
-const MENU: {
-  [K in ActiveHeaderItem]: MenuItem;
-} = {
-  hi: {
-    title: 'say hi.',
-    emoji: '👋',
-    slug: '/hi',
-  },
-  work: {
-    title: 'working.',
-    emoji: '💻',
-    slug: '/work',
-  },
-  blog: {
-    title: 'writing.',
-    emoji: '📝',
-    slug: '/blog',
-  },
-};
 
 const Item = ({ slug, title, emoji, effect }: MenuItem) => {
   const ref = useRef<HTMLAnchorElement>(null);
@@ -69,23 +50,23 @@ const Item = ({ slug, title, emoji, effect }: MenuItem) => {
 
 const Header = ({ active }: { active?: ActiveHeaderItem }) => {
   return (
-    <nav className="flex items-center justify-between leading-6">
+    <nav className="flex items-center leading-6 md:justify-between">
       <div className="flex items-center">
         <Item slug="/" title="home." />
         {active && (
           <Fragment>
-            <div className="px-4 text-dark-muted">/</div>
-            <span className="text-base font-bold leading-6">
+            <div className="hidden px-4 text-dark-muted sm:block">/</div>
+            <span className="hidden text-base font-bold leading-6 sm:block">
               {MENU[active].title} {MENU[active].emoji}
             </span>
           </Fragment>
         )}
       </div>
-      <div className="flex items-center">
+      <div className="flex items-center justify-end">
         {Object.entries(MENU).map(([key, item], i) =>
           key !== active ? (
             <Fragment key={i}>
-              <div className="w-12" />
+              <div className="w-4 md:w-12" />
               <Item
                 slug={item.slug}
                 title={item.title}

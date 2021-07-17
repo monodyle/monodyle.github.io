@@ -1,5 +1,5 @@
 .article {
-  @apply max-w-3xl px-8 mx-auto mt-6 mb-9;
+  @apply max-w-3xl mx-auto mt-6 lg:px-8 mb-9;
 }
 
 .hero {

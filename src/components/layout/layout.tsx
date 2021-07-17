@@ -1,7 +1,7 @@
-import { Fragment } from 'react';
 import Head from 'next/head';
-import { ActiveHeaderItem, Header } from './header';
+import { Fragment } from 'react';
 import { Footer } from './footer';
+import { ActiveHeaderItem, Header } from './header';
 
 interface Props {
   title?: string;
@@ -10,7 +10,7 @@ interface Props {
 }
 
 const Layout: React.FC<Props> = ({
-  title = 'The Monody\'s Space',
+  title = "The Monody's Space",
   active,
   footer,
   children,
@@ -21,9 +21,9 @@ const Layout: React.FC<Props> = ({
         <title>{title}</title>
       </Head>
       <div className="flex flex-col items-center justify-between min-h-screen">
-        <div className="container flex flex-col px-16 py-20 mx-auto">
+        <div className="container flex flex-col px-6 py-4 mx-auto md:py-12 md:px-16">
           <Header active={active} />
-          <div className="h-16" />
+          <div className="h-4 sm:h-8 lg:h-16" />
           <div className="flex-auto flex-shrink-0">{children}</div>
         </div>
         <Footer illustration={footer} />

@@ -3,8 +3,8 @@ import { LookLike } from 'components/look-like/look-like';
 
 const IndexPage = () => (
   <Layout footer>
-    <div className="flex items-center justify-between pt-12 mx-24">
-      <div className="w-1/2">
+    <div className="pt-12 md:flex md:items-center md:justify-between lg:mx-24">
+      <div className="md:w-[calc(100%-256px)]">
         <h2 className="mb-5 text-2xl leading-9 tracking-wide uppercase font-display">
           Introduce Me ✌️
         </h2>
@@ -20,7 +20,9 @@ const IndexPage = () => (
         </p>
       </div>
       <div className="w-16 h-16" />
-      <LookLike />
+      <div className="hidden md:block">
+        <LookLike />
+      </div>
     </div>
   </Layout>
 );

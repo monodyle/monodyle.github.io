@@ -1,14 +1,14 @@
-import { config } from 'config/config';
+import { CONFIG } from 'config/config';
 import Head from 'next/head';
 
 export default function SEO({
-  title = config.title,
-  description = config.excerpt,
-  image = config.image,
+  title = CONFIG.title,
+  description = CONFIG.excerpt,
+  image = CONFIG.image,
   slug = '/',
 }) {
-  const url = `${config.url}${slug}`;
-  const previewImage = `${config.url}${image}`;
+  const url = `${CONFIG.url}${slug}`;
+  const previewImage = `${CONFIG.url}${image}`;
   return (
     <Head>
       {/* General tags */}
@@ -37,7 +37,7 @@ export default function SEO({
       <meta
         key="twitter:creator"
         name="twitter:creator"
-        content={config.author}
+        content={CONFIG.author}
       />
       <meta key="twitter:title" name="twitter:title" content={title} />
       <meta

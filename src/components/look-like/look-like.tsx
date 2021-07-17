@@ -1,14 +1,13 @@
+import Image from 'next/image';
 import {
   CSSProperties,
+  Fragment,
   useCallback,
   useEffect,
   useRef,
   useState,
-  Fragment,
 } from 'react';
-import Image from 'next/image';
 import styles from './look-like.module.css';
-import { config } from 'config/config';
 
 const map = (
   mouse: number,

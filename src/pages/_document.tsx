@@ -1,5 +1,5 @@
-import { config } from 'config/config';
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import { CONFIG } from 'config/config';
+import Document, { Head, Html, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
   render(): JSX.Element {
@@ -25,8 +25,8 @@ class MyDocument extends Document {
           />
           <link rel="manifest" href="/site.webmanifest" />
           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#24292e" />
-          <meta name="apple-mobile-web-app-title" content={config.title} />
-          <meta name="application-name" content={config.title} />
+          <meta name="apple-mobile-web-app-title" content={CONFIG.title} />
+          <meta name="application-name" content={CONFIG.title} />
           <meta name="msapplication-TileColor" content="#1366E9" />
           <meta name="theme-color" content="#ffffff" />
         </Head>
