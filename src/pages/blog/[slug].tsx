@@ -1,11 +1,11 @@
-import { useRouter } from 'next/router';
+import { Layout } from 'components/layout/layout';
+import { Post } from 'components/post/post';
+import SEO from 'components/seo';
 import ErrorPage from 'next/error';
 import Head from 'next/head';
-import { getPostBySlug, getAllPosts } from 'utils/api.util';
+import { useRouter } from 'next/router';
 import { PostType } from 'types/post.type';
-import { Layout } from 'components/layout/layout';
-import SEO from 'components/seo';
-import { Post } from 'components/post/post';
+import { getAllPosts, getPostBySlug } from 'utils/api.util';
 import { md } from 'utils/markdown.util';
 
 type Props = {
@@ -13,6 +13,51 @@ type Props = {
   morePosts: PostType[];
   preview?: boolean;
 };
+
+type Params = {
+  params: {
+    slug: string;
+  };
+};
+
+const CONTENT_PAGE_CACHE_TIME = 60 * 60 * 24 * 7; // 7 days
+
+export async function getStaticProps({ params }: Params) {
+  const post = getPostBySlug(params.slug, [
+    'title',
+    'date',
+    'slug',
+    'author',
+    'content',
+    'image',
+    'tags',
+  ]);
+  const content = await md.parser(post.content || '');
+
+  return {
+    revalidate: CONTENT_PAGE_CACHE_TIME,
+    props: {
+      post: {
+        ...post,
+        content,
+      },
+    },
+  };
+}
+
+export async function getStaticPaths() {
+  const posts = getAllPosts(['slug']);
+  return {
+    paths: posts.map((posts) => {
+      return {
+        params: {
+          slug: posts.slug,
+        },
+      };
+    }),
+    fallback: 'blocking',
+  };
+}
 
 const SinglePost = ({ post }: Props) => {
   const router = useRouter();
@@ -41,45 +86,3 @@ const SinglePost = ({ post }: Props) => {
 };
 
 export default SinglePost;
-
-type Params = {
-  params: {
-    slug: string;
-  };
-};
-
-export async function getStaticProps({ params }: Params) {
-  const post = getPostBySlug(params.slug, [
-    'title',
-    'date',
-    'slug',
-    'author',
-    'content',
-    'image',
-    'tags',
-  ]);
-  const content = await md.parser(post.content || '');
-
-  return {
-    props: {
-      post: {
-        ...post,
-        content,
-      },
-    },
-  };
-}
-
-export async function getStaticPaths() {
-  const posts = getAllPosts(['slug']);
-  return {
-    paths: posts.map((posts) => {
-      return {
-        params: {
-          slug: posts.slug,
-        },
-      };
-    }),
-    fallback: false,
-  };
-}

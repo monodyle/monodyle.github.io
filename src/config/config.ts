@@ -3,7 +3,7 @@ import { ActiveHeaderItem, MenuItem } from 'components/layout/header';
 export const CONFIG = {
   author: 'Monody Le',
   url: 'https://minhle.space',
-  title: "The Monody's Space",
+  title: 'The Monody Space',
   excerpt: 'Hello, just a simple guy.',
   image: '/assets/cover.png',
   email: 'hi@minhle.space',
