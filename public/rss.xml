@@ -1,0 +1,99 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Monody Space</title>
+    <link>https://minhle.space</link>
+    <description>Hello, just a simple guy.</description>
+    <language>vi</language>
+    <lastBuildDate>Sun, 12 Dec 2021 17:00:00 GMT</lastBuildDate>
+    <atom:link href="The Monody Space" rel="self" type="application/rss+xml" />
+    <item>
+      <guid>https://minhle.space/blog/learning-rust.mdx</guid>
+      <title>Đánh nhau với Rust — Lẩu cua đồng</title>
+      <description>Lúc muốn học thì ai cũng học, lúc phải học thì không ai học nữa rồi...</description>
+      <link>https://minhle.space/blog/learning-rust.mdx</link>
+      <pubDate>Sun, 12 Dec 2021 17:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <guid>https://minhle.space/blog/animation-performance.mdx</guid>
+      <title>Animation làm sao mới tốt?</title>
+      <description>Dạo mình viết lại cái trang này, tự dưng nổi hứng muốn làm một cái animation ở cuối chân trang. Lọ mọ một hồi thì tòi ra một số vấn đề... Chi tiết thế nào, đọc xong sẽ rõ.</description>
+      <link>https://minhle.space/blog/animation-performance.mdx</link>
+      <pubDate>Sun, 11 Jul 2021 17:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <guid>https://minhle.space/blog/awesome-flexbox.mdx</guid>
+      <title>Flexbox vi diệu — Sorting bằng CSS như thế nào?</title>
+      <description>Công nghệ phát triển nhanh quá, học thôi còn bắt kịp thời đại.</description>
+      <link>https://minhle.space/blog/awesome-flexbox.mdx</link>
+      <pubDate>Sat, 11 Jul 2020 17:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <guid>https://minhle.space/blog/sql-database-hacking.mdx</guid>
+      <title>Mấy cái trò Database Hacking</title>
+      <description>Hôm nọ mình vừa đọc được một bài write-up của một bạn White-hat sau khi báo cáo lại lỗ hổng trên trang web của Đại học Harvard, tự dưng thấy kỹ năng về bảo mật của mình bao lâu nay... kém ghê</description>
+      <link>https://minhle.space/blog/sql-database-hacking.mdx</link>
+      <pubDate>Sat, 14 Mar 2020 17:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <guid>https://minhle.space/blog/toan-va-tin.mdx</guid>
+      <title>Toán và Tin — Học toán để làm gì?</title>
+      <description>Học toán để làm gì? Câu hỏi khó phết đấy, đố bạn biết học toán dể làm gì, và nó ứng dụng thế nào trong tin học?</description>
+      <link>https://minhle.space/blog/toan-va-tin.mdx</link>
+      <pubDate>Thu, 05 Mar 2020 17:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <guid>https://minhle.space/blog/chuyen-toi-di-lap-trinh.mdx</guid>
+      <title>Chuyện mình đi lập trình — Bắt đầu từ đâu?</title>
+      <description>Ừ thì... Bắt đầu từ con số không chứ từ đâu nữa?</description>
+      <link>https://minhle.space/blog/chuyen-toi-di-lap-trinh.mdx</link>
+      <pubDate>Fri, 14 Feb 2020 17:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <guid>https://minhle.space/blog/toi-da-viet-dkhp-helper-nhu-the-nao.mdx</guid>
+      <title>Tôi đã viết ĐKHP Helper như thế nào?</title>
+      <description>Cứ 9h sáng, kỳ nào cũng thế, không có sự khoan nhượng nào, một trận chiến khốc liệt, đẫm máu, tất cả vỏn vẹn chưa tới một giây...</description>
+      <link>https://minhle.space/blog/toi-da-viet-dkhp-helper-nhu-the-nao.mdx</link>
+      <pubDate>Tue, 06 Aug 2019 17:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <guid>https://minhle.space/blog/my-summer.mdx</guid>
+      <title>Đời — Mùa hè</title>
+      <description>Mùa hè, nghe tới thôi là đã đầy sức trẻ, tinh thần của những con người sắp được giải tỏa những căng thẳng sau một năm làm việc căng thẳng và mệt mỏi, là lúc mà hằng sa số những đứa học sinh mong chờ để có những ngày nghỉ sau những ngày tháng bào mòn chiếc ghế nhà trường bằng cặp mông vô địch của mình. Ai cũng mong chờ một mùa hè với năng lượng tuổi trẻ rạo rực.</description>
+      <link>https://minhle.space/blog/my-summer.mdx</link>
+      <pubDate>Sat, 08 Sep 2018 17:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <guid>https://minhle.space/blog/doi-ve-co-ban-la-buon.mdx</guid>
+      <title>Ngẫm — Đời về cơ bản là buồn</title>
+      <description>Trước khi đi vào vấn đề, tôi có một câu hỏi đơn giản dành cho các bạn: "Bạn là ai?". Chậm đã, đây không phải là một cuộc phỏng vấn, vì vậy tôi không tìm kiếm những câu trả lời đại loại như: “Tôi là một người nghiêm túc tìm kiếm sự thành đạt. Tôi thích dành thời gian cho công việc, gia đình và bạn bè”. - Cái câu trả lời mà gần như 80% mấy ông đi xin việc đều mở mồm ra là hót một bài như vậy.</description>
+      <link>https://minhle.space/blog/doi-ve-co-ban-la-buon.mdx</link>
+      <pubDate>Thu, 22 Mar 2018 17:00:00 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <guid>https://minhle.space/blog/song-lau-dau-len-lao-lang.mdx</guid>
+      <title>Ngẫm — Sống lâu đâu lên Lão làng?</title>
+      <description>Ngàn năm văn vở của nước An Nam, lưu truyền hậu thế một triết lý: Kính lão đắc thọ. Ngụ ý là người nhỏ tuổi phải biết kính trọng người lớn tuổi, dần dần nó trở thành nguyên tắc của cuộc sống mà tất cả mọi người đều nghe theo. Điều đó thật tốt</description>
+      <link>https://minhle.space/blog/song-lau-dau-len-lao-lang.mdx</link>
+      <pubDate>Wed, 21 Mar 2018 17:00:00 GMT</pubDate>
+    </item>
+
+  </channel>
+</rss>

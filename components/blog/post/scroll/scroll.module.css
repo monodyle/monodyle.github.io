@@ -1,0 +1,16 @@
+.container {
+  width: 2px;
+  border-radius: 1px;
+  height: 64%;
+  position: fixed;
+  top: 20%;
+  margin-left: -8rem;
+  background-color: var(--gray-100);
+  overflow: hidden;
+}
+
+.fill {
+  background-color: var(--gray-500);
+  border-radius: 1px;
+  transition: height 240ms ease;
+}

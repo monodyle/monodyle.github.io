@@ -1,0 +1,24 @@
+.container {
+  padding-top: 64px;
+  margin-bottom: 64px;
+}
+
+.heading {
+  color: var(--gray-500);
+  text-align: center;
+}
+
+.tips {
+  margin-top: 0.5rem;
+  line-height: 150%;
+  color: var(--gray-500);
+  text-align: center;
+}
+
+.key {
+  border: solid var(--gray-500);
+  border-radius: 0.385rem;
+  border-width: 1px 1px 2px;
+  font-weight: 700;
+  padding: 1px 4px;
+}

@@ -1,0 +1,1 @@
+export { InformationIcon } from "./information"

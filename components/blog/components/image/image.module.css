@@ -1,0 +1,24 @@
+.image {
+  display: block;
+  margin: 0 auto;
+}
+
+.caption {
+  padding: 0.25rem 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  font-style: italic;
+  color: var(--gray-600);
+}
+
+.hero {
+  margin: 0 -3.5rem 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .right {
+    width: 48%;
+    float: right;
+    margin: 0 -3.5rem 1rem 1.5rem;
+  }
+}
