@@ -25,7 +25,6 @@ class MyDocument extends Document {
           />
           <link rel="manifest" href="/site.webmanifest" />
           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#24292e" />
-          <meta property="twitter:card" content="summary_large_image" />
           <meta name="apple-mobile-web-app-title" content={CONFIG.title} />
           <meta name="application-name" content={CONFIG.title} />
         </Head>

@@ -1,13 +1,13 @@
 import Head from "next/head"
 
 export const CONFIG = {
-  author: 'Monody Le',
-  url: 'https://www.minhle.space',
-  title: 'The Monody Space',
-  excerpt: 'Hello, just a simple guy.',
-  image: '/assets/cover.png',
-  email: 'hi@minhle.space',
-};
+  author: "Monody Le",
+  url: "https://www.minhle.space",
+  title: "The Monody Space",
+  excerpt: "Hello, just a simple guy.",
+  image: "/assets/cover.png",
+  email: "hi@minhle.space",
+}
 
 export default function SEO({
   title = CONFIG.title,
@@ -21,39 +21,23 @@ export default function SEO({
     <Head>
       {/* General tags */}
       <title>{title}</title>
-      <meta key="title" name="title" content={title} />
-      <meta key="description" name="description" content={description} />
-      <meta key="image" name="image" content={previewImage} />
+      <meta name="title" content={title} />
+      <meta name="description" content={description} />
 
       {/* OpenGraph tags */}
-      <meta key="og:url" property="og:url" content={url} />
-      <meta key="og:type" property="og:type" content="website" />
-      <meta key="og:title" property="og:title" content={title} />
-      <meta
-        key="og:description"
-        property="og:description"
-        content={description}
-      />
-      <meta key="og:image" property="og:image" content={previewImage} />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={url} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:image" content={previewImage} />
 
       {/* Twitter Card tags */}
-      <meta
-        key="twitter:card"
-        name="twitter:card"
-        content="summary_large_image"
-      />
-      <meta
-        key="twitter:creator"
-        name="twitter:creator"
-        content={CONFIG.author}
-      />
-      <meta key="twitter:title" name="twitter:title" content={title} />
-      <meta
-        key="twitter:description"
-        name="twitter:description"
-        content={description}
-      />
-      <meta key="twitter:image" name="twitter:image" content={previewImage} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:creator" content={CONFIG.author} />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={previewImage} />
+      <meta name="twitter:creator" content="@trait_sniper" />
     </Head>
   )
 }
