@@ -1,0 +1,159 @@
+---
+title: Đánh nhau với Rust — Lẩu cua đồng
+excerpt: Lúc muốn học thì ai cũng học, lúc phải học thì không ai học nữa rồi...
+date: Dec 13, 2021
+image: /assets/blog/learning-rust/featured.png
+tags: [programming, rust]
+---
+
+Xin chào, lâu lắm mình mới viết blog, mặc dù ngâm hơi lâu kèm lời hứa ở bài trước là sẽ viết một bài về CSS. Cơ mà đời nào có như mơ, mình quá lười để viết thêm, bẵng đi một thời gian...
+
+Chẳng là dạo này mình lại nhảy việc nên cũng lu bu khá nhiều thứ. Covid làm cuộc sống mình thay đổi khá nhiều. Bình thường ngoài việc lên văn phòng ngồi mài đít 8 tiếng một ngày thì nay mình ngồi ở nhà mài đít 16 tiếng 1 ngày. :yikes:
+
+Dưới sự mời gọi của cả CEO — anh Trung và Frontend Lead — anh quý, kèm theo đó là động lực thôi thúc làm giàu ở trong mình, mình đầu quân cho **Sky Mavis** — một công ty công nghệ blockchain. Vậy là mình join Sky Mavis với cái title là *Frontend Engineer*.
+
+Ấy vậy mà commit đầu tiên và PR đầu tiên của mình dài 4000 LOC[^1] là một cái PR... service **Rust**.
+
+<image
+  title="4000 LOC đầu tiên..."
+  src="/assets/blog/learning-rust/01.png"
+/>
+
+[^1]: Lines of code
+
+## Rust là gì?
+
+Giải thích đơn giản theo cách hiểu của mình thì: **Rust** là ngôn ngữ biên dịch[^2]. Được tạo ra bởi team *Mozilla*. Mình cũng không rõ lý do cụ thể tại sao mọi người hype với Rust[^3]. Nó được sinh ra để hoàn thành sứ mệnh quản lý tài quyên và tính an toàn trong bộ nhớ.
+
+[^2]: https://vi.wikipedia.org/wiki/Ng%C3%B4n_ng%E1%BB%AF_bi%C3%AAn_d%E1%BB%8Bch
+[^3]: Thoe Stackoverflow (https://insights.stackoverflow.com/survey/2020#most-loved-dreaded-and-wanted)
+
+<image
+  className="hero"
+  title="Theo Google Translate"
+  src="/assets/blog/learning-rust/04.png"
+/>
+
+Với mình Rust khá khó nuốt vì Rust là ngôn ngữ lập trình cấp hệ thống, nên nó đòi hỏi việc người sử dụng phải hiểu các khái niệm cấp thấp của khoa học máy tính, cộng thêm cái đống khái niệm đặc thù của Rust, thì nó càng khó nhai hơn...
+
+## Hành trình đến với Rust
+
+Thật ra đây không phải lần đầu mình học Rust. Hành trình mình học Rust khá gian nan. Ban đầu mình khá sợ Rust vì mình không giỏi lắm trong các lang có typing và compiler. Tuy thời đại học mình code C/C++ cũng [rất ghê](de-thi-oop) (ghê = đủ để thi :doubt:), cơ mà Rust vẫn là cái gì đó khá đáng sợ, dù sao cũng bỏ code Backend lâu lắm rồi...
+
+[de-thi-oop]: https://github.com/monodyle/de-thi-oop-vo-lam-truyen-ky-cpp
+
+Cơ mà vì hype với Rust do bị mấy ông anh ở WeBuild dụ, đặc biệt là anh [@unrealhoang] là người truyền cảm hứng nhiều nhất để mình học Rust. Nên mình lỡ dấn thân vào Rust **một vài** lần. Nhấn mạnh một vài, thật sự là mình đã học 4 - 5 lần, lần nào cũng quyết tâm học mà không lần nào đi đâu đến đâu...
+
+[@unrealhoang]: https://github.com/unrealhoang/
+
+Mỗi lần học, mình đều quyết tâm ngồi đọc [Rust Book]. Tuy không giỏi lắm trong việc đọc hiểu tiếng anh nên mình rất biết cách dùng Google Translate để rồi không hiểu trong doc của Rust nó viết cái gì trong đó :lookdown:. Và rồi lại bỏ cuộc vì follow theo example mà cứ `cargo run` là có một cái lỗi gì đó mà mình đọc không hiểu :nosebleed:. Thế là mình học Go... (Sorry anh unreal :sad:)
+
+[Rust Book]: https://doc.rust-lang.org/book/
+
+Lần này vào Sky Mavis đúng lúc đang thiếu nhân sự. Thế là mình lại phải đa năng để lấp đầy những khoảng trống trong team...
+
+Tiêu chí tuyển nhân sự ở Sky Mavis khá là đặc biệt, vì đặc thù vẫn là công ty start up (ít nhất là tới thời điểm này), nên không yêu cầu bạn phải biết đầy đủ tech stack đang được sử dụng tại Sky Mavis, mà thay vào đó là việc ứng viên có sẵn sàng học những thứ mới hay không. Vì vậy nên mình cũng rất chào đón việc học cái gì đó mới. Và lần này là Rust.
+
+Mình nhận ra việc học của mình nó khá là **"εὕρηκα!"** (Phiên âm: /évrika/, hay tiếng Việt đọc là ơ-rê-ca). Tức là việc học của mình với một số thứ chỉ có thể ngộ, không thể cầu. Rust cũng vậy, trong một khoảnh khắc mình nhận ra là: "Ơ, hoá ra là như vậy".
+
+<image
+  title="εὕρηκα!"
+  src="/assets/blog/learning-rust/02.jpg"
+/>
+
+Vừa làm vừa học đối với mình dễ hơn hẳn.
+
+## Rust và mấy cái khác
+
+Lúc mình muốn học Rust thì ai cũng biết, lúc mình phải học Rust thì mọi người đã chán rồi. Từ javascript nhảy qua học Rust giống như là ác mộng vậy... Dù vẫn dùng typescript để typing cho js, cơ mà typing của Rust nó là cái gì đó siêu khủng khiếp đối với mình. Nên dưới đây là những gì mình note lại khi mình ơ-rê-ca lúc học Rust.
+
+### cargo
+
+Giống như nhiều ngôn ngữ khác, Rust cũng có một cái tổ chức và quản lý các gói phụ thuộc (dependencies) của nó. Như Node, bạn có `npm`, hay `mix` của Elixir, thì Rust có `cargo`, và các dependenciesdepen của cargo được gọi là **crate**.
+
+Việc run một cái repo Rust cũng giống như `npm start`, ta có `cargo run`. Ờ thì cũng không phải build bằng `rustc` mỗi lần reload code. Rust cũng có hot-reload, cơ mà setup cũng mệt mỏi nên mình cũng làm biếng luôn.
+
+Ban đầu nhìn Rust nó kế thừa khá nhiều thứ từ C/C++ nên mình cũng hơi sợ việc import 3rd package. Cơ mà ngồi rồi mới thấy tính ra cũng không phức tạp lắm. P/s: Đấy là do mình không biết bên C/C++ có package management nào không... :sad:
+
+### Borrow checker
+
+Rất nhiều người lúc mentor và dụ dỗ mình học Rust luôn lặp lại một câu là: "Hãy học kỹ [chương 4], em sẽ thấy một chân trời mới."
+
+[chương 4]: https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html
+
+Cơ mà mình có hiểu gì đâu, đọc mãi chẳng chữ nào đọng lại trong não, thế là trong lúc mày mò lại chiêm nghiệm được một ít thứ từ **borrow checker** của Rust.
+
+<image
+  title="Borrow checker"
+  src="/assets/blog/learning-rust/03.png"
+/>
+
+Được javscript chiều chuộng khá nhiều, mình đã dần quen với việc khai báo biến lung tung và mutable mọi thứ một cách thoải mái. Cơ mà từ lúc viết Rust, mình liên tục bị cái console chửi vì cái compier khá khó tính trong việc sử dụng và khai báo biến.
+
+Ví dụ đơn giản, trong javascript mình có thể viết như thế này:
+
+```js[data-file="test.js"]
+let x = [5];
+let y = x;
+
+console.log(x);
+```
+
+```bash
+$ node test.js
+Array [ 5 ]
+```
+
+Cơ mà trong Rust á, thử viết thế xem:
+
+```rust[data-file="main.rs"]
+fn main() {
+    let a = vec![5];
+    let b = a;
+    println!("{:?}", a);
+}
+```
+
+```bash
+$ cargo run
+warning: unused variable: `b`
+ --> src/main.rs:3:9
+  |
+3 |     let b = a;
+  |         ^ help: if this is intentional, prefix it with an underscore: `_b`
+  |
+  = note: `#[warn(unused_variables)]` on by default
+
+error[E0382]: borrow of moved value: `a`
+ --> src/main.rs:4:22
+  |
+2 |     let a = vec![5];
+  |         - move occurs because `a` has type `Vec<i32>`, which does not implement the `Copy` trait
+3 |     let b = a;
+  |             - value moved here
+4 |     println!("{:?}", a);
+  |                      ^ value borrowed here after move
+
+For more information about this error, try `rustc --explain E0382`.
+```
+
+Đấy là những lời sỉ vả của Rust mình nhận phải hằng ngày :sosad:
+
+Ở javascript, việc bạn khai báo và gán từ biến này sang biến khác cực kỳ đơn giản và không có gì xảy ra cả. Cơ mà ở Rust, khi viết `let y = x` thì bạn đã chuyển value từ `x` sang `y`. Tức là `y` đã lấy đi những gì `x` đã giữ, giờ `x` chẳng còn gì cả.
+
+Giống như việc bạn có một chiếc iPhone 13 Pro Max, mình mượn của bạn dùng ít ngày thì bạn không có iPhone 13 Pro Max nào cả. Đó là cách ownership và borrow hoạt động trong Rust.
+
+## Cải thiện
+
+Cái thời mà mình cứ học rồi lại bỏ cũng muốn dùng Rust để làm một cái gì đó hay ho. Nhưng khổ nỗi tới việc borrow mình cũng không hiểu nên tâm có thừa mà lực không đủ. Dạo này trùng hợp thay, mình vừa học Rust ngay khoảng thời gian chuẩn bị diễn ra [Advent of Code]. Nên mình cũng tranh thủ [diễu võ dương oai] với Rust.
+
+[Advent of Code]: https://adventofcode.com/
+[diễu võ dương oai]: https://github.com/monodyle/aoc/tree/master/2021/
+
+Cơ mà năm nay mình drop ở ngày 8 rồi, nếu ai chơi AOC lâu chắc cũng biết lý do phần lớn mọi người drop là gì, nên đừng cười mình nhé, khổ thân mình :snug:
+
+Sắp tới chắc mình sẽ lại làm cái gì đó với Rust. Hy vọng mình sẽ không lười nữa...
+
+## Tổng kết
+
+Tóm lại thì mình lúc mình muốn học, học nó không muốn mình, và ai cũng hype với Rust. Giờ mình học được Rust, thì Rust giờ (hình như) hết hype rồi. :smoke:

@@ -1,0 +1,75 @@
+---
+date: Mar 22, 2018
+image: /assets/blog/song-lau-dau-len-lao-lang/featured.jpg
+title: Ngẫm — Sống lâu đâu lên Lão làng?
+excerpt: 'Ngàn năm văn vở của nước An Nam, lưu truyền hậu thế một triết lý: Kính lão đắc thọ. Ngụ ý là người nhỏ tuổi phải biết kính trọng người lớn tuổi, dần dần nó trở thành nguyên tắc của cuộc sống mà tất cả mọi người đều nghe theo. Điều đó thật tốt'
+tags: [life, opinion, thinking]
+---
+
+Hello, seri **Ngẫm** này mình rewrite từ seri **Madness Things That I Think** từ trước, chủ yếu là để migrate qua blog này cũng như chau chuốt lại câu từ, sửa một vài nội dung không phù hợp.
+
+Nhắc nhở thân thiện: Những blog có tag **#thinking** và **#opinion** là những bài viết mình viết về những câu chuyện xàm lờ trong cuộc sống và viết trên quan điểm góc nhìn cá nhân. Nên có thể nó sẽ đụng chạm tới một số cá nhân không cùng quan điểm, nếu bạn nằm trong trường hợp này thì hy vọng được bỏ qua hoặc góp ý. Xin cảm ơn :smug: Giờ thì đổi đại từ nhân xưng nhé
+
+## Cứ sống lâu là thành lão làng?
+
+Ngàn năm văn vở của nước An Nam, lưu truyền hậu thế một triết lý:
+
+> _Kính lão đắc thọ_
+
+Ngụ ý là người nhỏ tuổi phải biết kính trọng người lớn tuổi, dần dần nó trở thành nguyên tắc của cuộc sống mà tất cả mọi người đều nghe theo. Điều đó thật tốt :ok:
+
+Nhưng đã bao giờ bạn gặp người lớn tuổi **kính trọng** những người nhỏ tuổi hơn? Uây, nghe từ _"kính trọng"_ mà từ lớn sang nhỏ kiểu nó bị gượng gạo nhỉ. À mà tôi không vơ đũa cả nắm đâu, vì bản thân tôi cũng có những đàn anh rất xem trọng và kính trọng bản thân của tôi.
+
+Vậy vấn đề ở đây là gì?
+
+Ở Việt Nam, có không ít các hội nhóm, các tập thể, đặc biệt các văn phòng đều có một thói 'xấu' mang tên: **“Ma cũ bắt nạt ma mới”**. Không phải tự dưng mà nó sinh ra cái vấn đề tiêu cực đó đâu. Họ cho rằng những người mới vào nghề là những kẻ _nghèo kinh nghiệm_, _chưa trải sự đời_ nên xem mấy đứa đàn em này như là “_công cụ_” để giải trí, đồng thời “_rèn dũa_” các em để sau này có “_gặp giông to_” thì còn biết cách ứng phó. Có thật là vậy?
+
+“_Người lớn_” luôn có một cái tư tưởng mặc định là: “_Mấy đứa nhỏ tuổi hơn chắc gì chúng nó giỏi bằng mình_”. Tôi cũng một người từng có tư tưởng như vậy. Thời học cấp 3, khi học lớp 12 hỏi bọn lớp 11: “_Biết Logarit là gì không?_”. Bọn nó lắc đầu chịu thua, thế là tôi được phen cười thầm, cảm giác như tôi là một đấng toàn năng.
+
+Tôi có một thằng bạn cấp 3, lúc lên đại học thì nó xin đi làm thêm ở một nhóm quay phim. Nó thích chụp ảnh lắm. Những lúc thằng đạo diễn có vấn đề thì nó có nhắc là “_Anh ơi, cái này chưa hợp lý, theo em thì ..._”. Và những gì thằng bạn tôi nhận được là câu: “_Im mồm, mày biết gì mà nói?_”. Cho tới ngày ra sản phẩm, nó cho tôi xem thì tôi mới biết: “\*Hóa ra, thằng đạo diễn này bị **bất lực\***”.
+
+<image title="" src="/assets/blog/song-lau-dau-len-lao-lang/01.jpg" />
+
+Trong một trường hợp khác, bạn tôi khi mới vào công ty **X**, nó làm ở bộ phận marketing. Mới đầu vào cũng bị mấy ông tướng _nhân viên 3-4 năm kinh nghiệm_ đè dữ lắm. Một năm sau nó lên chức trưởng phòng marketing, thế là mấy ông tướng lại chả dám hó hé gì. Ai sống trong môi trường công sở đều biết, dù tuổi có nhỏ hơn, nhưng chức cao hơn thì bắt buộc phải xưng _anh - em_ với sếp.
+
+Đọc truyện tiên hiệp - kiếm hiệp đều có câu: “**Cường giả vi tôn**” (Đại ý là: Kẻ mạnh mới được làm vua). Không biết thằng cu này miệng còn hôi sữa hay không, miễn sao hắn là cường giả đỉnh đỉnh thiên địa, ngàn vạn ông cụ cả ngàn tuổi đều phải quỳ xuống mà hô lên một tiếng: “_Tiền bối_”.
+
+Vậy nên mới nói, có những người đi được 10 năm kinh nghiệm, nhưng thật ra chỉ là một năm kinh nghiệm, lặp đi lặp lại 10 lần.
+
+<image title="" src="/assets/blog/song-lau-dau-len-lao-lang/02.jpg" />
+
+## Mình thích điều gì, không có nghĩa là nó đúng
+
+Thích cái gì, thì cũng chỉ là thích mà thôi. Đừng đánh giá quá vội vàng, đừng khen chê lối sống của một ai hết.
+
+Có thể bạn là game thủ **Dota 2**, bạn ghét **League of Legends** vãi bìu. Nhưng không có nghĩa mọi người đều như thế. Có thể bạn thích **Sơn Tùng**, nhưng không có nghĩa **Sơn Tùng** là idol của tất cả mọi người. Bạn có thể là fan của **Justin Bieber**, nhưng đừng bắt người khác phải nghe nhạc của **Justin Bieber** vì bạn thấy nó quá hay.
+
+Mỗi người trong chúng ta đều có một câu chuyện riêng về cuộc đời mình, ta không có cách nào thấu hiểu được người khác. Và cũng đừng vội dìm hàng ý tưởng, câu chữ của ai.
+
+<image title="" src="/assets/blog/song-lau-dau-len-lao-lang/03.jpg" />
+
+Nhiều người có sở thích “_phát lời khuyên miễn phí_”. Trong khi người khác không thực sự cần. Hãy biết cách lúc nào cần cho lời khuyên, và lúc nào thì không cần. Những lúc như thế, người ta sẽ nghĩ bạn là thằng thích **dạy đời**.
+
+Đừng vội phán xét một điều gì đó _như đúng rồi_. Chỉ vì một vài đứa trẻ con ngu hơn mình, không có nghĩa mọi đứa trẻ con đều ngu hơn mình. Ngày xưa tôi nghĩ ở thời cấp 3, tôi là đứa giỏi Tin Học nhất nhì thành phố. Nhưng cho đến ngày tôi tìm ra những con “_quái vật thực thụ_”, và bất ngờ hơn là nó học _cấp 2_, thua tôi đến **3 tuổi**. Trong khi mình mới chỉ làm ra vài ba cái giao diện website vớ vẩn, thì nó đã lập trình cả **AI**.
+
+> Hãy biết khi nào thì nên dừng, đừng tự rước nhục vào thân.
+
+## Không chỉ Rộng, mà còn Sâu
+
+Đừng tưởng thế giới này chỉ có được mỗi cái rộng. Không nhất thiết phải đi hết cả thế giới mới gọi là người có hiểu biết. Mời các bạn nghe bản nhạc sau
+
+<iframe width="100%" height="166" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/176980481&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+
+Trong bài nhạc trên, **Đen Vâu** có viết:
+
+> Vì đất nước mình còn lạ, cần chi đâu nước ngoài.
+
+Đứng một chỗ, chịu khó nhìn xung quanh một tẹo, cảm nhận nó lâu hơn một chút, có khi viết cả đời cũng không hết ý. Đừng nghĩ ông nhà thơ nào cũng như ông nào, có thể bạn chán ghét văn học vì không hiểu “bà cô/ông thầy” đào đâu ra lắm ý thế trong khi tác giả còn chưa nghĩ tới đó. Đồng ý là không phải bài thơ nào cũng có ngụ ý của tác giả, không phải bài nào cũng sâu xa như vậ, nhưng đã **Tức cảnh sinh tình**, ngụ cảnh sinh thơ thì chắc chắn trong bài thơ phải có những ý tứ rất sâu xa.
+
+Vì vậy, sống lâu thì đi được nhiều hơn, nhưng không có nghĩa bạn biết hết mọi ngóc ngách của thế giới. Có thể bạn biết ở **Singapore** có một con đường ngắn đi thẳng từ **Bukit Batok** đến **Central Water Catchment** trong một nốt nhạc do một lần đi du lịch vô tình tìm ra. Nhưng bạn không rõ mọi ngóc ngách ở **Sài Thành** bằng thằng cu sống ở **Sài Gòn** 10 năm nay.
+
+## Kết
+
+Bài viết lấy ý tưởng từ khóa học: **Essential of Strategic Marketing**
+
+Rất cảm ơn mọi người nếu mọi người đọc tới đây. Nếu bài viết có sạn hy vọng mọi người bỏ qua. Mình mong muốn có những người cùng thảo luận về những vấn đề mình nêu ra, hoặc cho mình một vấn đề để mình có thể viết tiếp những bài sau. Chúc mọi người ngày mới tốt lành.

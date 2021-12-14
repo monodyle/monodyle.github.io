@@ -32,6 +32,3 @@ yarn-error.log*
 
 # vercel
 .vercel
-
-# generate
-/public/rss.xml

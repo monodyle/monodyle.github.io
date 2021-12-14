@@ -1,0 +1,47 @@
+.toc {
+  position: sticky;
+  top: 240px;
+  width: 360px;
+  float: right;
+  margin-right: -480px;
+
+  font-family: var(--monospace);
+  opacity: 0.25;
+  transition: opacity 240ms ease;
+}
+
+.toc:hover {
+  opacity: 1;
+}
+
+.toc ol {
+  margin: 0;
+}
+
+.toc ol > li {
+  margin: 0;
+}
+
+.toc ol > li::marker {
+  display: inline-block;
+}
+
+.toc a {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: none;
+  margin-bottom: -0.75rem;
+}
+
+.toc a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1660px) {
+  .toc {
+    display: none;
+  }
+}
