@@ -25,7 +25,11 @@ const defaultSettings: Settings = {
 const getInitSettings = (): Settings => {
   let settings = { ...defaultSettings, ready: true }
   const storedSettings = localStorage.getItem("settings")
-  if (storedSettings) settings = JSON.parse(storedSettings)
+  try {
+    if (storedSettings) settings = JSON.parse(storedSettings)
+  } catch (e) {
+    console.error(e)
+  }
 
   return settings
 }
@@ -40,7 +44,7 @@ const useProvideSettings = () => {
 
   const save = (values: Settings) => {
     setSettings(values)
-    localStorage.setItem("settings", String(values))
+    localStorage.setItem("settings", JSON.stringify(values))
   }
 
   return { settings, save }

@@ -63,7 +63,7 @@ export const mdxSerialize = (content: string, data: { [key: string]: any }) =>
         [
           require("remark-prism"),
           {
-            plugins: ["autolinker", "line-numbers", "diff-highlight"],
+            plugins: ["line-numbers", "diff-highlight"],
           },
         ],
       ],
