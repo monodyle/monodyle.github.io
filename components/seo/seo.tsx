@@ -9,12 +9,20 @@ export const CONFIG = {
   email: "hi@minhle.space",
 }
 
-export default function SEO({
-  title = CONFIG.title,
-  description = CONFIG.excerpt,
-  image = CONFIG.image,
-  slug = "/",
-}) {
+interface Props {
+  title?: string
+  description?: string
+  image?: string
+  slug?: string
+}
+
+export default function SEO(props: Props) {
+  const {
+    title = CONFIG.title,
+    description = CONFIG.excerpt,
+    image = CONFIG.image,
+    slug = "/",
+  } = props
   const url = `${CONFIG.url}${slug}`
   const previewImage = `${CONFIG.url}${image}`
   return (
