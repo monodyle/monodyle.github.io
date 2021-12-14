@@ -5,6 +5,7 @@
 @import "./fonts/judson/judson.css";
 @import "./prism.css";
 @import url("https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css");
+@import "./post.css";
 
 html {
   --background: #f3f4f6;
@@ -33,6 +34,7 @@ body {
   background-color: var(--background);
   color: var(--text);
   font-family: var(--monospace);
+  overflow-x: hidden;
 }
 
 .rainbown {

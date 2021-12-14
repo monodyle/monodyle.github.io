@@ -31,11 +31,7 @@
 }
 
 .counter {
-  width: 4rem;
-  margin-right: 0.5rem;
-  text-align: center;
-  font-size: 1.5rem;
-  color: var(--gray-300);
+  display: none;
 }
 
 .title {
@@ -50,13 +46,14 @@
 }
 
 .meta {
-  margin-bottom: 4px;
   display: flex;
-  align-items: center;
-  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+  gap: 0.25rem 1rem;
 }
 
 .date {
+  width: 100%;
   color: var(--gray-600);
 }
 
@@ -68,4 +65,21 @@
 
 .tag::before {
   content: "#";
+}
+
+@media screen and (min-width: 768px) {
+  .counter {
+    display: block;
+    width: 4rem;
+    margin-right: 0.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--gray-300);
+  }
+  .meta {
+    align-items: center;
+  }
+  .date {
+    width: unset;
+  }
 }

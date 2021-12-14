@@ -4,6 +4,8 @@
 
 .hero {
   margin-bottom: 2rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
   border-radius: 0.375rem;
   overflow: hidden;
 }
@@ -31,6 +33,7 @@
 
 .tags {
   display: flex;
+  flex-wrap: nowrap;
   gap: 0.5rem;
 }
 

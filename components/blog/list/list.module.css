@@ -8,6 +8,10 @@
   border-bottom: 1px solid var(--gray-100);
 }
 
+.post:first-child {
+  padding-top: 0;
+}
+
 .title {
   display: inline-block;
 
@@ -22,13 +26,14 @@
 }
 
 .meta {
-  margin-bottom: 4px;
   display: flex;
-  align-items: center;
-  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+  gap: 0.25rem 1rem;
 }
 
 .date {
+  width: 100%;
   color: var(--gray-600);
 }
 
@@ -46,4 +51,13 @@
   max-width: 680px;
   color: var(--gray-600);
   line-height: 1.625rem;
+}
+
+@media screen and (min-width: 768px) {
+  .meta {
+    align-items: center;
+  }
+  .date {
+    width: unset;
+  }
 }

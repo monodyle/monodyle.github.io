@@ -5,6 +5,18 @@ import { h } from "hastscript"
 import { findAndReplace } from "hast-util-find-and-replace"
 import { Post } from "~components/blog/interface"
 import { Plugin } from "unified"
+import { serialize } from "next-mdx-remote/serialize"
+
+import rehypeAutolinkHeadings from "rehype-autolink-headings"
+import rehypeSlug from "rehype-slug"
+import rehypeKatex from "rehype-katex"
+import rehypeToc from "rehype-toc"
+
+import remarkImages from "remark-images"
+import remarkMath from "remark-math"
+import remarkGfm from "remark-gfm"
+import remarkFootnote from "remark-footnotes"
+import { emojis } from "~utils/emoji"
 
 export const POSTS_PATH = path.join(process.cwd(), "posts")
 
@@ -39,3 +51,29 @@ export const rehypeEmoji: Plugin = ({ emojis }: RehypeEmojiOptions) => {
     findAndReplace(tree, replace_map, { ignore: ["code"] })
   }
 }
+
+export const mdxSerialize = (content: string, data: { [key: string]: any }) =>
+  serialize(content, {
+    mdxOptions: {
+      remarkPlugins: [
+        remarkMath,
+        remarkImages,
+        remarkGfm,
+        [remarkFootnote, { inlineNotes: true }],
+        [
+          require("remark-prism"),
+          {
+            plugins: ["autolinker", "line-numbers", "diff-highlight"],
+          },
+        ],
+      ],
+      rehypePlugins: [
+        rehypeKatex,
+        rehypeSlug,
+        rehypeToc,
+        rehypeAutolinkHeadings,
+        [rehypeEmoji, { pattern: /:([\w-_]+):/g, emojis }],
+      ],
+    },
+    scope: data,
+  })

@@ -320,6 +320,11 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
+"@jsdevtools/rehype-toc@3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@jsdevtools/rehype-toc/-/rehype-toc-3.0.2.tgz#29c32e6b40cd4b5dafd96cb90d5057ac5dab4a51"
+  integrity sha512-n5JEf16Wr4mdkRMZ8wMP/wN9/sHmTjRPbouXjJH371mZ2LEGDl72t8tEsMRNFerQN/QJtivOxqK1frdGa4QK5Q==
+
 "@mdx-js/mdx@^1.6.22":
   version "1.6.22"
   resolved "https://registry.yarnpkg.com/@mdx-js/mdx/-/mdx-1.6.22.tgz#8a723157bf90e78f17dc0f27995398e6c731f1ba"
@@ -4313,6 +4318,13 @@ rehype-slug@^5.0.0:
     hast-util-to-string "^2.0.0"
     unified "^10.0.0"
     unist-util-visit "^4.0.0"
+
+rehype-toc@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/rehype-toc/-/rehype-toc-3.0.2.tgz#0373e2abafddeb0606ee38229ff6714da6d86d68"
+  integrity sha512-DMt376+4i1KJGgHJL7Ezd65qKkJ7Eqp6JSB47BJ90ReBrohI9ufrornArM6f4oJjP2E2DVZZHufWucv/9t7GUQ==
+  dependencies:
+    "@jsdevtools/rehype-toc" "3.0.2"
 
 remark-footnotes@2.0.0:
   version "2.0.0"
