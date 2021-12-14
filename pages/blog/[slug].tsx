@@ -23,28 +23,20 @@ export default function PostDetail(props: Props) {
   )
 }
 
-export const getStaticProps: GetStaticProps = async (context) => {
-  try {
-    const { params } = context
-    if (!params) return { notFound: true }
-    const postFilePath = path.join(POSTS_PATH, `${params.slug}.mdx`)
-    const source = fs.readFileSync(postFilePath)
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  if (params === undefined) return { notFound: true }
+  const postFilePath = path.join(POSTS_PATH, `${params.slug}.mdx`)
+  const source = fs.readFileSync(postFilePath)
 
-    const { content, data } = matter(source)
-    const mdxSource = await mdxSerialize(content, data)
+  const { content, data } = matter(source)
+  const mdxSource = await mdxSerialize(content, data)
 
-    return {
-      revalidate: CONTENT_PAGE_CACHE_TIME,
-      props: {
-        source: mdxSource,
-        post: data,
-      },
-    }
-  } catch (error) {
-    console.error(error)
-    return {
-      notFound: true,
-    }
+  return {
+    revalidate: CONTENT_PAGE_CACHE_TIME,
+    props: {
+      source: mdxSource,
+      post: data,
+    },
   }
 }
 
@@ -52,6 +44,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const paths = postFilePaths
     .map((path) => path.replace(/\.mdx?$/, ""))
     .map((slug) => ({ params: { slug } }))
+
+  console.log(paths)
 
   return {
     paths,
