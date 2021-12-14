@@ -1,13 +1,5 @@
 import Document, { Head, Html, Main, NextScript } from "next/document"
-
-const CONFIG = {
-  author: "Monody Le",
-  url: "https://minhle.space",
-  title: "The Monody Space",
-  excerpt: "Hello, just a simple guy.",
-  image: "/assets/cover.png",
-  email: "hi@minhle.space",
-}
+import { CONFIG } from "~components/seo/seo"
 
 class MyDocument extends Document {
   render(): JSX.Element {

@@ -2,7 +2,7 @@ import Head from "next/head"
 
 export const CONFIG = {
   author: 'Monody Le',
-  url: 'https://minhle.space',
+  url: 'https://www.minhle.space',
   title: 'The Monody Space',
   excerpt: 'Hello, just a simple guy.',
   image: '/assets/cover.png',
