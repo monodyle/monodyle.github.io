@@ -21,7 +21,7 @@ export default function PostDetail(props: Props) {
   return (
     <Layout active="blog">
       <SEO
-        title={`${props.post.title} — ${CONFIG.title}`}
+        title={props.post.title}
         description={props.post.excerpt}
         image={props.post.image}
         slug={`/blog/${props.slug}`}
