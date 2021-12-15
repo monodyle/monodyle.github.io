@@ -5,6 +5,7 @@
   float: right;
   margin-right: -480px;
 
+  font-size: 16px;
   font-family: var(--monospace);
   opacity: 0.25;
   transition: opacity 240ms ease;
@@ -33,7 +34,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   text-decoration: none;
-  margin-bottom: -0.75rem;
+  margin-bottom: -0.65rem;
 }
 
 .toc a:hover {
