@@ -5,11 +5,11 @@ import SEO, { CONFIG } from "~components/seo/seo"
 import s from "./hi.module.css"
 
 export const SOCIALS = {
-  email: "hi@minhle.space",
   github: "https://github.com/monodyle",
   facebook: "https://fb.me/monodylh",
   twitter: "https://twitter.com/monodyle",
 }
+const EMAIL = "hi@minhle.space";
 
 export default function HiPage() {
   return (
@@ -28,10 +28,10 @@ export default function HiPage() {
           <div className={s.break} />
           <div className={s.emailLabel}>email ✉️</div>
           <a
-            href={`mailto:${SOCIALS.email}`}
+            href={`mailto:${EMAIL}`}
             className={["rainbown", s.email].join(" ")}
           >
-            {SOCIALS.email}
+            {EMAIL}
           </a>
           <div className={s.break} />
           <div className={s.socialLabel}>social network 🤖</div>

@@ -3,7 +3,7 @@
   max-width: 1164px;
   width: 100%;
   position: sticky;
-  top: 4px;
+  top: 0;
   z-index: 100;
 
   background-color: rgba(var(--background-rgb), 0.9);
@@ -11,7 +11,8 @@
   backdrop-filter: blur(16px);
   transition: background-color 240ms ease 0s;
 
-  border-radius: 0.385rem;
+  border-bottom-left-radius: 0.385rem;
+  border-bottom-right-radius: 0.385rem;
   box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.2) inset;
 }
 
