@@ -6,7 +6,7 @@ const generateRssItem = (post: PostData, path: string) => `
     <guid>${CONFIG.url}/blog/${path}</guid>
     <title>${post.title}</title>
     <description>${post.excerpt}</description>
-    <link>${CONFIG.url}/blog/${path}</link>
+    <link>${CONFIG.url}/blog/${path.replace(/\.mdx?/, "")}</link>
     <pubDate>${new Date(post.date).toUTCString()}</pubDate>
   </item>
 `
