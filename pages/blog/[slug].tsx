@@ -7,8 +7,10 @@ import { Post } from "~components/blog/post/post"
 import { Layout } from "~components/layout/layout"
 import { mdxSerialize, postFilePaths, POSTS_PATH } from "~utils/mdx"
 import { MDXRemoteSerializeResult } from "next-mdx-remote"
+import SEO, { CONFIG } from "~components/seo/seo"
 
 interface Props {
+  slug: string
   source: MDXRemoteSerializeResult<Record<string, unknown>>
   post: PostData
 }
@@ -18,6 +20,12 @@ const CONTENT_PAGE_CACHE_TIME = 60 * 60 * 24 * 7 // 7 days
 export default function PostDetail(props: Props) {
   return (
     <Layout active="blog">
+      <SEO
+        title={props.post.title}
+        description={props.post.excerpt}
+        image={props.post.image}
+        slug={`/blog/${props.slug}`}
+      />
       <Post post={props.post} source={props.source} />
     </Layout>
   )
@@ -34,6 +42,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   return {
     revalidate: CONTENT_PAGE_CACHE_TIME,
     props: {
+      slug: params.slug,
       source: mdxSource,
       post: data,
     },

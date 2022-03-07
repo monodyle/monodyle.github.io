@@ -1,21 +1,25 @@
 import { Fragment } from "react"
 import { Layout } from "~components/layout/layout"
 import { Look } from "~components/look/look"
+import SEO, { CONFIG } from "~components/seo/seo"
 import s from "./hi.module.css"
-
-const CONFIG = {
-  email: "hi@minhle.space",
-}
 
 export const SOCIALS = {
   github: "https://github.com/monodyle",
   facebook: "https://fb.me/monodylh",
   twitter: "https://twitter.com/monodyle",
 }
+const EMAIL = "hi@minhle.space";
 
 export default function HiPage() {
   return (
     <Layout active="hi">
+      <SEO
+        title="About me"
+        description={CONFIG.excerpt}
+        image={CONFIG.image}
+        slug="/hi"
+      />
       <div className={s.container}>
         <Look />
         <div className={s.info}>
@@ -24,10 +28,10 @@ export default function HiPage() {
           <div className={s.break} />
           <div className={s.emailLabel}>email ✉️</div>
           <a
-            href={`mailto:${CONFIG.email}`}
+            href={`mailto:${EMAIL}`}
             className={["rainbown", s.email].join(" ")}
           >
-            {CONFIG.email}
+            {EMAIL}
           </a>
           <div className={s.break} />
           <div className={s.socialLabel}>social network 🤖</div>

@@ -10,7 +10,7 @@ Xin chào, lâu lắm mình mới viết blog, mặc dù ngâm hơi lâu kèm l�
 
 Chẳng là dạo này mình lại nhảy việc nên cũng lu bu khá nhiều thứ. Covid làm cuộc sống mình thay đổi khá nhiều. Bình thường ngoài việc lên văn phòng ngồi mài đít 8 tiếng một ngày thì nay mình ngồi ở nhà mài đít 16 tiếng 1 ngày. :yikes:
 
-Dưới sự mời gọi của cả CEO — anh Trung và Frontend Lead — anh quý, kèm theo đó là động lực thôi thúc làm giàu ở trong mình, mình đầu quân cho **Sky Mavis** — một công ty công nghệ blockchain. Vậy là mình join Sky Mavis với cái title là *Frontend Engineer*.
+Dưới sự dụ dỗ của cả CEO và Frontend Lead, kèm theo đó là động lực thôi thúc làm giàu thấm nhuần trong huyết quản của mình, mình đầu quân cho **Sky Mavis** — một công ty công nghệ blockchain. Vậy là mình join Sky Mavis với cái title là *Frontend Engineer*.
 
 Ấy vậy mà commit đầu tiên và PR đầu tiên của mình dài 4000 LOC[^1] là một cái PR... service **Rust**.
 
@@ -22,6 +22,15 @@ Dưới sự mời gọi của cả CEO — anh Trung và Frontend Lead — anh 
 [^1]: Lines of code
 
 ## Rust là gì?
+
+<image
+  title="Rust chỉ là một trò chơi"
+  src="/assets/blog/learning-rust/05.png"
+/>
+
+Rust là một trò chơi sinh tồn, được [phát hành trên steam](https://store.steampowered.com/app/252490/Rust/)...
+
+Đùa thôi :nosebleed:
 
 Giải thích đơn giản theo cách hiểu của mình thì: **Rust** là ngôn ngữ biên dịch[^2]. Được tạo ra bởi team *Mozilla*. Mình cũng không rõ lý do cụ thể tại sao mọi người hype với Rust[^3]. Nó được sinh ra để hoàn thành sứ mệnh quản lý tài quyên và tính an toàn trong bộ nhớ.
 
@@ -69,7 +78,7 @@ Lúc mình muốn học Rust thì ai cũng biết, lúc mình phải học Rust 
 
 ### cargo
 
-Giống như nhiều ngôn ngữ khác, Rust cũng có một cái tổ chức và quản lý các gói phụ thuộc (dependencies) của nó. Như Node, bạn có `npm`, hay `mix` của Elixir, thì Rust có `cargo`, và các dependenciesdepen của cargo được gọi là **crate**.
+Giống như nhiều ngôn ngữ khác, Rust cũng có một cái tổ chức và quản lý các gói phụ thuộc (dependencies) của nó. Như *Node*, bạn có `npm`, hay `composer` của *php*, thì *Rust* có `cargo`, và các dependencies của cargo được gọi là **crate**.
 
 Việc run một cái repo Rust cũng giống như `npm start`, ta có `cargo run`. Ờ thì cũng không phải build bằng `rustc` mỗi lần reload code. Rust cũng có hot-reload, cơ mà setup cũng mệt mỏi nên mình cũng làm biếng luôn.
 
@@ -88,7 +97,7 @@ Cơ mà mình có hiểu gì đâu, đọc mãi chẳng chữ nào đọng lại
   src="/assets/blog/learning-rust/03.png"
 />
 
-Được javscript chiều chuộng khá nhiều, mình đã dần quen với việc khai báo biến lung tung và mutable mọi thứ một cách thoải mái. Cơ mà từ lúc viết Rust, mình liên tục bị cái console chửi vì cái compier khá khó tính trong việc sử dụng và khai báo biến.
+Được javascript chiều chuộng khá nhiều, mình đã dần quen với việc khai báo biến lung tung và mutable mọi thứ một cách thoải mái. Cơ mà từ lúc viết Rust, mình liên tục bị cái console chửi vì cái compier khá khó tính trong việc sử dụng và khai báo biến.
 
 Ví dụ đơn giản, trong javascript mình có thể viết như thế này:
 

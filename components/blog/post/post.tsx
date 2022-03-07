@@ -1,7 +1,6 @@
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote"
 import { PostData } from "../interface"
 import components from "../components/components"
-import SEO, { CONFIG } from "~components/seo/seo"
 import s from "./post.module.css"
 import { PostHeader } from "./header/header"
 import { PostSettings } from "./settings/settings"
@@ -46,11 +45,6 @@ export const Post = (props: Props) => {
 
   return (
     <div className={s.container}>
-      <SEO
-        title={`${props.post.title} — ${CONFIG.title}`}
-        description={props.post.excerpt}
-        image={props.post.image}
-      />
       <PostHeader post={props.post} time={Math.round(words / 200)} />
       <PostSettings />
       <PostScroll percentage={percentage} />
