@@ -1,0 +1,167 @@
+---
+title: React dạo này cứ dở hơi thế nào ý
+excerpt: Nhưng mà còn hái ra tiền thì vẫn phải làm thôi =))))
+date: Aug 29, 2022
+image: /assets/blog/react-do-hoi/featured.png
+tags: [frontend, react]
+---
+
+Dạo này mình lướt Twitter nhiều khủng khiếp, có một khoảng thời gian tự dưng mấy cái trang của mấy cái thư viện JS thi nhau tweet một cái emoji, mình còn tưởng chúng nó rảnh rỗi sinh nông nổi ăn theo nhau. Không ngờ được cú chốt hoá ra là mấy nhà cùng nhau hint cái event ViteConf :doubt:
+
+<img
+  title=""
+  src="/assets/blog/react-do-hoi/tweet-01.png"
+/>
+
+Tiện thể ai chưa follow twitter của mình thì hãy cho mình một follow nhé :smug:
+
+Ngồi nhìn lại, hoá ra là liên minh chống React... nghĩ lại mình cũng không vui vẻ gì với React lắm, cơ mà miễn là còn hái ra tiền thì vẫn phải làm thôi :nosebleed:
+
+## React và những điều diệu kỳ
+
+Dạo hơn năm trước, mình phát hiện ra React bắt đầu làm một cái trang docs beta mới: [https://beta.reactjs.org/](https://beta.reactjs.org/). Phát hiện ra stack trang này đang dùng là Next.js và Tailwind nên mình hào hứng đem đi khoe với mọi người.
+
+Thấm thoát cũng một năm trôi qua, React thì đã có bản 18 official, trang này thì vẫn đang beta, nhưng mà nội dung thì được update liên tục. Nếu có rảnh rỗi lướt qua, bạn sẽ thấy trong mục **Learn** có một section được để tên là **Escape Hatches** :confused:
+
+Ngồi đọc cả nửa ngày, mình phát hiện ra có vẻ rất nhiều ngươi sai cái best practice của React, trong đó có cả mình. Ơ... nhưng mà ban đầu tụi bây thiết kế ra nó kiểu đó mà, giờ rảnh rỗi đi quay lại giải quyết vấn đề bao nhiêu lâu nay làm bao nhiêu người bế tắc là sao? :stab:
+
+Nếu ngồi google với từ khoá "react best practices", chắc có cả ty tỷ kết qua cho các bạn đọc. Mỗi người một kiểu, cơ mà chắc không có gì xịn hơn chính chủ viết.
+
+Mình ngồi đọc mãi, cũng không hiểu rốt cuộc phải dùng React Hook như nào thì mới đúng? Tại sao component của tui re-render? Tại sao không được fetch data trong `useEffect`??? :rage:
+
+Bài học sau mấy ngày ngồi đọc cái đống "Nắp thoát hiểm" của React là:
+
+> Đếch hiểu gì cả :cry:
+
+## Đúng ra là hook này, mà hook kia mới chuẩn cơ
+
+### Ví dụ
+
+Đôi lúc cái mình nghĩ không nghĩ giống như mình. Mình sẽ đem một ví dụ đơn giản để các bạn có thể hiểu cái thiết kế của React nó... thần kỳ như thế nào.
+
+Nếu bỏ qua thuộc tính `autofocus` sẵn có trong HTML, thì làm thế nào để bạn có thể focus vào một cái `input` trong React?
+
+Câu trả lời nhanh gọn nhât sẽ là:
+
+```jsx
+const ref = React.useRef(null)
+
+React.useEffect(() => {
+  ref.current?.focus()
+}, [])
+
+return (
+  <input
+    ref={ref}
+    defaultValue="lmao?"
+  />
+)
+```
+
+Code vậy cũng được, thì cũng không vi phạm cái gì. Việc để trống dependency cũng ổn vì chỉ có `ref` được sử dụng bên trong `useEffect`. Linter sẽ không mắng bạn và `ref` cũng sẽ được đọc trong khi render.
+
+Ừ, nhưng mà nó *không phải* là cách đỉnh cao nhất đâu.
+
+### React nâng cao
+
+React đã giả định `ref` đã được fill khi effect được khởi chạy. Trong trường hợp nó không có sẵn, ví dụ như bạn truyền `ref` vào một component khác thì sao? Việc đó sẽ trì hoãn việc render input, hoặc input sẽ xuất hiện bởi một action của người dùng, value của `ref` sẽ vẫn là `null` khi effect chạy:
+
+```jsx
+function App() {
+  const ref = React.useRef(null)
+
+  React.useEffect(() => {
+    // ref.current luôn luôn sẽ là `null` khi cái effect này chạy
+    ref.current?.focus()
+  }, [])
+
+  return <Form ref={ref} />
+}
+
+const Form = React.forwardRef((props, ref) => {
+  const [show, setShow] = React.useState(false)
+  return (
+    <form>
+      <button type="button" onClick={() => setShow(true)}>
+        show
+      </button>
+      {show && <input ref={ref} />}
+    </form>
+  )
+})
+```
+
+Render statement bằng chữ:
+- Render `Form`
+- `input` chưa render, value của `ref` là `null`
+- `useEffect` chạy, chả làm gì
+- `input` hiện ra, value `ref` là `input`
+
+Thế effect có chạy chưa? :pepe_surrender: Dĩ nhiên là chưa. Vậy là phải thêm `ref` vào dependency của `useEffect` :okay:
+
+### React vi diệu
+
+Code kiểu trên thì bạn nào mới code React cũng có thể làm được, nên giờ hãy thử đào xem React có gì hay ho không nhé.
+
+Mình ngồi xem ref của React cụ thể nó là gì, thì tình cờ tìm được [type declarations của ref](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/d1c6213f3a87daa9233abd1ad75508446cf80e20/types/react/v17/index.d.ts#L85)
+
+```ts
+type Ref<T> = RefCallback<T> | RefObject<T> | null;
+```
+
+Tức là ngoài object ra thì nó còn truyền được cả một callback vào `ref` nữa. :moka: Đồng nghĩa với việc bạn có thể viết như thế này thay vì `ref={ref}`
+
+```jsx
+<input
+  ref={(node) => {
+    ref.current = node
+  }}
+  defaultValue="lmao?"
+/>
+```
+
+Ngắn gọn thì:
+
+> Cái prop tên `ref` trong JSX element cũng chỉ là một cái function. :ok:
+
+Dĩ nhiên, cái function đó sẽ chạy sau khi render, một trạng thái quá hoàn hảo để chạy effect. Vậy thì bạn có thể viết thành thế này:
+
+```jsx
+<input
+  ref={(node) => {
+    node?.focus()
+  }}
+  defaultValue="lmao?"
+/>
+```
+
+Nhưng mà một chi tiết bạn nên để tâm là: React sẽ chạy function này mỗi lần DOM tree của nó re-render mà dính phải `input`. Vì vậy, mình phải sửa lại để nó chỉ thực thi vào đúng lúc mình muốn.
+
+### `useCallback` cứu thầy
+
+Chúng ta cần một cái gì đó mang tính ổn định, để đảm bảo rằng việc focus vào input có nên thực thi hay không. Đồng nghĩa với việc nếu chúng ta pass cùng một reference vào function, thì việc thực thi sẽ được bỏ qua.
+
+May thay, `useCallback` xuất hiện. `useCallback` đảm bảo một hàm sẽ không được tạo ra nếu nó không cần thiết.
+
+```jsx
+const ref = React.useCallback((node) => {
+  node?.focus()
+}, [])
+
+return (
+  <input
+    ref={ref}
+    defaultValue="lmao?"
+  />
+)
+```
+
+Đúng rồi đó :ok: So với cách ban đầu, chúng ta chỉ sử dụng một hook. Hành vi thì vẫn đúng như chúng ta kỳ vọng.
+
+## Kết bài
+
+Rút ra bài học là, nếu bạn muốn tương tác với trực tiếp với DOM sau khi nó render, thì thay vì dùng `useRef` và `useEffect`, thì hãy dùng `useCallback` cho gọn.
+
+Cơ mà nghĩ mãi vẫn tức, lẽ ra nó không nên như thế... React cứ dở hơi kiểu gì ấy :cry:
+
+Cảm ơn bạn đã đọc tới đây, bài viết dựa trên trải nghiệm cá nhân, tham khảo trên mạng và một viên ngọc sáng được [ẩn](https://reactjs.org/docs/hooks-faq.html#how-can-i-measure-a-dom-node) tít sâu trong lỗ đen của React.
