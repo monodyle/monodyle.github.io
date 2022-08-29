@@ -56,7 +56,7 @@ export const Post = (props: Props) => {
         }}
         ref={contentRef}
       >
-        {<MDXRemote {...props.source} components={components} />}
+        {<MDXRemote {...props.source} components={components as any} />}
       </div>
     </div>
   )

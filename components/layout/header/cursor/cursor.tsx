@@ -1,6 +1,5 @@
 import {
   cloneElement,
-  Fragment,
   RefObject,
   useEffect,
   useRef,
@@ -75,7 +74,7 @@ const Cursor = (props: Props) => {
   }, [])
 
   return (
-    <Fragment>
+    <>
       <div ref={childrenRef} className={s.container}>
         {props.children && cloneElement(props.children)}
       </div>
@@ -85,7 +84,7 @@ const Cursor = (props: Props) => {
           <CustomCursor cursorRef={mouseRef} icon={props.icon} />,
           document.body,
         )}
-    </Fragment>
+    </>
   )
 }
 

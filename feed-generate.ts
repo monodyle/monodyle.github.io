@@ -1,4 +1,4 @@
-const fs = require("fs")
+import fs from "fs"
 import { getAllPosts } from "~utils/mdx"
 import { generateRss } from "~utils/rss"
 
