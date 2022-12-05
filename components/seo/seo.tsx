@@ -2,7 +2,7 @@ import Head from "next/head"
 
 export const CONFIG = {
   author: "Monody Le",
-  url: "https://www.minhle.space",
+  url: "https://minhle.space",
   title: "The Monody Space",
   excerpt: "Hello, just a simple guy.",
   image: "/assets/cover.png",
@@ -45,7 +45,7 @@ export default function SEO(props: Props) {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={previewImage} />
-      <meta name="twitter:creator" content="@trait_sniper" />
+      <meta name="twitter:creator" content="@monodyle" />
     </Head>
   )
 }
