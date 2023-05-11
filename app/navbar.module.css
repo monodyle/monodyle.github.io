@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto 24px;
+  padding: 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo img {
+  width: 48px;
+  border-radius: 100%;
+}
+
+.logo strong {
+  font-size: 24px;
+}
+
+.links {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 14px;
+  line-height: 40px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.link.active {
+  background-color: #eee6de;
+}
+
+.icon {
+  width: 18px;
+}
