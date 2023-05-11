@@ -5,16 +5,19 @@
   --max-width: 1100px;
   --font-sans: 'Space Grotesk', sans-serif;
   --font-mono: 'Space Mono', ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono',
+    'Droid Sans Mono', 'Courier New', monospace;
 
+  --dimmed-text: #57534e;
   --foreground: #292524;
   --foreground-rgb: 41, 37, 36;
   --background: #fff7ed;
   --background-rgb: 255, 247, 237;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -36,6 +39,7 @@ main {
   width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
+  padding: 24px;
 }
 
 a {

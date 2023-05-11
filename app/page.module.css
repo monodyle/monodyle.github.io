@@ -1,1 +1,36 @@
-.main {}
+.container {
+  padding: 24px 32px;
+  border-radius: 8px;
+  border: 2px solid var(--foreground);
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+  display: flex;
+  gap: 24px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.description {
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.avatar {
+  margin-left: auto;
+}
+.avatar img {
+  display: block;
+  width: 128px;
+  border-radius: 8px;
+  border: 2px solid var(--foreground);
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+}

@@ -1,3 +1,10 @@
+import Header from './header'
+
 export default function Blog() {
-  return <div>blogs</div>
+  return (
+    <div>
+      <Header />
+      <div>blogs</div>
+    </div>
+  )
 }
