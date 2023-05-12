@@ -1,0 +1,40 @@
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: var(--dimmed-text);
+}
+
+.tags {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.tag {
+  border-radius: 4px;
+  display: block;
+  padding: 2px 4px;
+  background-color: #eee6de;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.brief {
+  color: var(--dimmed-text);
+}
